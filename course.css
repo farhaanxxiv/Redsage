@@ -87,6 +87,7 @@
   color: white;
   font-weight: 600;
   font-size: 1.1rem;
+  white-space: nowrap;
 }
 .hero .container .right video {
   width: 100%;
@@ -196,6 +197,7 @@
   font-weight: 600;
   font-size: 1.1rem;
   margin-top: 0;
+  white-space: nowrap;
 }
 .overview .container .left video {
   width: 100%;

@@ -43,7 +43,9 @@ new Splide('.masterclass-swiper', {
     pagination: true, // Enable pagination
     arrows: true, // Enable navigation arrows
 }).mount();
-new Splide('.about-swiper', {
+new Splide('.about-swiper', {   
+    autoPlay: true,
+    interval: 2000,
     // type: 'loop', // Enable loop functionality
     perPage: 1, // Default number of slides per view
     gap: '30px',

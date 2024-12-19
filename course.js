@@ -1,27 +1,29 @@
-const video = document.getElementById('hero-video');
-const playButton = document.getElementById('hero-play-btn');
+const videos = [
+  { video: document.getElementById('hero-video'), button: document.getElementById('hero-play-btn') },
+  { video: document.getElementById('why-video'), button: document.getElementById('why-play-btn') }
+];
 
-// Show the button when the video is paused
-video.addEventListener('pause', () => {
-  playButton.style.display = 'flex';
-  video.style.filter = 'brightness(0.7)';
+videos.forEach(({ video, button }) => {
+  // Show the button when the video is paused
+  video.addEventListener('pause', () => {
+    button.style.display = 'flex';
+    video.style.filter = 'brightness(0.7)';
+  });
 
+  // Hide the button when the video is playing and enable controls
+  video.addEventListener('play', () => {
+    button.style.display = 'none';
+    video.controls = true; // Enable controls when the video starts
+    video.style.filter = 'brightness(1)';
+  });
+
+  // Play the video when the button is clicked
+  button.addEventListener('click', () => {
+    video.play();
+    video.controls = false; // Ensure controls are disabled initially
+  });
 });
 
-// Hide the button when the video is playing and enable controls
-video.addEventListener('play', () => {
-  playButton.style.display = 'none';
-  video.controls = true; // Enable controls when the video starts
-  video.style.filter = 'brightness(1)';
-
-
-});
-
-// Play the video when the button is clicked
-playButton.addEventListener('click', () => {
-  video.play(); 
-  video.controls = false; // Ensure controls are disabled initially
-});
 
 
 const faqItems = document.querySelectorAll('.faq-item');
