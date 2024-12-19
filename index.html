@@ -1,0 +1,1485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+
+    <!-- Dont move this down, it will affect mobile field in forms  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/css/intlTelInput.css">
+
+
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/global.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/js/intlTelInput.min.js"></script>
+
+    <!-- SplideJS  -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
+    <!-- Lite Youtube -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/lite-youtube-embed/0.3.2/lite-yt-embed.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lite-youtube-embed/0.3.2/lite-yt-embed.css"
+        integrity="sha512-utq8YFW0J2abvPCECXM0zfICnIVpbEpW4lI5gl01cdJu+Ct3W6GQMszVITXMtBLJunnaTp6bbzk5pheKX2XuXQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- SwiperJS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</head>
+
+
+<body>
+
+    <nav>
+        <div class="logo-hamburger-container">
+
+            <a class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <a href="/">
+                <img class="logo" src="/logos/red-black.png" alt="">
+            </a>
+        </div>
+        <div class="links " id="phone-sidebar">
+            <a href="/">Link</a>
+            <a href="/">Link</a>
+            <a href="/">Link</a>
+            <a href="/">Link</a>
+
+            <div class="toggle-navbar">
+                <div class="toggle-btn">
+                    <p>Link Toggle</p>
+                    <img src="/images/home/down-arrow.png" class="arrow">
+                </div>
+
+                <div class="content">
+                    <a href="">Link</a>
+                    <a href="">Link</a>
+                    <a href="">Link</a>
+                    <a href="">Link</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <button class="bl contact-btn">
+            Contact
+        </button>
+    </nav>
+
+    <section class="hero first">
+        <div class="bg-pattern">
+            <img src="/images/home/bg-pattern.png" alt="">
+        </div>
+        <div class="container">
+            <div class="left">
+                <img src="/images/home/hero-img.png" alt="">
+            </div>
+            <div class="right">
+                <p class="heading">Your Information</p>
+                <p class="subheading">Deserunt ad mollit sunt nostrud commodo cillum ullamco.</p>
+
+
+                <form>
+                    <input placeholder="Name" type="text">
+                    <input class="phone-with-country" type="tel">
+                    <input placeholder="Email" type="email">
+                    <button class="br" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="programs">
+        <h1>Our Programs</h1>
+        <h2>Elit ullamco incididunt aliquip sit elit sunt cillum commodo qui magna.</h2>
+
+        <div class="categories">
+            <button class="active" data-target="popular-swiper">Popular</button>
+            <button data-target="data-science-swiper">Data Science</button>
+            <button data-target="technology-swiper">Technology</button>
+            <button data-target="finance-swiper">Finance</button>
+            <button data-target="management-swiper">Management</button>
+            <button data-target="future-tech-swiper">Future Tech</button>
+        </div>
+
+        <div class="container">
+            <div class="splide programs-swiper popular-swiper">
+
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <!-- Slides -->
+                        <div class="splide__slide">
+                            <div class="card">
+                                <img class="banner" src="/images/home/sky.png" alt="">
+                                <div class="content">
+                                    <h1 class="">Medium length section goes here</h1>
+                                    <div class="images">
+                                        <img src="/images/home/sc.png" alt="">
+                                        <img src="/images/home/disney.png" alt="">
+                                    </div>
+                                    <div class="details">
+                                        <div class="detail">
+                                            <img src="/images/home/suitcase.png" alt="">
+                                            <p>Min. work exp: 1 year</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/clock.png" alt="">
+                                            <p>Duration: 9-12 months</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/3d-cube.png" alt="">
+                                            <p> Capstone project</p>
+                                        </div>
+                                    </div>
+                                    <button>Download Brochure</button>
+                                    <button class="white">Explore</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="card">
+                                <img class="banner" src="/images/home/sky.png" alt="">
+                                <div class="content">
+                                    <h1 class="">Medium length section goes here</h1>
+                                    <div class="images">
+                                        <img src="/images/home/sc.png" alt="">
+                                        <img src="/images/home/disney.png" alt="">
+                                    </div>
+                                    <div class="details">
+                                        <div class="detail">
+                                            <img src="/images/home/suitcase.png" alt="">
+                                            <p>Min. work exp: 1 year</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/clock.png" alt="">
+                                            <p>Duration: 9-12 months</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/3d-cube.png" alt="">
+                                            <p> Capstone project</p>
+                                        </div>
+                                    </div>
+                                    <button>Download Brochure</button>
+                                    <button class="white">Explore</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="card">
+                                <img class="banner" src="/images/home/sky.png" alt="">
+                                <div class="content">
+                                    <h1 class="">Medium length section goes here</h1>
+                                    <div class="images">
+                                        <img src="/images/home/sc.png" alt="">
+                                        <img src="/images/home/disney.png" alt="">
+                                    </div>
+                                    <div class="details">
+                                        <div class="detail">
+                                            <img src="/images/home/suitcase.png" alt="">
+                                            <p>Min. work exp: 1 year</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/clock.png" alt="">
+                                            <p>Duration: 9-12 months</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/3d-cube.png" alt="">
+                                            <p> Capstone project</p>
+                                        </div>
+                                    </div>
+                                    <button>Download Brochure</button>
+                                    <button class="white">Explore</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="card">
+                                <img class="banner" src="/images/home/sky.png" alt="">
+                                <div class="content">
+                                    <h1 class="">Medium length section goes here</h1>
+                                    <div class="images">
+                                        <img src="/images/home/sc.png" alt="">
+                                        <img src="/images/home/disney.png" alt="">
+                                    </div>
+                                    <div class="details">
+                                        <div class="detail">
+                                            <img src="/images/home/suitcase.png" alt="">
+                                            <p>Min. work exp: 1 year</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/clock.png" alt="">
+                                            <p>Duration: 9-12 months</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/3d-cube.png" alt="">
+                                            <p> Capstone project</p>
+                                        </div>
+                                    </div>
+                                    <button>Download Brochure</button>
+                                    <button class="white">Explore</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="card">
+                                <img class="banner" src="/images/home/sky.png" alt="">
+                                <div class="content">
+                                    <h1 class="">Medium length section goes here</h1>
+                                    <div class="images">
+                                        <img src="/images/home/sc.png" alt="">
+                                        <img src="/images/home/disney.png" alt="">
+                                    </div>
+                                    <div class="details">
+                                        <div class="detail">
+                                            <img src="/images/home/suitcase.png" alt="">
+                                            <p>Min. work exp: 1 year</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/clock.png" alt="">
+                                            <p>Duration: 9-12 months</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/3d-cube.png" alt="">
+                                            <p> Capstone project</p>
+                                        </div>
+                                    </div>
+                                    <button>Download Brochure</button>
+                                    <button class="white">Explore</button>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+
+                </div>
+                <!-- <div class="swiper-pagination"></div> -->
+
+                <!-- <div style="" class="swiper-button-prev"></div> -->
+                <!-- <div style="" class="swiper-button-next"></div> -->
+            </div>
+            <div class="splide programs-swiper data-science-swiper hidden">
+
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <!-- Slides -->
+                        <div class="splide__slide">
+                            <div class="card">
+                                <img class="banner" src="/images/home/sky.png" alt="">
+                                <div class="content">
+                                    <h1 class="">Medium length section goes here</h1>
+                                    <div class="images">
+                                        <img src="/images/home/sc.png" alt="">
+                                        <img src="/images/home/disney.png" alt="">
+                                    </div>
+                                    <div class="details">
+                                        <div class="detail">
+                                            <img src="/images/home/suitcase.png" alt="">
+                                            <p>Min. work exp: 1 year</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/clock.png" alt="">
+                                            <p>Duration: 9-12 months</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/3d-cube.png" alt="">
+                                            <p> Capstone project</p>
+                                        </div>
+                                    </div>
+                                    <button>Download Brochure</button>
+                                    <button class="white">Explore</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="card">
+                                <img class="banner" src="/images/home/sky.png" alt="">
+                                <div class="content">
+                                    <h1 class="">Medium length section goes here</h1>
+                                    <div class="images">
+                                        <img src="/images/home/sc.png" alt="">
+                                        <img src="/images/home/disney.png" alt="">
+                                    </div>
+                                    <div class="details">
+                                        <div class="detail">
+                                            <img src="/images/home/suitcase.png" alt="">
+                                            <p>Min. work exp: 1 year</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/clock.png" alt="">
+                                            <p>Duration: 9-12 months</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/3d-cube.png" alt="">
+                                            <p> Capstone project</p>
+                                        </div>
+                                    </div>
+                                    <button>Download Brochure</button>
+                                    <button class="white">Explore</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="card">
+                                <img class="banner" src="/images/home/sky.png" alt="">
+                                <div class="content">
+                                    <h1 class="">Medium length section goes here</h1>
+                                    <div class="images">
+                                        <img src="/images/home/sc.png" alt="">
+                                        <img src="/images/home/disney.png" alt="">
+                                    </div>
+                                    <div class="details">
+                                        <div class="detail">
+                                            <img src="/images/home/suitcase.png" alt="">
+                                            <p>Min. work exp: 1 year</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/clock.png" alt="">
+                                            <p>Duration: 9-12 months</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/3d-cube.png" alt="">
+                                            <p> Capstone project</p>
+                                        </div>
+                                    </div>
+                                    <button>Download Brochure</button>
+                                    <button class="white">Explore</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="card">
+                                <img class="banner" src="/images/home/sky.png" alt="">
+                                <div class="content">
+                                    <h1 class="">Medium length section goes here</h1>
+                                    <div class="images">
+                                        <img src="/images/home/sc.png" alt="">
+                                        <img src="/images/home/disney.png" alt="">
+                                    </div>
+                                    <div class="details">
+                                        <div class="detail">
+                                            <img src="/images/home/suitcase.png" alt="">
+                                            <p>Min. work exp: 1 year</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/clock.png" alt="">
+                                            <p>Duration: 9-12 months</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/3d-cube.png" alt="">
+                                            <p> Capstone project</p>
+                                        </div>
+                                    </div>
+                                    <button>Download Brochure</button>
+                                    <button class="white">Explore</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="card">
+                                <img class="banner" src="/images/home/sky.png" alt="">
+                                <div class="content">
+                                    <h1 class="">Medium length section goes here</h1>
+                                    <div class="images">
+                                        <img src="/images/home/sc.png" alt="">
+                                        <img src="/images/home/disney.png" alt="">
+                                    </div>
+                                    <div class="details">
+                                        <div class="detail">
+                                            <img src="/images/home/suitcase.png" alt="">
+                                            <p>Min. work exp: 1 year</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/clock.png" alt="">
+                                            <p>Duration: 9-12 months</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/3d-cube.png" alt="">
+                                            <p> Capstone project</p>
+                                        </div>
+                                    </div>
+                                    <button>Download Brochure</button>
+                                    <button class="white">Explore</button>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+
+                </div>
+                <!-- <div class="swiper-pagination"></div> -->
+
+                <!-- <div style="" class="swiper-button-prev"></div> -->
+                <!-- <div style="" class="swiper-button-next"></div> -->
+            </div>
+            <div class="splide programs-swiper technology-swiper hidden">
+
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <!-- Slides -->
+                        <div class="splide__slide">
+                            <div class="card">
+                                <img class="banner" src="/images/home/sky.png" alt="">
+                                <div class="content">
+                                    <h1 class="">Medium length section goes here</h1>
+                                    <div class="images">
+                                        <img src="/images/home/sc.png" alt="">
+                                        <img src="/images/home/disney.png" alt="">
+                                    </div>
+                                    <div class="details">
+                                        <div class="detail">
+                                            <img src="/images/home/suitcase.png" alt="">
+                                            <p>Min. work exp: 1 year</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/clock.png" alt="">
+                                            <p>Duration: 9-12 months</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/3d-cube.png" alt="">
+                                            <p> Capstone project</p>
+                                        </div>
+                                    </div>
+                                    <button>Download Brochure</button>
+                                    <button class="white">Explore</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="card">
+                                <img class="banner" src="/images/home/sky.png" alt="">
+                                <div class="content">
+                                    <h1 class="">Medium length section goes here</h1>
+                                    <div class="images">
+                                        <img src="/images/home/sc.png" alt="">
+                                        <img src="/images/home/disney.png" alt="">
+                                    </div>
+                                    <div class="details">
+                                        <div class="detail">
+                                            <img src="/images/home/suitcase.png" alt="">
+                                            <p>Min. work exp: 1 year</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/clock.png" alt="">
+                                            <p>Duration: 9-12 months</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/3d-cube.png" alt="">
+                                            <p> Capstone project</p>
+                                        </div>
+                                    </div>
+                                    <button>Download Brochure</button>
+                                    <button class="white">Explore</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="card">
+                                <img class="banner" src="/images/home/sky.png" alt="">
+                                <div class="content">
+                                    <h1 class="">Medium length section goes here</h1>
+                                    <div class="images">
+                                        <img src="/images/home/sc.png" alt="">
+                                        <img src="/images/home/disney.png" alt="">
+                                    </div>
+                                    <div class="details">
+                                        <div class="detail">
+                                            <img src="/images/home/suitcase.png" alt="">
+                                            <p>Min. work exp: 1 year</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/clock.png" alt="">
+                                            <p>Duration: 9-12 months</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/3d-cube.png" alt="">
+                                            <p> Capstone project</p>
+                                        </div>
+                                    </div>
+                                    <button>Download Brochure</button>
+                                    <button class="white">Explore</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="card">
+                                <img class="banner" src="/images/home/sky.png" alt="">
+                                <div class="content">
+                                    <h1 class="">Medium length section goes here</h1>
+                                    <div class="images">
+                                        <img src="/images/home/sc.png" alt="">
+                                        <img src="/images/home/disney.png" alt="">
+                                    </div>
+                                    <div class="details">
+                                        <div class="detail">
+                                            <img src="/images/home/suitcase.png" alt="">
+                                            <p>Min. work exp: 1 year</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/clock.png" alt="">
+                                            <p>Duration: 9-12 months</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/3d-cube.png" alt="">
+                                            <p> Capstone project</p>
+                                        </div>
+                                    </div>
+                                    <button>Download Brochure</button>
+                                    <button class="white">Explore</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="card">
+                                <img class="banner" src="/images/home/sky.png" alt="">
+                                <div class="content">
+                                    <h1 class="">Medium length section goes here</h1>
+                                    <div class="images">
+                                        <img src="/images/home/sc.png" alt="">
+                                        <img src="/images/home/disney.png" alt="">
+                                    </div>
+                                    <div class="details">
+                                        <div class="detail">
+                                            <img src="/images/home/suitcase.png" alt="">
+                                            <p>Min. work exp: 1 year</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/clock.png" alt="">
+                                            <p>Duration: 9-12 months</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/3d-cube.png" alt="">
+                                            <p> Capstone project</p>
+                                        </div>
+                                    </div>
+                                    <button>Download Brochure</button>
+                                    <button class="white">Explore</button>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+
+                </div>
+                <!-- <div class="swiper-pagination"></div> -->
+
+                <!-- <div style="" class="swiper-button-prev"></div> -->
+                <!-- <div style="" class="swiper-button-next"></div> -->
+            </div>
+            <div class="splide programs-swiper finance-swiper hidden">
+
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <!-- Slides -->
+                        <div class="splide__slide">
+                            <div class="card">
+                                <img class="banner" src="/images/home/sky.png" alt="">
+                                <div class="content">
+                                    <h1 class="">Medium length section goes here</h1>
+                                    <div class="images">
+                                        <img src="/images/home/sc.png" alt="">
+                                        <img src="/images/home/disney.png" alt="">
+                                    </div>
+                                    <div class="details">
+                                        <div class="detail">
+                                            <img src="/images/home/suitcase.png" alt="">
+                                            <p>Min. work exp: 1 year</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/clock.png" alt="">
+                                            <p>Duration: 9-12 months</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/3d-cube.png" alt="">
+                                            <p> Capstone project</p>
+                                        </div>
+                                    </div>
+                                    <button>Download Brochure</button>
+                                    <button class="white">Explore</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="card">
+                                <img class="banner" src="/images/home/sky.png" alt="">
+                                <div class="content">
+                                    <h1 class="">Medium length section goes here</h1>
+                                    <div class="images">
+                                        <img src="/images/home/sc.png" alt="">
+                                        <img src="/images/home/disney.png" alt="">
+                                    </div>
+                                    <div class="details">
+                                        <div class="detail">
+                                            <img src="/images/home/suitcase.png" alt="">
+                                            <p>Min. work exp: 1 year</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/clock.png" alt="">
+                                            <p>Duration: 9-12 months</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/3d-cube.png" alt="">
+                                            <p> Capstone project</p>
+                                        </div>
+                                    </div>
+                                    <button>Download Brochure</button>
+                                    <button class="white">Explore</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="card">
+                                <img class="banner" src="/images/home/sky.png" alt="">
+                                <div class="content">
+                                    <h1 class="">Medium length section goes here</h1>
+                                    <div class="images">
+                                        <img src="/images/home/sc.png" alt="">
+                                        <img src="/images/home/disney.png" alt="">
+                                    </div>
+                                    <div class="details">
+                                        <div class="detail">
+                                            <img src="/images/home/suitcase.png" alt="">
+                                            <p>Min. work exp: 1 year</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/clock.png" alt="">
+                                            <p>Duration: 9-12 months</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/3d-cube.png" alt="">
+                                            <p> Capstone project</p>
+                                        </div>
+                                    </div>
+                                    <button>Download Brochure</button>
+                                    <button class="white">Explore</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="card">
+                                <img class="banner" src="/images/home/sky.png" alt="">
+                                <div class="content">
+                                    <h1 class="">Medium length section goes here</h1>
+                                    <div class="images">
+                                        <img src="/images/home/sc.png" alt="">
+                                        <img src="/images/home/disney.png" alt="">
+                                    </div>
+                                    <div class="details">
+                                        <div class="detail">
+                                            <img src="/images/home/suitcase.png" alt="">
+                                            <p>Min. work exp: 1 year</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/clock.png" alt="">
+                                            <p>Duration: 9-12 months</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/3d-cube.png" alt="">
+                                            <p> Capstone project</p>
+                                        </div>
+                                    </div>
+                                    <button>Download Brochure</button>
+                                    <button class="white">Explore</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="card">
+                                <img class="banner" src="/images/home/sky.png" alt="">
+                                <div class="content">
+                                    <h1 class="">Medium length section goes here</h1>
+                                    <div class="images">
+                                        <img src="/images/home/sc.png" alt="">
+                                        <img src="/images/home/disney.png" alt="">
+                                    </div>
+                                    <div class="details">
+                                        <div class="detail">
+                                            <img src="/images/home/suitcase.png" alt="">
+                                            <p>Min. work exp: 1 year</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/clock.png" alt="">
+                                            <p>Duration: 9-12 months</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/3d-cube.png" alt="">
+                                            <p> Capstone project</p>
+                                        </div>
+                                    </div>
+                                    <button>Download Brochure</button>
+                                    <button class="white">Explore</button>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+
+                </div>
+                <!-- <div class="swiper-pagination"></div> -->
+
+                <!-- <div style="" class="swiper-button-prev"></div> -->
+                <!-- <div style="" class="swiper-button-next"></div> -->
+            </div>
+            <div class="splide programs-swiper management-swiper hidden">
+
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <!-- Slides -->
+                        <div class="splide__slide">
+                            <div class="card">
+                                <img class="banner" src="/images/home/sky.png" alt="">
+                                <div class="content">
+                                    <h1 class="">Medium length section goes here</h1>
+                                    <div class="images">
+                                        <img src="/images/home/sc.png" alt="">
+                                        <img src="/images/home/disney.png" alt="">
+                                    </div>
+                                    <div class="details">
+                                        <div class="detail">
+                                            <img src="/images/home/suitcase.png" alt="">
+                                            <p>Min. work exp: 1 year</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/clock.png" alt="">
+                                            <p>Duration: 9-12 months</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/3d-cube.png" alt="">
+                                            <p> Capstone project</p>
+                                        </div>
+                                    </div>
+                                    <button>Download Brochure</button>
+                                    <button class="white">Explore</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="card">
+                                <img class="banner" src="/images/home/sky.png" alt="">
+                                <div class="content">
+                                    <h1 class="">Medium length section goes here</h1>
+                                    <div class="images">
+                                        <img src="/images/home/sc.png" alt="">
+                                        <img src="/images/home/disney.png" alt="">
+                                    </div>
+                                    <div class="details">
+                                        <div class="detail">
+                                            <img src="/images/home/suitcase.png" alt="">
+                                            <p>Min. work exp: 1 year</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/clock.png" alt="">
+                                            <p>Duration: 9-12 months</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/3d-cube.png" alt="">
+                                            <p> Capstone project</p>
+                                        </div>
+                                    </div>
+                                    <button>Download Brochure</button>
+                                    <button class="white">Explore</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="card">
+                                <img class="banner" src="/images/home/sky.png" alt="">
+                                <div class="content">
+                                    <h1 class="">Medium length section goes here</h1>
+                                    <div class="images">
+                                        <img src="/images/home/sc.png" alt="">
+                                        <img src="/images/home/disney.png" alt="">
+                                    </div>
+                                    <div class="details">
+                                        <div class="detail">
+                                            <img src="/images/home/suitcase.png" alt="">
+                                            <p>Min. work exp: 1 year</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/clock.png" alt="">
+                                            <p>Duration: 9-12 months</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/3d-cube.png" alt="">
+                                            <p> Capstone project</p>
+                                        </div>
+                                    </div>
+                                    <button>Download Brochure</button>
+                                    <button class="white">Explore</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="card">
+                                <img class="banner" src="/images/home/sky.png" alt="">
+                                <div class="content">
+                                    <h1 class="">Medium length section goes here</h1>
+                                    <div class="images">
+                                        <img src="/images/home/sc.png" alt="">
+                                        <img src="/images/home/disney.png" alt="">
+                                    </div>
+                                    <div class="details">
+                                        <div class="detail">
+                                            <img src="/images/home/suitcase.png" alt="">
+                                            <p>Min. work exp: 1 year</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/clock.png" alt="">
+                                            <p>Duration: 9-12 months</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/3d-cube.png" alt="">
+                                            <p> Capstone project</p>
+                                        </div>
+                                    </div>
+                                    <button>Download Brochure</button>
+                                    <button class="white">Explore</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="card">
+                                <img class="banner" src="/images/home/sky.png" alt="">
+                                <div class="content">
+                                    <h1 class="">Medium length section goes here</h1>
+                                    <div class="images">
+                                        <img src="/images/home/sc.png" alt="">
+                                        <img src="/images/home/disney.png" alt="">
+                                    </div>
+                                    <div class="details">
+                                        <div class="detail">
+                                            <img src="/images/home/suitcase.png" alt="">
+                                            <p>Min. work exp: 1 year</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/clock.png" alt="">
+                                            <p>Duration: 9-12 months</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/3d-cube.png" alt="">
+                                            <p> Capstone project</p>
+                                        </div>
+                                    </div>
+                                    <button>Download Brochure</button>
+                                    <button class="white">Explore</button>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+
+                </div>
+                <!-- <div class="swiper-pagination"></div> -->
+
+                <!-- <div style="" class="swiper-button-prev"></div> -->
+                <!-- <div style="" class="swiper-button-next"></div> -->
+            </div>
+            <div class="splide programs-swiper future-tech-swiper hidden">
+
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <!-- Slides -->
+                        <div class="splide__slide">
+                            <div class="card">
+                                <img class="banner" src="/images/home/sky.png" alt="">
+                                <div class="content">
+                                    <h1 class="">Medium length section goes here</h1>
+                                    <div class="images">
+                                        <img src="/images/home/sc.png" alt="">
+                                        <img src="/images/home/disney.png" alt="">
+                                    </div>
+                                    <div class="details">
+                                        <div class="detail">
+                                            <img src="/images/home/suitcase.png" alt="">
+                                            <p>Min. work exp: 1 year</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/clock.png" alt="">
+                                            <p>Duration: 9-12 months</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/3d-cube.png" alt="">
+                                            <p> Capstone project</p>
+                                        </div>
+                                    </div>
+                                    <button>Download Brochure</button>
+                                    <button class="white">Explore</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="card">
+                                <img class="banner" src="/images/home/sky.png" alt="">
+                                <div class="content">
+                                    <h1 class="">Medium length section goes here</h1>
+                                    <div class="images">
+                                        <img src="/images/home/sc.png" alt="">
+                                        <img src="/images/home/disney.png" alt="">
+                                    </div>
+                                    <div class="details">
+                                        <div class="detail">
+                                            <img src="/images/home/suitcase.png" alt="">
+                                            <p>Min. work exp: 1 year</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/clock.png" alt="">
+                                            <p>Duration: 9-12 months</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/3d-cube.png" alt="">
+                                            <p> Capstone project</p>
+                                        </div>
+                                    </div>
+                                    <button>Download Brochure</button>
+                                    <button class="white">Explore</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="card">
+                                <img class="banner" src="/images/home/sky.png" alt="">
+                                <div class="content">
+                                    <h1 class="">Medium length section goes here</h1>
+                                    <div class="images">
+                                        <img src="/images/home/sc.png" alt="">
+                                        <img src="/images/home/disney.png" alt="">
+                                    </div>
+                                    <div class="details">
+                                        <div class="detail">
+                                            <img src="/images/home/suitcase.png" alt="">
+                                            <p>Min. work exp: 1 year</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/clock.png" alt="">
+                                            <p>Duration: 9-12 months</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/3d-cube.png" alt="">
+                                            <p> Capstone project</p>
+                                        </div>
+                                    </div>
+                                    <button>Download Brochure</button>
+                                    <button class="white">Explore</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="card">
+                                <img class="banner" src="/images/home/sky.png" alt="">
+                                <div class="content">
+                                    <h1 class="">Medium length section goes here</h1>
+                                    <div class="images">
+                                        <img src="/images/home/sc.png" alt="">
+                                        <img src="/images/home/disney.png" alt="">
+                                    </div>
+                                    <div class="details">
+                                        <div class="detail">
+                                            <img src="/images/home/suitcase.png" alt="">
+                                            <p>Min. work exp: 1 year</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/clock.png" alt="">
+                                            <p>Duration: 9-12 months</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/3d-cube.png" alt="">
+                                            <p> Capstone project</p>
+                                        </div>
+                                    </div>
+                                    <button>Download Brochure</button>
+                                    <button class="white">Explore</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="card">
+                                <img class="banner" src="/images/home/sky.png" alt="">
+                                <div class="content">
+                                    <h1 class="">Medium length section goes here</h1>
+                                    <div class="images">
+                                        <img src="/images/home/sc.png" alt="">
+                                        <img src="/images/home/disney.png" alt="">
+                                    </div>
+                                    <div class="details">
+                                        <div class="detail">
+                                            <img src="/images/home/suitcase.png" alt="">
+                                            <p>Min. work exp: 1 year</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/clock.png" alt="">
+                                            <p>Duration: 9-12 months</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/home/3d-cube.png" alt="">
+                                            <p> Capstone project</p>
+                                        </div>
+                                    </div>
+                                    <button>Download Brochure</button>
+                                    <button class="white">Explore</button>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+
+                </div>
+                <!-- <div class="swiper-pagination"></div> -->
+
+                <!-- <div style="" class="swiper-button-prev"></div> -->
+                <!-- <div style="" class="swiper-button-next"></div> -->
+            </div>
+
+        </div>
+    </section>
+
+    <section class="partnership">
+        <h1>Partnership</h1>
+        <h2>Qui dolore officia fugiat dolore esse anim consectetur elit ipsum sunt excepteur minim.</h2>
+
+        <div class="cards">
+            <div class="card">
+                <img src="/images/home/webflow.png" alt="">
+            </div>
+            <div class="card">
+                <img src="/images/home/webflow.png" alt="">
+            </div>
+            <div class="card">
+                <img src="/images/home/webflow.png" alt="">
+            </div>
+            <div class="card">
+                <img src="/images/home/relume.png" alt="">
+            </div>
+            <div class="card">
+                <img src="/images/home/relume.png" alt="">
+            </div>
+            <div class="card">
+                <img src="/images/home/relume.png" alt="">
+            </div>
+            <div class="card">
+                <img src="/images/home/webflow.png" alt="">
+            </div>
+            <div class="card">
+                <img src="/images/home/webflow.png" alt="">
+            </div>
+            <div class="card">
+                <img src="/images/home/webflow.png" alt="">
+            </div>
+            <div class="card">
+                <img src="/images/home/relume.png" alt="">
+            </div>
+            <div class="card">
+                <img src="/images/home/relume.png" alt="">
+            </div>
+            <div class="card">
+                <img src="/images/home/relume.png" alt="">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="masterclass">
+        <h1>Free Masterclass</h1>
+        <h2>Adipisicing nisi anim duis consectetur sit nostrud ad eiusmod commodo in cupidatat dolor et.</h2>
+
+        <div class="cards">
+
+            <div class="splide  masterclass-swiper">
+                <!-- Additional required wrapper -->
+                <!-- Slides -->
+                <div class="splide__track">
+                    <ul class="splide__list">
+
+                        <div class="splide__slide">
+                            <div class="card">
+                                <div class="profile">
+                                    <img src="/images/home/dp.jpeg" alt="">
+                                    <div class="info">
+                                        <p class="name">John</p>
+                                        <p class="role">Developer</p>
+                                    </div>
+                                </div>
+
+                                <div class="info">
+                                    <h2>Java Collection Framework</h2>
+                                    <h3>Working on Java</h3>
+                                </div>
+
+                                <div class="details">
+
+                                    <div class="detail">
+                                        <img src="/images/home/calendar.png" alt="">
+                                        <p>Jul 25, 2024 | 7:30</p>
+                                    </div>
+                                    <div class="detail">
+                                        <img src="/images/home/clock.png" alt="">
+                                        <p>2 hours</p>
+                                    </div>
+                                </div>
+
+                                <p class="registered">200+ Registered</p>
+
+                                <button>Register Now</button>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="card">
+                                <div class="profile">
+                                    <img src="/images/home/dp.jpeg" alt="">
+                                    <div class="info">
+                                        <p class="name">John</p>
+                                        <p class="role">Developer</p>
+                                    </div>
+                                </div>
+
+                                <div class="info">
+                                    <h2>Java Collection Framework</h2>
+                                    <h3>Working on Java</h3>
+                                </div>
+
+                                <div class="details">
+
+                                    <div class="detail">
+                                        <img src="/images/home/calendar.png" alt="">
+                                        <p>Jul 25, 2024 | 7:30</p>
+                                    </div>
+                                    <div class="detail">
+                                        <img src="/images/home/clock.png" alt="">
+                                        <p>2 hours</p>
+                                    </div>
+                                </div>
+
+                                <p class="registered">200+ Registered</p>
+
+                                <button>Register Now</button>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="card">
+                                <div class="profile">
+                                    <img src="/images/home/dp.jpeg" alt="">
+                                    <div class="info">
+                                        <p class="name">John</p>
+                                        <p class="role">Developer</p>
+                                    </div>
+                                </div>
+
+                                <div class="info">
+                                    <h2>Java Collection Framework</h2>
+                                    <h3>Working on Java</h3>
+                                </div>
+
+                                <div class="details">
+
+                                    <div class="detail">
+                                        <img src="/images/home/calendar.png" alt="">
+                                        <p>Jul 25, 2024 | 7:30</p>
+                                    </div>
+                                    <div class="detail">
+                                        <img src="/images/home/clock.png" alt="">
+                                        <p>2 hours</p>
+                                    </div>
+                                </div>
+
+                                <p class="registered">200+ Registered</p>
+
+                                <button>Register Now</button>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="card">
+                                <div class="profile">
+                                    <img src="/images/home/dp.jpeg" alt="">
+                                    <div class="info">
+                                        <p class="name">John</p>
+                                        <p class="role">Developer</p>
+                                    </div>
+                                </div>
+
+                                <div class="info">
+                                    <h2>Java Collection Framework</h2>
+                                    <h3>Working on Java</h3>
+                                </div>
+
+                                <div class="details">
+
+                                    <div class="detail">
+                                        <img src="/images/home/calendar.png" alt="">
+                                        <p>Jul 25, 2024 | 7:30</p>
+                                    </div>
+                                    <div class="detail">
+                                        <img src="/images/home/clock.png" alt="">
+                                        <p>2 hours</p>
+                                    </div>
+                                </div>
+
+                                <p class="registered">200+ Registered</p>
+
+                                <button>Register Now</button>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+        <button class="view-all">View All Courses</button>
+
+    </section>
+
+    <section class="testimonials">
+        <div class="bg-pattern">
+            <img src="/images/home/bg-pattern.png" alt="">
+        </div>
+        <h1>Testimonials</h1>
+        <h2>Adipisicing nisi anim duis consectetur sit nostrud ad eiusmod commodo in cupidatat dolor et.</h2>
+
+
+        <div class="cards">
+            <div class="card">
+                <div data-star="4">
+                </div>
+
+                <lite-youtube videoid="LN1TQm942_U"
+                    style="background-image: url('https://i.ytimg.com/vi/LN1TQm942_U/hqdefault.jpg');">
+                </lite-youtube>
+
+                <p class="testimonial">
+                    Minim et ullamco elit elit do aliqua ex minim eu sit. Ea proident fugiat et ullamco est laboris
+                    aliqua ex nostrud pariatur. Ullamco excepteur voluptate elit nisi labore.
+                </p>
+
+                <div class="profile">
+                    <img src="/images/home/dp.jpeg" alt="">
+                    <div class="info">
+                        <p class="name">John</p>
+                        <p class="role">Developer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div data-star="4">
+                </div>
+
+                <lite-youtube videoid="LN1TQm942_U"
+                    style="background-image: url('https://i.ytimg.com/vi/LN1TQm942_U/hqdefault.jpg');">
+                </lite-youtube>
+
+                <p class="testimonial">
+                    Minim et ullamco elit elit do aliqua ex minim eu sit. Ea proident fugiat et ullamco est laboris
+                    aliqua ex nostrud pariatur. Ullamco excepteur voluptate elit nisi labore.
+                </p>
+
+                <div class="profile">
+                    <img src="/images/home/dp.jpeg" alt="">
+                    <div class="info">
+                        <p class="name">John</p>
+                        <p class="role">Developer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div data-star="4">
+                </div>
+
+                <lite-youtube videoid="LN1TQm942_U"
+                    style="background-image: url('https://i.ytimg.com/vi/LN1TQm942_U/hqdefault.jpg');">
+                </lite-youtube>
+
+                <p class="testimonial">
+                    Minim et ullamco elit elit do aliqua ex minim eu sit. Ea proident fugiat et ullamco est laboris
+                    aliqua ex nostrud pariatur. Ullamco excepteur voluptate elit nisi labore.
+                </p>
+
+                <div class="profile">
+                    <img src="/images/home/dp.jpeg" alt="">
+                    <div class="info">
+                        <p class="name">John</p>
+                        <p class="role">Developer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <div class="splide about-swiper">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <!-- Slides -->
+                        <div class="splide__slide">
+                            <div>
+                                <div class="content">
+                                    <h2>Exercitation reprehenderit nostrud laborum sit.</h2>
+                                    <p>Duis aute esse non quis ullamco anim culpa et.Esse laboris voluptate velit sit.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div>
+                                <div class="content">
+                                    <h2>Exercitation reprehenderit nostrud laborum sit.</h2>
+                                    <p>Duis aute esse non quis ullamco anim culpa et.Esse laboris voluptate velit sit.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div>
+                                <div class="content">
+                                    <h2>Exercitation reprehenderit nostrud laborum sit.</h2>
+                                    <p>Duis aute esse non quis ullamco anim culpa et.Esse laboris voluptate velit sit.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <div class="right">
+                <div class="cards">
+                    <div class="card">
+                        <img src="/images/home/space.jpg" alt="">
+                        <div class="content">
+                            <h2>Aliquip aliquip minim minim occaecat.</h2>
+                            <p>Adipisicing non exercitation aliqua dolore anim laboris ex irure magna ipsum culpa.</p>
+                        </div>
+                    </div>
+                    <div class="card two">
+                        <div class="content">
+                            <h2>Aliquip aliquip minim minim occaecat.</h2>
+                            <p>Adipisicing non exercitation aliqua dolore anim laboris ex irure magna ipsum culpa.</p>
+                        </div>
+                        <img src="/images/home/space.jpg" alt="">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="hero cta">
+        <div class="bg-pattern">
+            <img src="/images/home/bg-pattern.png" alt="">
+        </div>
+        <div class="container">
+            <div class="right">
+                <p class="heading">Your Information</p>
+                <p class="subheading">Deserunt ad mollit sunt nostrud commodo cillum ullamco.</p>
+
+                <form>
+                    <input placeholder="Name" type="text">
+                    <input placeholder="" class="phone-with-country" type="tel">
+                    <input placeholder="Email" type="email">
+                    <button class="br" type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="left">
+                <img src="/images/home/hero-img.png" alt="">
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="logo-container">
+            <img src="/logos/red-black.png" alt="">
+        </div>
+
+        <div class="column">
+            <h3>Column 1</h3>
+
+            <div class="links">
+
+                <a href="">Footer Links</a>
+                <a href="">Footer Links</a>
+                <a href="">Footer Links</a>
+                <a href="">Footer Links</a>
+                <a href="">Footer Links</a>
+
+
+            </div>
+        </div>
+
+        <div class="column">
+            <h3>Column 1</h3>
+
+            <div class="links">
+
+                <a href="">Footer Links</a>
+                <a href="">Footer Links</a>
+                <a href="">Footer Links</a>
+                <a href="">Footer Links</a>
+                <a href="">Footer Links</a>
+
+
+            </div>
+        </div>
+
+        <div class="column">
+            <h3>Column 1</h3>
+
+            <div class="links">
+
+                <a href="">Footer Links</a>
+                <a href="">Footer Links</a>
+                <a href="">Footer Links</a>
+                <a href="">Footer Links</a>
+                <a href="">Footer Links</a>
+
+
+            </div>
+        </div>
+
+        <div class="column">
+            <h3>Column 1</h3>
+
+            <div class="links">
+
+                <a href="">Footer Links</a>
+                <a href="">Footer Links</a>
+                <a href="">Footer Links</a>
+                <a href="">Footer Links</a>
+                <a href="">Footer Links</a>
+
+
+            </div>
+        </div>
+
+        <div class="column">
+            <h3>Column 1</h3>
+
+            <div class="links">
+
+                <a href="">Footer Links</a>
+                <a href="">Footer Links</a>
+                <a href="">Footer Links</a>
+                <a href="">Footer Links</a>
+                <a href="">Footer Links</a>
+
+
+            </div>
+        </div>
+
+    </footer>
+
+
+
+    <script src="/scripts.js">
+
+    </script>
+</body>
+
+</html>
