@@ -1,6 +1,21 @@
 .hero {
     position: relative;
 
+    .headline {
+        text-align: center;
+        font-size: 2.5rem;
+        position: relative;
+        font-weight: 500;
+        z-index: 5;
+        column-span: 2;
+        margin-bottom: 2rem;
+
+        @media only screen and (max-width: 800px) {
+            column-span: 1;
+
+        }
+    }
+
     .bg-pattern {
         width: 100%;
         position: absolute;
@@ -9,7 +24,7 @@
         right: 0;
         bottom: 0;
         z-index: 0;
-        opacity: 0.4;
+        opacity: 0.25;
         display: flex;
         justify-content: center;
 
@@ -45,6 +60,13 @@
                 border-radius: 50%;
                 background-color: var(--gray);
             }
+
+            p {
+                text-align: center;
+                font-size: 1.2rem;
+                margin-top: 2rem;
+                font-weight: 500;
+            }
         }
 
         .right {
@@ -74,9 +96,6 @@
                 display: flex;
                 flex-direction: column;
                 gap: 1rem;
-
-
-
             }
         }
     }
@@ -232,7 +251,7 @@
     }
 }
 
-.partnership {
+.clientele {
     h1 {
         color: #3d3d3d;
         font-size: var(--font-heading);
@@ -281,6 +300,160 @@
 
             p {}
 
+        }
+    }
+}
+
+.placed {
+    h1 {
+        font-size: var(--font-subheading);
+
+        text-align: center;
+
+    }
+
+
+    h2 {
+        font-size: var(--font-heading);
+        font-weight: 600;
+        text-align: center;
+        margin-top: 1rem;
+
+    }
+
+
+    padding-bottom: 15rem;
+
+    @media only screen and (max-width: 900px) {
+        padding-bottom: 4rem;
+
+    }
+
+    .timeline {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 6rem;
+        position: relative;
+
+
+        @media only screen and (max-width: 900px) {
+            width: 90%;
+            margin-top: 2rem;
+        }
+
+        .bar {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            height: 3px;
+            width: 100%;
+            background-color: var(--gray);
+
+            @media only screen and (max-width: 900px) {
+                height: 100%;
+                width: 3px;
+
+
+            }
+        }
+
+        .container {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            @media only screen and (max-width: 900px) {
+                position: relative;
+                flex-direction: column;
+                transform: translate(0);
+            }
+
+            .card {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                z-index: 5;
+
+
+                @media only screen and (max-width: 900px) {
+                    flex-direction: column;
+                    transform: translate(0);
+                    justify-content: space-around;
+                    gap: 2rem;
+
+                }
+
+                .number {
+                    position: relative;
+                    height: fit-content;
+                    display: flex;
+                    flex-shrink: none;
+
+
+                    p.count {
+                        flex-shrink: none;
+                        color: white;
+                        font-weight: 600;
+                        width: 2rem;
+                        height: 2rem;
+                        background-color: black;
+                        border-radius: 50%;
+
+                        @media only screen and (max-width: 900px) {
+                            transform: translateX(-45%);
+                            display: block;
+                        }
+
+                        span {
+                            transform: translate(100%, 20%);
+                            display: inline-block;
+
+                            @media only screen and (max-width: 900px) {}
+
+                        }
+
+                    }
+
+                    .content {
+                        position: absolute;
+                        top: 2rem;
+                        text-align: center;
+                        left: 0%;
+                        width: 10rem;
+                        transform: translateX(-40%);
+                        margin-top: 1rem;
+
+                        @media only screen and (max-width: 900px) {
+                            position: relative;
+                            transform: translateY(0);
+                            text-align: left;
+                            margin-top: 0;
+                            padding-left: 0.3rem;
+                            width: 100%;
+                            top: 0;
+                            height: fit-content;
+                            margin: auto;
+
+                        }
+
+                        h3 {
+                            font-size: 0.9rem;
+                            font-weight: 700;
+                        }
+
+                        p {
+                            margin-top: 0.7rem;
+                            color: #202020;
+                            font-size: 0.75rem;
+                            font-weight: 400;
+                            transform: translate(0);
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -564,7 +737,8 @@
 
             .splide__arrow--next {
                 scale: 0.9;
-                border: 1.5px solid white !important  ;
+                border: 1.5px solid white !important;
+
                 @media only screen and (max-width: 600px) {
 
                     scale: 0.8;
@@ -575,7 +749,8 @@
 
             .splide__arrow--prev {
                 scale: 0.9;
-                border: 1.5px solid white !important  ;
+                border: 1.5px solid white !important;
+
                 @media only screen and (max-width: 600px) {
 
                     scale: 0.8;
@@ -606,6 +781,7 @@
                         flex-direction: column;
                         gap: 1rem;
                         padding: 0 3rem;
+
                         @media only screen and (max-width: 600px) {
                             padding: 0;
                         }
@@ -684,4 +860,31 @@
     }
 
 
+}
+
+
+.cta {
+    h1 {
+        font-size: var(--font-heading);
+        text-align: center;
+        position: relative;
+        z-index: 5;
+    }
+
+    h2 {
+        color: #131313;
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 1rem;
+        font-weight: 500;
+        position: relative;
+        z-index: 5;
+
+    }
+
+    button {
+        display: block;
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
 }

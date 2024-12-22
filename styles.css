@@ -1,6 +1,22 @@
 .hero {
   position: relative;
 }
+.hero .headline {
+  text-align: center;
+  font-size: 2.5rem;
+  position: relative;
+  font-weight: 500;
+  z-index: 5;
+  -moz-column-span: 2;
+       column-span: 2;
+  margin-bottom: 2rem;
+}
+@media only screen and (max-width: 800px) {
+  .hero .headline {
+    -moz-column-span: 1;
+         column-span: 1;
+  }
+}
 .hero .bg-pattern {
   width: 100%;
   position: absolute;
@@ -9,7 +25,7 @@
   right: 0;
   bottom: 0;
   z-index: 0;
-  opacity: 0.4;
+  opacity: 0.25;
   display: flex;
   justify-content: center;
 }
@@ -42,6 +58,12 @@
   aspect-ratio: 1/1;
   border-radius: 50%;
   background-color: var(--gray);
+}
+.hero .container .left p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  font-weight: 500;
 }
 .hero .container .right {
   background-color: var(--gray);
@@ -188,35 +210,35 @@
   width: 100%;
 }
 
-.partnership h1 {
+.clientele h1 {
   color: #3d3d3d;
   font-size: var(--font-heading);
   text-align: center;
 }
-.partnership h2 {
+.clientele h2 {
   color: #666666;
   font-size: var(--font-subheading);
   text-align: center;
   margin-top: 1rem;
   font-weight: 400;
 }
-.partnership .cards {
+.clientele .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 0.5rem 0.3rem;
   margin-top: 3rem;
 }
 @media only screen and (max-width: 1200px) {
-  .partnership .cards {
+  .clientele .cards {
     grid-template-columns: 1fr 1fr;
   }
 }
 @media only screen and (max-width: 600px) {
-  .partnership .cards {
+  .clientele .cards {
     grid-template-columns: 1fr;
   }
 }
-.partnership .cards .card {
+.clientele .cards .card {
   background-color: var(--gray);
   display: flex;
   gap: 1rem;
@@ -225,11 +247,145 @@
   border: 1px solid #f0f0f0;
   box-shadow: 0 8px 3px -5px #c0c0c0;
 }
-.partnership .cards .card img {
+.clientele .cards .card img {
   display: block;
   margin: 0 auto;
   width: 10rem;
 }
+.placed {
+  padding-bottom: 15rem;
+}
+.placed h1 {
+  font-size: var(--font-subheading);
+  text-align: center;
+}
+.placed h2 {
+  font-size: var(--font-heading);
+  font-weight: 600;
+  text-align: center;
+  margin-top: 1rem;
+}
+@media only screen and (max-width: 900px) {
+  .placed {
+    padding-bottom: 4rem;
+  }
+}
+.placed .timeline {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 6rem;
+  position: relative;
+}
+@media only screen and (max-width: 900px) {
+  .placed .timeline {
+    width: 90%;
+    margin-top: 2rem;
+  }
+}
+.placed .timeline .bar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background-color: var(--gray);
+}
+@media only screen and (max-width: 900px) {
+  .placed .timeline .bar {
+    height: 100%;
+    width: 3px;
+  }
+}
+.placed .timeline .container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+@media only screen and (max-width: 900px) {
+  .placed .timeline .container {
+    position: relative;
+    flex-direction: column;
+    transform: translate(0);
+  }
+}
+.placed .timeline .container .card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 5;
+}
+@media only screen and (max-width: 900px) {
+  .placed .timeline .container .card {
+    flex-direction: column;
+    transform: translate(0);
+    justify-content: space-around;
+    gap: 2rem;
+  }
+}
+.placed .timeline .container .card .number {
+  position: relative;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-shrink: none;
+}
+.placed .timeline .container .card .number p.count {
+  flex-shrink: none;
+  color: white;
+  font-weight: 600;
+  width: 2rem;
+  height: 2rem;
+  background-color: black;
+  border-radius: 50%;
+}
+@media only screen and (max-width: 900px) {
+  .placed .timeline .container .card .number p.count {
+    transform: translateX(-45%);
+    display: block;
+  }
+}
+.placed .timeline .container .card .number p.count span {
+  transform: translate(100%, 20%);
+  display: inline-block;
+}
+.placed .timeline .container .card .number .content {
+  position: absolute;
+  top: 2rem;
+  text-align: center;
+  left: 0%;
+  width: 10rem;
+  transform: translateX(-40%);
+  margin-top: 1rem;
+}
+@media only screen and (max-width: 900px) {
+  .placed .timeline .container .card .number .content {
+    position: relative;
+    transform: translateY(0);
+    text-align: left;
+    margin-top: 0;
+    padding-left: 0.3rem;
+    width: 100%;
+    top: 0;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: auto;
+  }
+}
+.placed .timeline .container .card .number .content h3 {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.placed .timeline .container .card .number .content p {
+  margin-top: 0.7rem;
+  color: #202020;
+  font-size: 0.75rem;
+  font-weight: 400;
+  transform: translate(0);
+}
+
 .masterclass {
   background-color: var(--gray);
 }
@@ -545,4 +701,25 @@
 .about .container .right .cards .card .content p {
   font-size: 0.9rem;
   color: #464646;
+}
+
+.cta h1 {
+  font-size: var(--font-heading);
+  text-align: center;
+  position: relative;
+  z-index: 5;
+}
+.cta h2 {
+  color: #131313;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: 500;
+  position: relative;
+  z-index: 5;
+}
+.cta button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 2rem;
 }

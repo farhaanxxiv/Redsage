@@ -43,7 +43,7 @@ new Splide('.masterclass-swiper', {
     pagination: true, // Enable pagination
     arrows: true, // Enable navigation arrows
 }).mount();
-new Splide('.about-swiper', {   
+new Splide('.about-swiper', {
     autoPlay: true,
     interval: 2000,
     // type: 'loop', // Enable loop functionality
@@ -109,5 +109,20 @@ buttons.forEach((button) => {
         if (targetSwiper) {
             targetSwiper.classList.remove('hidden');
         }
+    });
+});
+
+
+// Select all buttons with the class "open-floating-form"
+const floatingFormbuttons = document.querySelectorAll('.toggle-floating-form');
+
+// Select the div with the id "floating-form"
+const floatingForm = document.getElementById('floating-form');
+
+// Add event listeners to all buttons
+floatingFormbuttons.forEach(button => {
+    button.addEventListener('click', () => {
+        // Toggle the "opened" class on the floating form
+        floatingForm.classList.toggle('opened');
     });
 });
