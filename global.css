@@ -558,13 +558,14 @@ footer .column .links a {
 
 .floating-form {
   position: fixed;
-  top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   z-index: 9998;
+  background-color: white;
+  top: 150%;
   transition: 0.2s;
   margin-top: 0.8rem;
   display: flex;
@@ -572,7 +573,7 @@ footer .column .links a {
   gap: 1rem;
 }
 .floating-form.opened {
-  top: 150%;
+  top: 0;
 }
 .floating-form * {
   transition: 0.2s;
