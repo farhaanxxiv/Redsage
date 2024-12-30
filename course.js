@@ -1,5 +1,5 @@
 const videos = [
-  { video: document.getElementById('hero-video'), button: document.getElementById('hero-play-btn') },
+  // { video: document.getElementById('hero-video'), button: document.getElementById('hero-play-btn') },
   { video: document.getElementById('why-video'), button: document.getElementById('why-play-btn') }
 ];
 

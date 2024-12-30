@@ -324,6 +324,59 @@
   font-weight: 600;
 }
 
+.approach h1 {
+  color: var(--gray);
+  font-size: var(--font-heading);
+  text-align: center;
+}
+.approach p {
+  color: #666666;
+  font-size: var(--font-subheading);
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: 400;
+}
+.approach .card .card {
+  padding: 1rem;
+  background-color: #fafafa;
+  border-radius: 1rem;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto 0;
+}
+@media only screen and (min-width: 800px) {
+  .approach .card .card:nth-child(2) {
+    grid-row: span 2;
+  }
+}
+.approach .card .card img {
+  width: 3rem;
+}
+.approach .card .card h2 {
+  color: black;
+  font-size: 1.3rem;
+  text-align: left;
+  font-weight: 700;
+}
+.approach .card .card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.approach .card .card p,
+.approach .card .card li {
+  color: #303030;
+  font-size: 0.8rem;
+  text-align: left;
+}
+.approach .card .card ul {
+  margin-top: 1rem;
+  margin-left: -1.4rem !important;
+}
+.approach .card .card span {
+  font-weight: 600;
+}
+
 .alumni {
   position: relative;
 }
@@ -680,25 +733,32 @@
   margin-top: 1rem;
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
 }
 .faculties .cards .card .person * {
   font-family: "Roboto", serif;
 }
+.faculties .cards .card .person .info {
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto 0;
+}
 .faculties .cards .card .person .info .name {
-  color: #565656;
-  font-weight: 600;
-  font-size: 1rem;
+  color: black;
+  font-weight: 500;
+  font-size: 1.1rem;
 }
 .faculties .cards .card .person .info .designation {
   margin-top: 0.8rem;
   color: #565656;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 .faculties .cards .card .person a {
   height: -moz-fit-content;
   height: fit-content;
   display: block;
   margin: auto 0;
+  margin-top: 0;
 }
 .faculties .cards .card .person a img {
   display: block;
