@@ -81,8 +81,16 @@
   font-weight: 600;
 }
 .hero .container .right .subheading {
+  position: relative;
+  font-style: italic;
   font-size: 0.9rem;
   color: #575757;
+}
+.hero .container .right .subheading img {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  opacity: 0.8;
 }
 .hero .container .right form {
   margin-top: 0.8rem;
@@ -209,6 +217,67 @@
 .programs .card .content button {
   width: 100%;
 }
+.programs .program * {
+  text-align: left;
+}
+.programs .program .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+.programs .program .grid-container img {
+  width: 100%;
+  border-radius: 1rem;
+}
+.programs .program .grid-container .content {
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto 0;
+}
+.programs .program .grid-container h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  font-weight: 600;
+}
+.programs .program .grid-container .description {
+  margin-top: 0.8rem;
+  font-size: 0.96rem;
+}
+.programs .program .grid-container ul {
+  margin-top: 1rem;
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.programs .program .grid-container ul li {
+  font-size: 0.9rem;
+}
+.programs .program .grid-container .stats {
+  margin-top: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.programs .program .grid-container .stats .stat {
+  display: flex;
+  gap: 0.5rem;
+}
+.programs .program .grid-container .stats .stat img {
+  display: block;
+  margin: auto 0;
+  width: 20px;
+  height: 20px;
+}
+.programs .program .grid-container .stats .stat p {
+  font-size: 0.9rem;
+}
+.programs .program .grid-container .stats .stat p span {
+  font-weight: 500;
+}
+.programs .program .grid-container button {
+  margin-top: 1.8rem;
+}
 
 .clientele h1 {
   color: #3d3d3d;
@@ -304,6 +373,15 @@
 .placement-record {
   overflow: hidden;
   position: relative;
+}
+.placement-record #placements {
+  display: block;
+  transform: translateY(-10rem);
+}
+@media only screen and (max-width: 600px) {
+  .placement-record #placements {
+    transform: translateY(-6rem);
+  }
 }
 .placement-record .overlay {
   position: absolute;
@@ -474,13 +552,13 @@
   }
 }
 .placed .timeline .container .card .number .content h3 {
-  font-size: 0.9rem;
+  font-size: 1.3rem;
   font-weight: 700;
 }
 .placed .timeline .container .card .number .content p {
-  margin-top: 0.7rem;
+  margin-top: 0.8rem;
   color: #202020;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   font-weight: 400;
   transform: translate(0);
 }
@@ -594,6 +672,15 @@
   overflow: hidden;
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+.testimonials #reviews {
+  display: block;
+  transform: translateY(-7rem);
+}
+@media only screen and (max-width: 600px) {
+  .testimonials #reviews {
+    transform: translateY(-6rem);
+  }
 }
 .testimonials .bg-pattern {
   width: 100%;

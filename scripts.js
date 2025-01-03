@@ -22,11 +22,23 @@ toggleNavbars.forEach(navbar => {
 
 
 
-let navToggle = document.querySelector('.nav-toggle')
-let bars = document.querySelectorAll('.bar')
+let navToggle = document.querySelector('.nav-toggle');
+let bars = document.querySelectorAll('.bar');
+let navbarLinks = document.querySelectorAll('nav a');
 
-function toggleHamburger(e) {
-    bars.forEach(bar => bar.classList.toggle('x'))
-    document.getElementById('phone-sidebar').classList.toggle('opened')
+// Iterate over the navbar links properly
+navbarLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        // Add functionality here if needed, like closing the navbar or navigation logic
+        console.log(`Clicked on ${link.textContent}`);
+        toggleHamburger()
+    });
+});
+
+function toggleHamburger() {
+    bars.forEach(bar => bar.classList.toggle('x'));
+    document.getElementById('phone-sidebar').classList.toggle('opened');
 }
 
+// Add event listener for the toggle button
+// navToggle.addEventListener('click', toggleHamburger);

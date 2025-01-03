@@ -20,6 +20,7 @@ body {
 
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 section {
@@ -28,6 +29,11 @@ section {
 
 section.first {
   padding-top: 8rem;
+}
+@media only screen and (max-width: 600px) {
+  section.first {
+    padding-top: 5rem;
+  }
 }
 
 * {
@@ -223,7 +229,7 @@ nav .logo-hamburger-container {
 }
 @media only screen and (max-width: 700px) {
   nav {
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1rem;
   }
 }
 nav .nav-toggle {
@@ -314,7 +320,8 @@ nav .links a {
   padding: 0.25rem 1rem;
   border-radius: 0.5rem;
   display: block;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  font-weight: 500;
 }
 nav .links a:hover,
 nav .links .toggle-navbar:hover {
@@ -396,6 +403,13 @@ nav .contact-btn {
   height: -moz-fit-content;
   height: fit-content;
   margin: auto 0;
+}
+@media only screen and (max-width: 600px) {
+  nav .contact-btn {
+    font-size: 0.8rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+  }
 }
 
 footer {

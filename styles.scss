@@ -87,8 +87,16 @@
             }
 
             .subheading {
+                position: relative;
+                font-style: italic;
                 font-size: 0.9rem;
                 color: #575757;
+                img{
+                    position: absolute;
+                    width: 3rem;
+                    height: 3rem;
+                    opacity: 0.8;
+                }
             }
 
             form {
@@ -132,6 +140,8 @@
             }
         }
     }
+
+
 
     background: var(--gray);
 
@@ -249,6 +259,84 @@
         }
 
     }
+
+    .program {
+        // margin-top: 2.5rem;
+
+        * {
+            text-align: left;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+
+            img {
+                width: 100%;
+                border-radius: 1rem;
+            }
+
+            .content{
+                height: fit-content;
+                margin: auto 0;
+            }
+
+            h2 {
+                font-size: 2rem;
+                    font-weight: 600;
+                    font-weight: 600;
+            }
+
+            .description{
+                margin-top: .8rem;
+                font-size: .96rem;
+            }
+
+            ul{
+                margin-top: 1rem;
+                padding-left: 1rem;
+                display: flex;
+                flex-direction: column;
+                gap: .3rem;
+
+                li{
+                    font-size: .9rem;
+                }
+            }
+            .stats{
+                margin-top: 1.3rem;
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+
+                .stat{
+                    display: flex;
+                    gap: .5rem;
+                    
+                    img{
+                        display: block;
+                        margin: auto 0;
+                        width: 20px;
+                        height: 20px;
+                    }
+
+                    p{
+                        font-size: .9rem;
+                        span{
+                            font-weight: 500;
+                        }
+                    }
+
+                }
+            }
+
+            button{
+                margin-top: 1.8rem;
+            }
+        }
+
+    }
 }
 
 .clientele {
@@ -362,6 +450,15 @@
 }
 
 .placement-record {
+
+    #placements{
+        display: block;
+        transform: translateY(-10rem);
+        @media only screen and (max-width: 600px) {
+            transform: translateY(-6rem);
+        
+        }
+    }
     overflow: hidden;
 
     position: relative;
@@ -564,14 +661,14 @@
                         }
 
                         h3 {
-                            font-size: 0.9rem;
+                            font-size: 1.3rem;
                             font-weight: 700;
                         }
 
                         p {
-                            margin-top: 0.7rem;
+                            margin-top: 0.8rem;
                             color: #202020;
-                            font-size: 0.75rem;
+                            font-size: .8rem;
                             font-weight: 400;
                             transform: translate(0);
                         }
@@ -718,6 +815,16 @@
 .testimonials {
     position: relative;
     overflow: hidden;
+
+    #reviews{
+        display: block;
+        transform: translateY(-7rem);
+
+        @media only screen and (max-width: 600px) {
+        transform: translateY(-6rem);
+            
+        }
+    }
 
     .bg-pattern {
         width: 100%;
