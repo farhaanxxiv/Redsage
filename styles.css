@@ -575,7 +575,8 @@
     margin-top: 2rem;
   }
 }
-.placed .timeline .bar, .placed .timeline .bar-holder {
+.placed .timeline .bar,
+.placed .timeline .bar-holder {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -584,7 +585,8 @@
   background-color: var(--red);
 }
 @media only screen and (max-width: 900px) {
-  .placed .timeline .bar, .placed .timeline .bar-holder {
+  .placed .timeline .bar,
+  .placed .timeline .bar-holder {
     height: 100%;
     width: 2px;
     transform: translateX(1px);
@@ -1016,6 +1018,54 @@
 .about .container .right .cards .card .content p {
   font-size: 0.9rem;
   color: #464646;
+}
+
+.skillpath h1 {
+  color: black;
+  font-size: 2rem;
+}
+.skillpath .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+@media only screen and (max-width: 700px) {
+  .skillpath .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+.skillpath .grid-container .banner {
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto 0;
+}
+.skillpath .grid-container .banner img {
+  width: 100%;
+  border-radius: 1rem;
+}
+.skillpath .grid-container .content .cards {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.skillpath .grid-container .content .cards .card {
+  display: flex;
+  gap: 1.5rem;
+}
+.skillpath .grid-container .content .cards .card img {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  margin: auto 0;
+}
+.skillpath .grid-container .content .cards .card h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.skillpath .grid-container .content .cards .card p {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
 }
 
 .cta h1 {
