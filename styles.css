@@ -47,27 +47,129 @@
   }
 }
 .hero .container .left {
+  overflow-x: hidden;
   height: -moz-fit-content;
   height: fit-content;
   margin: auto;
+  background-color: #fd1c08;
+  padding: 2rem;
+  width: 100%;
+  border-radius: 1.5rem;
 }
-.hero .container .left img {
-  width: 80%;
-  display: block;
-  margin: auto;
-  aspect-ratio: 1/1;
+@media only screen and (max-width: 600px) {
+  .hero .container .left {
+    padding: 3rem 1rem;
+    border-radius: 0;
+  }
+}
+.hero .container .left * {
+  color: white;
+}
+.hero .container .left .chip {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+@keyframes gloww {
+  from {
+    box-shadow: 0px 0px 2px white;
+  }
+  to {
+    box-shadow: 0px 0px 15px white;
+  }
+}
+.hero .container .left .chip .glow {
+  animation: gloww 1s linear infinite alternate;
+  width: 10px;
+  height: 10px;
+  background-color: white;
   border-radius: 50%;
-  background-color: var(--gray);
 }
-.hero .container .left p {
-  text-align: center;
-  font-size: 1.2rem;
-  margin-top: 2rem;
+.hero .container .left .chip p {
+  font-size: 0.8rem;
   font-weight: 500;
 }
+.hero .container .left .course-name {
+  margin-top: 1rem;
+}
+.hero .container .left .heading-trainers {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  color: white;
+  font-weight: 500;
+}
+.hero .container .left .trainer-container {
+  margin-top: 0.5rem;
+  border-radius: 1rem;
+}
+.hero .container .left .timings {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+.hero .container .left .timings .card {
+  display: flex;
+  gap: 0.5rem;
+}
+.hero .container .left .timings .card img {
+  display: block;
+  margin: auto 0;
+  width: 1.3rem;
+  height: 1.3rem;
+  filter: brightness(0%) saturate(0) invert(1);
+}
+@keyframes move-hero {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(-63rem);
+  }
+}
+.hero .container .left .trainers {
+  display: flex;
+  gap: 1rem;
+  animation: move-hero 10s linear infinite;
+  margin-top: 1rem;
+}
+.hero .container .left .trainers .trainer {
+  background-color: white;
+  flex-shrink: 0;
+  max-width: 20rem;
+  padding: 0.5rem;
+  border: 1px solid #d0d0d0;
+  border-radius: 0.6rem;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto 0;
+}
+.hero .container .left .trainers .trainer * {
+  color: black;
+}
+.hero .container .left .trainers .trainer .profile {
+  display: flex;
+  gap: 0.5rem;
+}
+.hero .container .left .trainers .trainer .profile img {
+  background-color: black;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: block;
+  margin: auto 0;
+}
+.hero .container .left .trainers .trainer .profile .details .name {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.hero .container .left .trainers .trainer .profile .details .designation {
+  font-size: 0.8rem;
+  color: #505050;
+}
 .hero .container .right {
-  background-color: var(--gray);
-  border-radius: 2.5rem;
+  background-color: #fafafa;
+  border-radius: 1rem;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -85,12 +187,16 @@
   font-style: italic;
   font-size: 0.9rem;
   color: #575757;
+  padding-left: 1.8rem;
 }
 .hero .container .right .subheading img {
   position: absolute;
-  width: 3rem;
-  height: 3rem;
-  opacity: 0.8;
+  width: 1.5rem;
+  height: 1.5rem;
+  opacity: 0.3;
+  z-index: 0;
+  left: 0;
+  top: -20%;
 }
 .hero .container .right form {
   margin-top: 0.8rem;
@@ -225,9 +331,17 @@
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
 }
+@media only screen and (max-width: 700px) {
+  .programs .program .grid-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
 .programs .program .grid-container img {
   width: 100%;
   border-radius: 1rem;
+  display: block;
+  margin: auto 0;
 }
 .programs .program .grid-container .content {
   height: -moz-fit-content;
@@ -325,8 +439,8 @@
 .clientele .cards .card img {
   display: block;
   margin: 0 auto;
-  width: 10rem;
-  height: 10rem;
+  width: 7rem;
+  height: 7rem;
 }
 @media only screen and (max-width: 600px) {
   .clientele .cards .card img {
@@ -430,10 +544,12 @@
 }
 
 .placed {
+  background-color: #fbfbfb;
   padding-bottom: 15rem;
 }
 .placed h1 {
   font-size: var(--font-subheading);
+  color: var(--red);
   text-align: center;
 }
 .placed h2 {
@@ -459,18 +575,31 @@
     margin-top: 2rem;
   }
 }
-.placed .timeline .bar {
+.placed .timeline .bar, .placed .timeline .bar-holder {
   position: absolute;
   top: 0;
   bottom: 0;
-  height: 3px;
+  height: 2px;
   width: 100%;
-  background-color: var(--gray);
+  background-color: var(--red);
 }
 @media only screen and (max-width: 900px) {
-  .placed .timeline .bar {
+  .placed .timeline .bar, .placed .timeline .bar-holder {
     height: 100%;
-    width: 3px;
+    width: 2px;
+    transform: translateX(1px);
+  }
+}
+.placed .timeline .bar-holder {
+  height: 6px;
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+}
+@media only screen and (max-width: 900px) {
+  .placed .timeline .bar-holder {
+    height: 100%;
+    width: 6px;
+    transform: translateX(-1px);
   }
 }
 .placed .timeline .container {
@@ -515,7 +644,7 @@
   font-weight: 600;
   width: 2rem;
   height: 2rem;
-  background-color: black;
+  background-color: var(--red);
   border-radius: 50%;
 }
 @media only screen and (max-width: 900px) {
@@ -533,7 +662,7 @@
   top: 2rem;
   text-align: center;
   left: 0%;
-  width: 10rem;
+  width: 15rem;
   transform: translateX(-40%);
   margin-top: 1rem;
 }

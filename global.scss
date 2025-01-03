@@ -3,7 +3,7 @@
 @import url('https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css');
 
 :root {
-    --gray: #ececec;
+    --gray: #f6f6f6;
     --red: #fd1c08;
     --font-heading: 2.4rem;
     --font-subheading: 1rem;
@@ -28,9 +28,19 @@ html {
 
 section {
     padding: 5rem 5%;
+
+    @media only screen and (max-width: 600px) {
+        padding: 5rem 3%;
+    
+    }
+    &.phone{
+        @media only screen and (max-width: 600px) {
+            padding: 5rem 0;
+        }
+    }
 }
 
-section.first {
+section.first, .first-section {
     padding-top: 8rem;
 
     @media only screen and (max-width: 600px) {
@@ -38,6 +48,7 @@ section.first {
     
     }
 }
+
 
 * {
     margin: 0;
@@ -76,6 +87,7 @@ select {
     width: 100%;
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
+    border: 1px solid #eaeaea;
 
     &::-moz-placeholder {
         color: white;
@@ -377,8 +389,13 @@ nav {
             flex-direction: column;
 
             .toggle-btn {
+                // transform: translateY(2px);
                 display: flex;
                 gap: 0.5rem;
+                p{
+                    font-weight: 500;
+                    font-size: 1rem;
+                }
             }
 
             &.opened {
@@ -469,25 +486,37 @@ footer {
 
 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
+    gap: 3rem 1rem;
 
     @media only screen and (max-width: 900px) {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr ;
 
     }
 
 
     @media only screen and (max-width: 700px) {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr ;
 
     }
 
     @media only screen and (max-width: 600px) {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr ;
 
     }
 
-    gap: 2rem 1rem;
+    .links-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem 1rem;
+
+        @media only screen and (max-width: 600px) {
+        grid-template-columns: 1fr ;
+        
+        }
+
+    }
+
 
     .logo-container {
         height: fit-content;
@@ -495,7 +524,14 @@ footer {
         padding-right: 1.3rem;
 
         img {
+            display: block;
+            margin: auto;
             width: 100%;
+            max-width: 14rem;
+            @media only screen and (max-width: 600px) {
+                margin: 0;
+            
+            }
         }
     }
 
@@ -515,6 +551,7 @@ footer {
                 font-size: 0.8rem;
                 color: black;
                 text-decoration: none;
+                width: fit-content;
             }
         }
     }
@@ -713,7 +750,7 @@ footer {
         display: flex;
         justify-content: space-between;
 
-        .toggle-floating-form {
+        .toggle-form-button {
             width: 1rem;
             height: 1rem;
             display: block;

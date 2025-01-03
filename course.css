@@ -9,7 +9,7 @@
   right: 0;
   bottom: 0;
   z-index: 0;
-  opacity: 0.4;
+  opacity: 0.1;
   display: flex;
   justify-content: center;
 }
@@ -60,6 +60,10 @@
   height: auto;
   border-radius: 1rem;
 }
+.hero .container .buttons {
+  display: flex;
+  gap: 1rem;
+}
 .hero .info {
   z-index: 5;
   position: relative;
@@ -109,7 +113,7 @@
 }
 
 .overview h1 {
-  color: #565656;
+  color: #202020;
   font-size: var(--font-heading);
   text-align: center;
 }
@@ -252,8 +256,10 @@
   text-align: left;
 }
 
+.why {
+  background-color: var(--gray);
+}
 .why h1 {
-  color: var(--red);
   font-size: var(--font-heading);
   text-align: center;
 }
@@ -304,8 +310,8 @@
   }
 }
 .why .container .right .cards .card {
-  padding: 1rem;
-  background-color: #fafafa;
+  padding: 2rem;
+  background-color: white;
   border-radius: 1rem;
   height: -moz-fit-content;
   height: fit-content;
@@ -392,6 +398,7 @@
   font-size: 1rem;
   text-align: left;
   font-weight: 400;
+  font-size: 0.9rem;
 }
 @media only screen and (max-width: 600px) {
   .approach .cards .card p {
@@ -468,6 +475,15 @@
 .curriculum {
   position: relative;
 }
+.curriculum #curriculum {
+  display: block;
+  transform: translateY(-10rem);
+}
+@media only screen and (max-width: 600px) {
+  .curriculum #curriculum {
+    transform: translateY(-6rem);
+  }
+}
 .curriculum .bg-pattern {
   width: 100%;
   position: absolute;
@@ -487,7 +503,7 @@
   margin: auto 0;
 }
 .curriculum h1 {
-  color: #565656;
+  color: #303030;
   font-size: var(--font-heading);
   position: relative;
   z-index: 5;
@@ -528,6 +544,12 @@
   .curriculum .container .right .faq-container {
     grid-template-columns: 1fr;
   }
+}
+.curriculum .container .right .faq-container .faq-question {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  font-weight: 600 !important;
+  color: black;
 }
 .curriculum .container .right .faq-container .faq-question p {
   font-weight: 600;
@@ -698,8 +720,17 @@
   font-size: 0.9rem;
   color: #565656;
 }
+.industry .certification #certification {
+  display: block;
+  transform: translateY(-10rem);
+}
+@media only screen and (max-width: 600px) {
+  .industry .certification #certification {
+    transform: translateY(-6rem);
+  }
+}
 .industry .certification h2 {
-  color: #565656;
+  color: #131313;
   font-size: var(--font-heading);
   text-align: center;
   font-weight: 700;
@@ -719,6 +750,7 @@
 
 .faculties {
   position: relative;
+  overflow: hidden;
 }
 .faculties .bg-pattern {
   width: 100%;
@@ -728,7 +760,7 @@
   right: 0;
   bottom: 0;
   z-index: 0;
-  opacity: 0.3;
+  opacity: 0.1;
   display: flex;
   justify-content: center;
 }
@@ -740,7 +772,7 @@
   margin: auto 0;
 }
 .faculties h1 {
-  color: #565656;
+  color: #131313;
   font-size: var(--font-heading);
   text-align: center;
   position: relative;
@@ -1017,7 +1049,7 @@
   right: 0;
   bottom: 0;
   z-index: 0;
-  opacity: 0.4;
+  opacity: 0.2;
   display: flex;
   justify-content: center;
 }
@@ -1040,20 +1072,18 @@
 .faqs .container {
   z-index: 5;
   position: relative;
-  display: grid;
   grid-template-columns: 55% 45%;
   gap: 2rem 3rem;
-}
-@media only screen and (max-width: 800px) {
-  .faqs .container {
-    display: flex;
-    flex-direction: column-reverse;
-  }
 }
 .faqs .container .left {
   height: -moz-fit-content;
   height: fit-content;
   margin: auto 0;
+  margin-bottom: 3rem;
+}
+.faqs .container .left h1 {
+  text-align: center;
+  color: #202020;
 }
 .faqs .container .left button {
   margin-top: 2rem;

@@ -9,7 +9,7 @@
         right: 0;
         bottom: 0;
         z-index: 0;
-        opacity: 0.4;
+        opacity: 0.1;
         display: flex;
         justify-content: center;
 
@@ -70,6 +70,11 @@
             }
         }
 
+        .buttons{
+            display: flex;
+            gap: 1rem;
+        }
+
 
     }
 
@@ -127,10 +132,9 @@
 
 }
 
-
 .overview {
     h1 {
-        color: #565656;
+        color: #202020;
         font-size: var(--font-heading);
         text-align: center;
     }
@@ -228,27 +232,27 @@
                 box-shadow: 0px 3px 4px 0px #a0a0a0;
 
 
-        @media only screen and (max-width: 600px) {
-            gap: .8rem;
-        
-        }
+                @media only screen and (max-width: 600px) {
+                    gap: .8rem;
 
-        @media only screen and (max-width:600px) {
-            flex-direction: column;
-        }
+                }
 
-        .divider {
-            margin: auto 0;
-            height: 3rem;
-            width: 1px;
-            background-color: black;
+                @media only screen and (max-width:600px) {
+                    flex-direction: column;
+                }
 
-            @media only screen and (max-width:600px) {
-                height: 1px;
-                width: 50%;
-                margin: 0 auto;
-            }
-        }
+                .divider {
+                    margin: auto 0;
+                    height: 3rem;
+                    width: 1px;
+                    background-color: black;
+
+                    @media only screen and (max-width:600px) {
+                        height: 1px;
+                        width: 50%;
+                        margin: 0 auto;
+                    }
+                }
 
 
                 .card {
@@ -304,9 +308,10 @@
 }
 
 .why {
+    background-color: var(--gray);
 
     h1 {
-        color: var(--red);
+        // color: var(--red);
         font-size: var(--font-heading);
         text-align: center;
     }
@@ -366,8 +371,8 @@
                 }
 
                 .card {
-                    padding: 1rem;
-                    background-color: #fafafa;
+                    padding: 2rem;
+                    background-color: white;
                     // border: 2px solid #fd1c0822;
                     border-radius: 1rem;
                     height: fit-content;
@@ -482,6 +487,7 @@
                 font-size: 1rem;
                 text-align: left;
                 font-weight: 400;
+                font-size: .9rem;
 
                 @media only screen and (max-width: 600px) {
                     text-align: center;
@@ -506,7 +512,6 @@
     }
 }
 
-
 @keyframes move-right {
     from {
         transform: translate(-66rem);
@@ -516,8 +521,6 @@
         transform: translate(0rem);
     }
 }
-
-
 
 .alumni {
     overflow: hidden;
@@ -588,7 +591,15 @@
 
 .curriculum {
     position: relative;
+    #curriculum {
+        display: block;
+        transform: translateY(-10rem);
 
+        @media only screen and (max-width: 600px) {
+            transform: translateY(-6rem);
+
+        }
+    }
     .bg-pattern {
         width: 100%;
         position: absolute;
@@ -611,7 +622,7 @@
     }
 
     h1 {
-        color: #565656;
+        color: #303030;
         font-size: var(--font-heading);
         position: relative;
         z-index: 5;
@@ -663,12 +674,24 @@
 
 
                 .faq-question {
+                    background-color: white;
+                    border: 1px solid #e0e0e0;
+                    // background-color: var(--red);
+                    // color: white;
+                    font-weight: 600 !important;
+                    color: black;
+
+                    img {
+                        // filter: invert(1);
+                    }
+
                     p {
                         font-weight: 600;
 
                         span {
                             font-weight: 500;
                         }
+
                     }
                 }
 
@@ -882,6 +905,17 @@
     }
 
     .certification {
+
+        #certification {
+            display: block;
+            transform: translateY(-10rem);
+    
+            @media only screen and (max-width: 600px) {
+                transform: translateY(-6rem);
+    
+            }
+        }
+    
         // margin-top: 12rem;
 
         // @media only screen and (max-width: 700px) {
@@ -891,7 +925,7 @@
 
         h2 {
 
-            color: #565656;
+            color: #131313;
             font-size: var(--font-heading);
             text-align: center;
             font-weight: 700;
@@ -917,6 +951,7 @@
 
 .faculties {
     position: relative;
+    overflow: hidden;
 
     .bg-pattern {
         width: 100%;
@@ -926,7 +961,7 @@
         right: 0;
         bottom: 0;
         z-index: 0;
-        opacity: 0.3;
+        opacity: 0.1;
         display: flex;
         justify-content: center;
 
@@ -941,7 +976,7 @@
     }
 
     h1 {
-        color: #565656;
+        color: #131313;
         font-size: var(--font-heading);
         text-align: center;
         position: relative;
@@ -1286,7 +1321,7 @@
         right: 0;
         bottom: 0;
         z-index: 0;
-        opacity: 0.4;
+        opacity: 0.2;
         display: flex;
         justify-content: center;
 
@@ -1316,19 +1351,24 @@
     .container {
         z-index: 5;
         position: relative;
-        display: grid;
+        // display: grid;
         grid-template-columns: 55% 45%;
         gap: 2rem 3rem;
 
         @media only screen and (max-width: 800px) {
-            display: flex;
-            flex-direction: column-reverse;
-
+            // display: flex;
+            // flex-direction: column-reverse;
         }
 
         .left {
             height: fit-content;
             margin: auto 0;
+            margin-bottom: 3rem;
+
+            h1 {
+                text-align: center;
+                color: #202020;
+            }
 
             button {
                 margin-top: 2rem;

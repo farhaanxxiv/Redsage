@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css");
 :root {
-  --gray: #ececec;
+  --gray: #f6f6f6;
   --red: #fd1c08;
   --font-heading: 2.4rem;
   --font-subheading: 1rem;
@@ -26,12 +26,22 @@ html {
 section {
   padding: 5rem 5%;
 }
+@media only screen and (max-width: 600px) {
+  section {
+    padding: 5rem 3%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  section.phone {
+    padding: 5rem 0;
+  }
+}
 
-section.first {
+section.first, .first-section {
   padding-top: 8rem;
 }
 @media only screen and (max-width: 600px) {
-  section.first {
+  section.first, .first-section {
     padding-top: 5rem;
   }
 }
@@ -73,6 +83,7 @@ select {
   width: 100%;
   padding: 0.5rem 1rem;
   font-size: 0.9rem;
+  border: 1px solid #eaeaea;
 }
 input::-moz-placeholder,
 select::-moz-placeholder {
@@ -347,6 +358,10 @@ nav .links .toggle-navbar .toggle-btn {
   display: flex;
   gap: 0.5rem;
 }
+nav .links .toggle-navbar .toggle-btn p {
+  font-weight: 500;
+  font-size: 1rem;
+}
 nav .links .toggle-navbar.opened .content {
   display: block;
 }
@@ -416,22 +431,32 @@ footer {
   background-color: var(--gray);
   padding: 5rem 5%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 2rem 1rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem 1rem;
 }
 @media only screen and (max-width: 900px) {
   footer {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media only screen and (max-width: 700px) {
   footer {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media only screen and (max-width: 600px) {
   footer {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+footer .links-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem 1rem;
+}
+@media only screen and (max-width: 600px) {
+  footer .links-container {
+    grid-template-columns: 1fr;
   }
 }
 footer .logo-container {
@@ -441,7 +466,15 @@ footer .logo-container {
   padding-right: 1.3rem;
 }
 footer .logo-container img {
+  display: block;
+  margin: auto;
   width: 100%;
+  max-width: 14rem;
+}
+@media only screen and (max-width: 600px) {
+  footer .logo-container img {
+    margin: 0;
+  }
 }
 footer .column h3 {
   font-size: 1rem;
@@ -456,6 +489,8 @@ footer .column .links a {
   font-size: 0.8rem;
   color: black;
   text-decoration: none;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .splide__arrow--prev,
@@ -624,7 +659,7 @@ footer .column .links a {
   display: flex;
   justify-content: space-between;
 }
-.floating-form .heading .toggle-floating-form {
+.floating-form .heading .toggle-form-button {
   width: 1rem;
   height: 1rem;
   display: block;

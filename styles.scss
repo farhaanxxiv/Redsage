@@ -49,29 +49,189 @@
         }
 
         .left {
+            overflow-x: hidden;
             height: fit-content;
             margin: auto;
+            background-color: #fd1c08;
+            padding: 2rem;
+            width: 100%;
+            border-radius: 1.5rem;
 
-            img {
-                width: 80%;
-                display: block;
-                margin: auto;
-                aspect-ratio: 1/1;
-                border-radius: 50%;
-                background-color: var(--gray);
+            @media only screen and (max-width: 600px) {
+                padding: 3rem 1rem;
+                border-radius: 0;
+
             }
 
-            p {
-                text-align: center;
-                font-size: 1.2rem;
+            * {
+                color: white;
+            }
+
+            .chip {
+                display: flex;
+                align-items: center;
+                gap: .4rem;
+
+                @keyframes gloww {
+                    from{
+                        box-shadow: 0px 0px 2px white;
+                    }
+                    to{
+                        box-shadow: 0px 0px 15px white;
+
+                    }
+                }
+
+                .glow {
+                    animation: gloww 1s linear infinite alternate;
+                    width: 10px;
+                    height: 10px;
+                    background-color: white;
+                    border-radius: 50%;
+                }
+
+                p {
+                    font-size: .8rem;
+                    font-weight: 500;
+                }
+            }
+
+            .course-name {
+                margin-top: 1rem;
+            }
+
+            .heading-trainers {
                 margin-top: 2rem;
+                font-size: 1.1rem;
+                color: white;
                 font-weight: 500;
             }
+
+            .trainer-container {
+                margin-top: .5rem;
+                border-radius: 1rem;
+                // padding: .5rem 1rem;
+            }
+
+
+            .timings {
+                display: flex;
+                gap: .5rem;
+                flex-direction: column;
+                margin-top: 1.5rem;
+
+                .card {
+                    display: flex;
+                    gap: .5rem;
+
+                    img {
+                        display: block;
+                        margin: auto 0;
+                        width: 1.3rem;
+                        height: 1.3rem;
+                        filter: brightness(0%) saturate(0) invert(1);
+                    }
+
+                    p {
+                        // 10:00 AM
+                    }
+
+                }
+
+            }
+
+            @keyframes move-hero {
+                from {
+                    transform: translate(0);
+                }
+
+                to {
+                    transform: translate(-63rem);
+                }
+            }
+
+            .trainers {
+                display: flex;
+                gap: 1rem;
+                // margin-top: 0.5rem;
+                animation: move-hero 10s linear infinite;
+                margin-top: 1rem;
+
+                .trainer {
+                    // background-color: white;
+                    // box-shadow: 0px 0px 10px #f0f0f0;
+
+                    background-color: white;
+                    flex-shrink: 0;
+                    max-width: 20rem;
+
+                    padding: .5rem;
+                    border: 1px solid #d0d0d0;
+                    border-radius: .6rem;
+                    height: fit-content;
+                    margin: auto 0;
+
+                    * {
+                        color: black;
+                    }
+
+
+                    .profile {
+                        display: flex;
+                        gap: .5rem;
+
+                        img {
+                            background-color: black;
+                            width: 4rem;
+                            height: 4rem;
+                            border-radius: 50%;
+                            display: block;
+                            margin: auto 0;
+                        }
+
+                        .details {
+                            .name {
+                                font-size: 1.1rem;
+                                font-weight: 500;
+                            }
+
+                            .designation {
+                                font-size: .8rem;
+                                color: #505050;
+                            }
+                        }
+                    }
+
+
+
+                }
+
+            }
+
+            // .trainer{
+            //     .course-name{
+
+            //     }
+
+            //     .details{
+            //         .name{
+            //             font-size: 1.2rem;
+            //             font-weight: 500;
+            //         }
+
+            //         .designation{
+
+            //         }
+            //     }
+            // }
+
+
         }
 
         .right {
-            background-color: var(--gray);
-            border-radius: 2.5rem;
+            background-color: #fafafa;
+            // border: 1px solid #eaeaea;
+            border-radius: 1rem;
             padding: 2rem;
 
             display: flex;
@@ -91,11 +251,16 @@
                 font-style: italic;
                 font-size: 0.9rem;
                 color: #575757;
-                img{
+                padding-left: 1.8rem;
+
+                img {
                     position: absolute;
-                    width: 3rem;
-                    height: 3rem;
-                    opacity: 0.8;
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    opacity: 0.3;
+                    z-index: 0;
+                    left: 0;
+                    top: -20%;
                 }
             }
 
@@ -272,58 +437,68 @@
             grid-template-columns: 1fr 1fr;
             gap: 3rem;
 
+            @media only screen and (max-width: 700px) {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+
+            }
+
             img {
                 width: 100%;
                 border-radius: 1rem;
+                display: block;
+                margin: auto 0;
             }
 
-            .content{
+            .content {
                 height: fit-content;
                 margin: auto 0;
             }
 
             h2 {
                 font-size: 2rem;
-                    font-weight: 600;
-                    font-weight: 600;
+                font-weight: 600;
+                font-weight: 600;
             }
 
-            .description{
+            .description {
                 margin-top: .8rem;
                 font-size: .96rem;
             }
 
-            ul{
+            ul {
                 margin-top: 1rem;
                 padding-left: 1rem;
                 display: flex;
                 flex-direction: column;
                 gap: .3rem;
 
-                li{
+                li {
                     font-size: .9rem;
                 }
             }
-            .stats{
+
+            .stats {
                 margin-top: 1.3rem;
                 display: flex;
                 flex-direction: column;
                 gap: .5rem;
 
-                .stat{
+                .stat {
                     display: flex;
                     gap: .5rem;
-                    
-                    img{
+
+                    img {
                         display: block;
                         margin: auto 0;
                         width: 20px;
                         height: 20px;
                     }
 
-                    p{
+                    p {
                         font-size: .9rem;
-                        span{
+
+                        span {
                             font-weight: 500;
                         }
                     }
@@ -331,7 +506,7 @@
                 }
             }
 
-            button{
+            button {
                 margin-top: 1.8rem;
             }
         }
@@ -392,8 +567,8 @@
             img {
                 display: block;
                 margin: 0 auto;
-                width: 10rem;
-                height: 10rem;
+                width: 7rem;
+                height: 7rem;
 
                 @media only screen and (max-width: 600px) {
                     height: auto;
@@ -451,14 +626,16 @@
 
 .placement-record {
 
-    #placements{
+    #placements {
         display: block;
         transform: translateY(-10rem);
+
         @media only screen and (max-width: 600px) {
             transform: translateY(-6rem);
-        
+
         }
     }
+
     overflow: hidden;
 
     position: relative;
@@ -526,9 +703,10 @@
 }
 
 .placed {
+    background-color: #fbfbfb;
     h1 {
         font-size: var(--font-subheading);
-
+        color: var(--red);
         text-align: center;
 
     }
@@ -562,21 +740,37 @@
             margin-top: 2rem;
         }
 
-        .bar {
+        .bar, .bar-holder {
             position: absolute;
             top: 0;
             bottom: 0;
-            height: 3px;
+            height: 2px;
             width: 100%;
-            background-color: var(--gray);
+            background-color: var(--red);
 
             @media only screen and (max-width: 900px) {
                 height: 100%;
-                width: 3px;
+                width: 2px;
+                transform: translateX(1px);
 
 
             }
         }
+
+        .bar-holder{
+            height: 6px;
+            background-color: #f0f0f0;
+            transform: translateY(-2px);
+
+            @media only screen and (max-width: 900px) {
+                height: 100%;
+                width: 6px;
+                transform: translateX(-1px);
+
+
+            }
+        }
+        
 
         .container {
             position: absolute;
@@ -620,7 +814,7 @@
                         font-weight: 600;
                         width: 2rem;
                         height: 2rem;
-                        background-color: black;
+                        background-color: var(--red);
                         border-radius: 50%;
 
                         @media only screen and (max-width: 900px) {
@@ -643,7 +837,7 @@
                         top: 2rem;
                         text-align: center;
                         left: 0%;
-                        width: 10rem;
+                        width: 15rem;
                         transform: translateX(-40%);
                         margin-top: 1rem;
 
@@ -816,13 +1010,13 @@
     position: relative;
     overflow: hidden;
 
-    #reviews{
+    #reviews {
         display: block;
         transform: translateY(-7rem);
 
         @media only screen and (max-width: 600px) {
-        transform: translateY(-6rem);
-            
+            transform: translateY(-6rem);
+
         }
     }
 

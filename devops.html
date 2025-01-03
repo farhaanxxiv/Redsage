@@ -52,44 +52,44 @@
             </a>
         </div>
         <div class="links " id="phone-sidebar">
-            <a href="/">Course</a>
-            <a href="/">Placement</a>
-            <a href="/">Blog</a>
-            <a href="/">Review</a>
-
+            <!-- <a href="/devops.html">Devops</a> -->
             <div class="toggle-navbar">
                 <div class="toggle-btn">
-                    <p>More</p>
+                    <p>Courses</p>
                     <img src="/images/home/down-arrow.png" class="arrow">
                 </div>
 
                 <div class="content">
-                    <a href="">FAQ</a>
-                    <a href="">Alumni Network</a>
-                    <a href="">Login</a>
-                    <a href="">Book a call</a>
+                    <a href="/devops.html">Devops</a>
                 </div>
 
             </div>
 
+            <a href="#certification">Certification</a>
+            <a href="#curriculum">Curriculum</a>
         </div>
 
-        <button class="bl contact-btn">
+        <button class="bl contact-btn toggle-floating-form">
             Contact
         </button>
     </nav>
 
+
     <section class="hero first">
-        <div class="bg-pattern">
+        <!-- <div class="bg-pattern">
             <img src="/images/global/bg-pattern.png" alt="">
-        </div>
+        </div> -->
         <div class="container">
             <div class="left">
                 <h1>Be a certified DEVOPS Engineer</h1>
                 <h2>"Streamline Development, Accelerate Delivery, and
                     Revolutionize Your Career with ourComprehensive
                     DevOps Training."</h2>
-                <button class="bl">Apply Now</button>
+                <div class="buttons">
+                    <button class="bl toggle-floating-form">Apply Now</button>
+                    <button class="bl toggle-brochure-form">Download Brochure</button>
+                </div>
+
             </div>
             <div class="right">
                 <img src="/images/course/hero-devops.png" alt="" />
@@ -251,55 +251,55 @@
             excellence</h1>
 
         <div class="cards">
-           
+
             <div class="card">
-              <img src="/images/course/book.png" alt="">
+                <img src="/images/course/book.png" alt="">
                 <p>
                     Industry-approved,
-                    structured curriculum                </p>
+                    structured curriculum </p>
 
             </div>
             <div class="card">
                 <img src="/images/course/live-streaming.png" alt="">
-                  <p>
+                <p>
                     Live, interactive sessions
-                    with industry experts               </p>
-  
-              </div>
-        
-              <div class="card">
+                    with industry experts </p>
+
+            </div>
+
+            <div class="card">
                 <img src="/images/course/meeting.png" alt="">
-                  <p>
+                <p>
                     Dedicated sessions to
                     resolve doubts and ensure
-                    progress.             </p>
-  
-              </div>
-              <div class="card">
+                    progress. </p>
+
+            </div>
+            <div class="card">
                 <img src="/images/course/opportunity.png" alt="">
-                  <p>
+                <p>
                     Career Support via Mock
                     interviews, profile building,
-                    and referral.         </p>
-  
-              </div>
-              <div class="card">
+                    and referral. </p>
+
+            </div>
+            <div class="card">
                 <img src="/images/course/experience.png" alt="">
-                  <p>
+                <p>
                     Learn from experienced
-                    industry leaders           </p>
-  
-              </div>
-              <div class="card">
+                    industry leaders </p>
+
+            </div>
+            <div class="card">
                 <img src="/images/course/recommend.png" alt="">
-                  <p>
+                <p>
                     Hands-on experience with
                     real-world case study and
-                    capstone projects.          </p>
-  
-              </div>
+                    capstone projects. </p>
+
+            </div>
         </div>
-    </section> 
+    </section>
 
     <section class="industry">
         <!-- <h1>Industry Requirements</h1>
@@ -328,7 +328,8 @@
             </div>
         </div> -->
 
-        <div class="certification">
+        <div  class="certification">
+            <div id="certification" ></div>
             <h2>Certification</h2>
             <img src="/images/course/certificate.png" alt="">
         </div>
@@ -394,12 +395,13 @@
         <!-- <div class="bg-pattern">
             <img src="/images/global/bg-pattern.png" alt="">
         </div> -->
+        <div id="curriculum" ></div>
 
         <div class="container">
             <div class="left">
                 <h1>Curriculum</h1>
                 <!-- <h2>Qui dolore officia fugiat dolore esse anim consectetur elit ipsum sunt excepteur minim.</h2> -->
-<!-- 
+                <!-- 
                 <button class="bl">
                     Contact Us
                 </button> -->
@@ -409,8 +411,8 @@
                     <div class="faq-item">
                         <div class="faq-question">
                             <p>
-                            Month 1 : <span>Foundations</span>
-                        </p>
+                                Month 1 : <span>Foundations</span>
+                            </p>
                             <img src="/images/global/plus.png" class="arrow" />
                         </div>
                         <div class="faq-answer">
@@ -445,10 +447,10 @@
                     <div class="faq-item">
                         <div class="faq-question">
                             <p>
-                            Month 2 : <span>Version Control, Linux, and Automation</span>
-                            
-                        </p>
-                        <img src="/images/global/plus.png" class="arrow" />
+                                Month 2 : <span>Version Control, Linux, and Automation</span>
+
+                            </p>
+                            <img src="/images/global/plus.png" class="arrow" />
                         </div>
                         <div class="faq-answer">
                             <ul>
@@ -483,9 +485,9 @@
                     <div class="faq-item">
                         <div class="faq-question">
                             <p>
-                            Month 3 : <span>Continuous Integration and Cloud Essentials</span>
-                        </p>
-                        <img src="/images/global/plus.png" class="arrow" />
+                                Month 3 : <span>Continuous Integration and Cloud Essentials</span>
+                            </p>
+                            <img src="/images/global/plus.png" class="arrow" />
 
                         </div>
                         <div class="faq-answer">
@@ -521,9 +523,9 @@
                     <div class="faq-item">
                         <div class="faq-question">
                             <p>
-                            Month 4 : <span>Advanced Cloud and Deployment Automation</span>
-                        </p>
-                        <img src="/images/global/plus.png" class="arrow" />
+                                Month 4 : <span>Advanced Cloud and Deployment Automation</span>
+                            </p>
+                            <img src="/images/global/plus.png" class="arrow" />
 
                         </div>
                         <div class="faq-answer">
@@ -559,9 +561,9 @@
                     <div class="faq-item">
                         <div class="faq-question">
                             <p>
-                            Month 5 : <span>Containerization and Orchestration</span>
-                        </p>
-                        <img src="/images/global/plus.png" class="arrow" />
+                                Month 5 : <span>Containerization and Orchestration</span>
+                            </p>
+                            <img src="/images/global/plus.png" class="arrow" />
 
                         </div>
                         <div class="faq-answer">
@@ -596,9 +598,9 @@
                     <div class="faq-item">
                         <div class="faq-question">
                             <p>
-                            Month 6 : <span>Specializations and Capstone Project</span>
-                        </p>
-                        <img src="/images/global/plus.png" class="arrow" />
+                                Month 6 : <span>Specializations and Capstone Project</span>
+                            </p>
+                            <img src="/images/global/plus.png" class="arrow" />
 
                         </div>
                         <div class="faq-answer">
@@ -636,8 +638,8 @@
 
         <div class="cards">
             <div class="card">
-                <div data-star="4">
-                </div>
+                <!-- <div data-star="4">
+                </div> -->
 
                 <lite-youtube videoid="LN1TQm942_U" style="background-image: url('/images/home/macbook.png');">
                 </lite-youtube>
@@ -656,8 +658,8 @@
                 </div>
             </div>
             <div class="card">
-                <div data-star="4">
-                </div>
+                <!-- <div data-star="4">
+                </div> -->
 
                 <lite-youtube videoid="LN1TQm942_U"
                     style="background-image: url('https://i.ytimg.com/vi/LN1TQm942_U/hqdefault.jpg');">
@@ -677,8 +679,8 @@
                 </div>
             </div>
             <div class="card">
-                <div data-star="4">
-                </div>
+                <!-- <div data-star="4">
+                </div> -->
 
                 <lite-youtube videoid="LN1TQm942_U"
                     style="background-image: url('https://i.ytimg.com/vi/LN1TQm942_U/hqdefault.jpg');">
@@ -959,7 +961,7 @@
 
                 <div>
                     <p class="heading">Talk to our expert
-                        <img class="toggle-floating-form" src="/images/icons/close-btn.png" alt="">
+                        <img class="toggle-floating-form toggle-form-button" src="/images/icons/close-btn.png" alt="">
                     </p>
                     <p class="subheading">Deserunt ad mollit sunt nostrud commodo cillum ullamco.</p>
                 </div>
@@ -968,8 +970,8 @@
                     <select name="" id="">
                         <option value="" hidden selected>Select a course</option>
 
-                        <option value="full-stack">Full Stack</option>
-                        <option value="frontend">Frontend</option>
+                        <option value="full-stack">Devops</option>
+                        <!-- <option value="frontend">Frontend</option> -->
 
                     </select>
                 </div>
@@ -977,12 +979,52 @@
                     <input placeholder="Name" type="text">
                 </div>
                 <div>
+                    <input placeholder="Graduation Year" type="text">
 
-                    <input placeholder="" class="phone-with-country" type="tel">
+                </div>
+                <div>
+                    <input placeholder="Job Title" type="text">
+
                 </div>
                 <div>
                     <input placeholder="Email" type="email">
                 </div>
+                <div>
+
+                    <input placeholder="" class="phone-with-country" type="tel">
+                </div>
+              
+                <div>
+                    <button class="br" type="submit">Submit</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <div id="brochure-form" class="floating-form">
+        <div class="content">
+
+            <form>
+
+                <div>
+                    <p class="heading">Talk to our expert
+                        <img class="toggle-brochure-form toggle-form-button" src="/images/icons/close-btn.png" alt="">
+                    </p>
+                    <p class="subheading">Deserunt ad mollit sunt nostrud commodo cillum ullamco.</p>
+                </div>
+
+                <div>
+                    <input placeholder="Name" type="text">
+                </div>
+               
+                <div>
+                    <input placeholder="Email" type="email">
+                </div>
+                <div>
+                    <input placeholder="" class="phone-with-country" type="tel">
+                </div>
+              
                 <div>
                     <button class="br" type="submit">Submit</button>
                 </div>
@@ -997,7 +1039,14 @@
         </div>
 
         <div class="container">
+            <div class="left">
+                <h1>FAQs</h1>
+                <!-- <h2>Qui dolore officia fugiat dolore esse anim consectetur elit ipsum sunt excepteur minim.</h2> -->
 
+                <!-- <button class="bl toggle-navbar">
+                    Contact Us
+                </button> -->
+            </div>
             <div class="right">
                 <div class="faq-container">
                     <div class="faq-item">
@@ -1049,7 +1098,7 @@
                         </div>
                         <div class="faq-answer">
                             Yes, many of our courses are accredited and include certificates recognized by
-industry leaders.
+                            industry leaders.
                         </div>
                     </div>
 
@@ -1057,14 +1106,7 @@ industry leaders.
 
                 </div>
             </div>
-            <div class="left">
-                <h1>FAQs</h1>
-                <!-- <h2>Qui dolore officia fugiat dolore esse anim consectetur elit ipsum sunt excepteur minim.</h2> -->
 
-                <button class="bl toggle-navbar">
-                    Contact Us
-                </button>
-            </div>
         </div>
     </section>
 
@@ -1073,83 +1115,25 @@ industry leaders.
         <div class="logo-container">
             <img src="/logos/red-black.png" alt="">
         </div>
+        <div class="links-container">
+            <div class="column">
+                <h3>Courses</h3>
 
-        <div class="column">
-            <h3>Column 1</h3>
+                <div class="links">
+                    <a href="/devops.html">Devops </a>
+                </div>
+            </div>
 
-            <div class="links">
+            <div class="column">
+                <h3>Other Links</h3>
 
-                <a href="">Footer Links</a>
-                <a href="">Footer Links</a>
-                <a href="">Footer Links</a>
-                <a href="">Footer Links</a>
-                <a href="">Footer Links</a>
-
-
+                <div class="links">
+                    <a href="/">Home</a>
+                    <a href="">Blogs</a>
+                </div>
             </div>
         </div>
-
-        <div class="column">
-            <h3>Column 1</h3>
-
-            <div class="links">
-
-                <a href="">Footer Links</a>
-                <a href="">Footer Links</a>
-                <a href="">Footer Links</a>
-                <a href="">Footer Links</a>
-                <a href="">Footer Links</a>
-
-
-            </div>
-        </div>
-
-        <div class="column">
-            <h3>Column 1</h3>
-
-            <div class="links">
-
-                <a href="">Footer Links</a>
-                <a href="">Footer Links</a>
-                <a href="">Footer Links</a>
-                <a href="">Footer Links</a>
-                <a href="">Footer Links</a>
-
-
-            </div>
-        </div>
-
-        <div class="column">
-            <h3>Column 1</h3>
-
-            <div class="links">
-
-                <a href="">Footer Links</a>
-                <a href="">Footer Links</a>
-                <a href="">Footer Links</a>
-                <a href="">Footer Links</a>
-                <a href="">Footer Links</a>
-
-
-            </div>
-        </div>
-
-        <div class="column">
-            <h3>Column 1</h3>
-
-            <div class="links">
-
-                <a href="">Footer Links</a>
-                <a href="">Footer Links</a>
-                <a href="">Footer Links</a>
-                <a href="">Footer Links</a>
-                <a href="">Footer Links</a>
-
-
-            </div>
-        </div>
-
-    </footer>
+    </footer>   
 
 
     <script src="/scripts.js">

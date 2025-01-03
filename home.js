@@ -60,26 +60,11 @@ floatingFormbuttons.forEach(button => {
     });
 });
 
-// new Splide('.masterclass-swiper', {
-//     // type: 'loop', // Enable loop functionality
-//     perPage: 4, // Default number of slides per view
-//     gap: '30px',
-//     breakpoints: {
-//         1200: {
-//             perPage: 3,
-//             spaceBetween: 20, // Adjust spacing as needed
-//         },
-//         900: {
-//             perPage: 2,
-//             gap: '20px', // Adjust spacing between slides
-//         },
-//         600: {
-//             perPage: 1,
-//             gap: '10px', // Adjust spacing between slides
-//         },
-
-//     },
-//     pagination: true, // Enable pagination
-//     arrows: true, // Enable navigation arrows
-// }).mount();
-//  
+new Splide('.trainers-splide', {
+    // type: 'loop', // Enable loop functionality
+    perPage: 1, // Default number of slides per view
+    gap: '30px',
+    pagination: true, // Enable pagination
+    arrows: true, // Enable navigation arrows
+}).mount();
+ 
