@@ -1,6 +1,11 @@
 .hero {
   position: relative;
 }
+@media only screen and (max-width: 600px) {
+  .hero {
+    padding-top: 0rem !important;
+  }
+}
 .hero .headline {
   text-align: center;
   font-size: 2.5rem;
@@ -44,6 +49,8 @@
 @media only screen and (max-width: 800px) {
   .hero .container {
     grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
 .hero .container .left {
@@ -52,15 +59,88 @@
   height: fit-content;
   margin: auto;
   background-color: #fd1c08;
-  padding: 2rem;
+  padding: 1rem;
   width: 100%;
   border-radius: 1.5rem;
 }
 @media only screen and (max-width: 600px) {
   .hero .container .left {
     padding: 3rem 1rem;
+    padding-bottom: 1.5rem;
     border-radius: 0;
   }
+}
+.hero .container .left .trainer {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0.5rem;
+  border: 1px solid #d0d0d0;
+  border-radius: 0.6rem;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto 0;
+}
+.hero .container .left .trainer * {
+  color: black;
+}
+.hero .container .left .trainer .profile {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+@media only screen and (max-width: 600px) {
+  .hero .container .left .trainer .profile {
+    flex-direction: row;
+  }
+}
+.hero .container .left .trainer .profile img {
+  background-color: white;
+  width: 50%;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+}
+@media only screen and (max-width: 600px) {
+  .hero .container .left .trainer .profile img {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+.hero .container .left .trainer .profile .details {
+  text-align: center;
+}
+@media only screen and (max-width: 600px) {
+  .hero .container .left .trainer .profile .details {
+    text-align: left;
+  }
+}
+.hero .container .left .trainer .profile .details * {
+  color: white;
+}
+.hero .container .left .trainer .profile .details .name {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.hero .container .left .trainer .profile .details .designation {
+  font-size: 0.8rem;
+  color: #f0f0f0;
+}
+.hero .container .left .parent-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media only screen and (max-width: 550px) {
+  .hero .container .left .parent-container {
+    grid-template-columns: 1fr;
+  }
+}
+.hero .container .left .parent-container .left {
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto 0;
 }
 .hero .container .left * {
   color: white;
@@ -130,42 +210,9 @@
 .hero .container .left .trainers {
   display: flex;
   gap: 1rem;
-  animation: move-hero 10s linear infinite;
   margin-top: 1rem;
-}
-.hero .container .left .trainers .trainer {
-  background-color: white;
-  flex-shrink: 0;
-  max-width: 20rem;
-  padding: 0.5rem;
-  border: 1px solid #d0d0d0;
-  border-radius: 0.6rem;
-  height: -moz-fit-content;
-  height: fit-content;
-  margin: auto 0;
-}
-.hero .container .left .trainers .trainer * {
-  color: black;
-}
-.hero .container .left .trainers .trainer .profile {
-  display: flex;
-  gap: 0.5rem;
-}
-.hero .container .left .trainers .trainer .profile img {
-  background-color: black;
-  width: 4rem;
-  height: 4rem;
-  border-radius: 50%;
-  display: block;
-  margin: auto 0;
-}
-.hero .container .left .trainers .trainer .profile .details .name {
-  font-size: 1.1rem;
-  font-weight: 500;
-}
-.hero .container .left .trainers .trainer .profile .details .designation {
-  font-size: 0.8rem;
-  color: #505050;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 .hero .container .right {
   background-color: #fafafa;
@@ -901,7 +948,7 @@
 }
 .testimonials .cards .card .profile {
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 .testimonials .cards .card .profile img {
   border-radius: 50%;
@@ -1042,7 +1089,7 @@
 
 .skillpath h1 {
   color: black;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .skillpath .grid-container {
   display: grid;
@@ -1080,7 +1127,7 @@
   margin: auto 0;
 }
 .skillpath .grid-container .content .cards .card h2 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 .skillpath .grid-container .content .cards .card p {

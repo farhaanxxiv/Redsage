@@ -62,15 +62,15 @@ floatingFormbuttons.forEach(button => {
 });
 
 
-const brochureFormbuttons = document.querySelectorAll('.toggle-brochure-form');
+// const brochureFormbuttons = document.querySelectorAll('.toggle-brochure-form');
 
-// Select the div with the id "floating-form"
-const brochureForm = document.getElementById('brochure-form');
+// // Select the div with the id "floating-form"
+// const brochureForm = document.getElementById('brochure-form');
 
-// Add event listeners to all buttons
-brochureFormbuttons.forEach(button => {
-    button.addEventListener('click', () => {
-        // Toggle the "opened" class on the floating form
-        brochureForm.classList.toggle('opened');
-    });
-});
+// // Add event listeners to all buttons
+// brochureFormbuttons.forEach(button => {
+//     button.addEventListener('click', () => {
+//         // Toggle the "opened" class on the floating form
+//         brochureForm.classList.toggle('opened');
+//     });
+// });

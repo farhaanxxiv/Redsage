@@ -83,3 +83,16 @@ const timelineBar = document.querySelector(".placed .timeline .bar");
       );
     },
   });
+
+  const floatingFormbuttons = document.querySelectorAll('.toggle-floating-form');
+
+// Select the div with the id "floating-form"
+const floatingForm = document.getElementById('floating-form');
+
+// Add event listeners to all buttons
+floatingFormbuttons.forEach(button => {
+    button.addEventListener('click', () => {
+        // Toggle the "opened" class on the floating form
+        floatingForm.classList.toggle('opened');
+    });
+});

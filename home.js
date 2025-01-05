@@ -47,24 +47,13 @@ swipers.forEach((swiper) => {
 // });
 
 // Select all buttons with the class "open-floating-form"
-const floatingFormbuttons = document.querySelectorAll('.toggle-floating-form');
 
-// Select the div with the id "floating-form"
-const floatingForm = document.getElementById('floating-form');
 
-// Add event listeners to all buttons
-floatingFormbuttons.forEach(button => {
-    button.addEventListener('click', () => {
-        // Toggle the "opened" class on the floating form
-        floatingForm.classList.toggle('opened');
-    });
-});
-
-new Splide('.trainers-splide', {
-    // type: 'loop', // Enable loop functionality
-    perPage: 1, // Default number of slides per view
-    gap: '30px',
-    pagination: true, // Enable pagination
-    arrows: true, // Enable navigation arrows
-}).mount();
+// new Splide('.trainers-splide', {
+//     // type: 'loop', // Enable loop functionality
+//     perPage: 1, // Default number of slides per view
+//     gap: '30px',
+//     pagination: true, // Enable pagination
+//     arrows: true, // Enable navigation arrows
+// }).mount();
  
