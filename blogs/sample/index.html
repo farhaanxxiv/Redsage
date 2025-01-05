@@ -39,7 +39,8 @@
 </head>
 
 
-<body>
+
+<body style="background-image: linear-gradient(#ffffff77,#ffffff77),url('/images/global/tile-background.png');">
     <nav>
         <div class="logo-hamburger-container">
 
@@ -74,37 +75,56 @@
         </button>
     </nav>
 
+
+
     <section class="blog-page first">
+        <div id="progress-bar-container">
+            <div id="progress-bar"></div>
+        </div>
         <article>
             <h1>Sample Blog</h1>
             <p class="description">An inside look at the itineraries for our all-company gatherings in Portland and
                 Scotland this year</p>
-                <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*6tXJ2lH6ay1hZEVAdX772Q.jpeg" alt="">
+            <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*6tXJ2lH6ay1hZEVAdX772Q.jpeg" alt="">
             <hr />
             <div class="content">
-            <p>
-                Proident do do officia excepteur. Magna voluptate aliqua reprehenderit deserunt nisi deserunt et pariatur consequat irure officia. Aliqua deserunt adipisicing deserunt amet mollit. Velit elit eu eiusmod Lorem dolore consectetur exercitation. Exercitation voluptate reprehenderit voluptate deserunt aliquip sit amet officia deserunt.
-<br/>
-<br/>
-Aute sit sit mollit et proident. Anim duis velit reprehenderit irure tempor dolore sit. Proident nulla nisi nisi qui Lorem ea laboris.
-<br/>
-<br/>
+                <p>
+                    Proident do do officia excepteur. Magna voluptate aliqua reprehenderit deserunt nisi deserunt et
+                    pariatur consequat irure officia. Aliqua deserunt adipisicing deserunt amet mollit. Velit elit eu
+                    eiusmod Lorem dolore consectetur exercitation. Exercitation voluptate reprehenderit voluptate
+                    deserunt aliquip sit amet officia deserunt.
+                    <br />
+                    <br />
+                    Aute sit sit mollit et proident. Anim duis velit reprehenderit irure tempor dolore sit. Proident
+                    nulla nisi nisi qui Lorem ea laboris.
+                    <br />
+                    <br />
 
-Voluptate proident veniam esse consectetur veniam velit duis in sit tempor dolore deserunt adipisicing quis. Nisi ipsum culpa aute reprehenderit qui quis enim nisi ad deserunt velit magna. Veniam quis reprehenderit culpa voluptate exercitation ipsum. Proident voluptate amet cillum elit. Ex cupidatat magna exercitation incididunt cupidatat deserunt consectetur enim tempor ea sint. Esse ad sit eu exercitation minim.
-<br/>
-<br/>
+                    Voluptate proident veniam esse consectetur veniam velit duis in sit tempor dolore deserunt
+                    adipisicing quis. Nisi ipsum culpa aute reprehenderit qui quis enim nisi ad deserunt velit magna.
+                    Veniam quis reprehenderit culpa voluptate exercitation ipsum. Proident voluptate amet cillum elit.
+                    Ex cupidatat magna exercitation incididunt cupidatat deserunt consectetur enim tempor ea sint. Esse
+                    ad sit eu exercitation minim.
+                    <br />
+                    <br />
 
-Cillum sit laborum reprehenderit nostrud qui aliqua elit est nulla id sit eiusmod. Enim consectetur laborum laboris deserunt id irure consequat culpa sint et. In dolore aliqua qui minim qui sit.
-<br/>
-<br/>
+                    Cillum sit laborum reprehenderit nostrud qui aliqua elit est nulla id sit eiusmod. Enim consectetur
+                    laborum laboris deserunt id irure consequat culpa sint et. In dolore aliqua qui minim qui sit.
+                    <br />
+                    <br />
 
-Minim cupidatat et et ullamco irure quis cillum consequat sint ad id. Aliquip mollit consectetur dolore culpa nostrud cillum exercitation ut amet ex laborum minim culpa incididunt. Qui laborum qui in minim sunt consequat. Esse eu ut cupidatat in qui quis tempor velit consectetur tempor aliqua sint. Quis ullamco non nostrud minim labore dolore labore nisi nulla tempor.
-<br/>
-<br/>
+                    Minim cupidatat et et ullamco irure quis cillum consequat sint ad id. Aliquip mollit consectetur
+                    dolore culpa nostrud cillum exercitation ut amet ex laborum minim culpa incididunt. Qui laborum qui
+                    in minim sunt consequat. Esse eu ut cupidatat in qui quis tempor velit consectetur tempor aliqua
+                    sint. Quis ullamco non nostrud minim labore dolore labore nisi nulla tempor.
+                    <br />
+                    <br />
 
-Ipsum tempor et eiusmod incididunt qui adipisicing est reprehenderit pariatur. Enim eu irure laboris commodo laborum dolore magna tempor incididunt ad anim quis non fugiat. Aliquip sunt adipisicing Lorem excepteur quis.
-            </p>
-        </div>
+                    Ipsum tempor et eiusmod incididunt qui adipisicing est reprehenderit pariatur. Enim eu irure laboris
+                    commodo laborum dolore magna tempor incididunt ad anim quis non fugiat. Aliquip sunt adipisicing
+                    Lorem excepteur quis.
+                </p>
+            </div>
         </article>
     </section>
     <footer>
@@ -172,8 +192,27 @@ Ipsum tempor et eiusmod incididunt qui adipisicing est reprehenderit pariatur. E
         </div>
     </div>
 
-    
+
     <script src="/scripts.js">
+    </script>
+
+    <script>
+
+        window.addEventListener('load', () => {
+
+            window.onscroll = function () {
+                updateProgressBar();
+            };
+
+            function updateProgressBar() {
+                const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+                const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                const scrollPercent = (scrollTop / docHeight) * 100;
+
+                document.getElementById('progress-bar').style.width = scrollPercent + '%';
+            }
+        })
+
     </script>
 
 </body>
