@@ -414,10 +414,20 @@ nav .links .toggle-navbar .content {
   }
 }
 nav .contact-btn {
-  display: block;
+  display: flex;
   height: -moz-fit-content;
   height: fit-content;
   margin: auto 0;
+  gap: 0.8rem;
+}
+nav .contact-btn .glow {
+  display: block;
+  margin: auto 0;
+  animation: gloww 1s linear infinite alternate;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
 }
 @media only screen and (max-width: 600px) {
   nav .contact-btn {

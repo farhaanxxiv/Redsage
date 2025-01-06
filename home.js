@@ -23,30 +23,29 @@ swipers.forEach((swiper) => {
 
 });
 
-// const buttons = document.querySelectorAll('.programs .categories button');
+const buttons = document.querySelectorAll('.programs .categories button');
 
-// // Add click event listeners for category buttons
-// buttons.forEach((button) => {
-//     button.addEventListener('click', () => {
-//         // Remove 'active' class from all buttons
-//         buttons.forEach((btn) => btn.classList.remove('active'));
+// Add click event listeners for category buttons
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+        // Remove 'active' class from all buttons
+        buttons.forEach((btn) => btn.classList.remove('active'));
 
-//         // Add 'active' class to the clicked button
-//         button.classList.add('active');
+        // Add 'active' class to the clicked button
+        button.classList.add('active');
 
-//         // Hide all Swipers
-//         swipers.forEach((swiper) => swiper.classList.add('hidden'));
+        // Hide all Swipers
+        swipers.forEach((swiper) => swiper.classList.add('hidden'));
 
-//         // Show the targeted Swiper
-//         const targetClass = button.getAttribute('data-target');
-//         const targetSwiper = document.querySelector(`.${targetClass}`);
-//         if (targetSwiper) {
-//             targetSwiper.classList.remove('hidden');
-//         }
-//     });
-// });
+        // Show the targeted Swiper
+        const targetClass = button.getAttribute('data-target');
+        const targetSwiper = document.querySelector(`.${targetClass}`);
+        if (targetSwiper) {
+            targetSwiper.classList.remove('hidden');
+        }
+    });
+});
 
-// Select all buttons with the class "open-floating-form"
 
 
 // new Splide('.trainers-splide', {
@@ -101,16 +100,16 @@ ScrollTrigger.matchMedia({
 
 
 // Select all buttons inside the student cards
-const buttons = document.querySelectorAll('.testimonial-container button');
+// const buttons = document.querySelectorAll('.testimonial-container button');
 
-// Loop through each button and add an event listener
-buttons.forEach(button => {
-  button.addEventListener('click', () => {
-    // Toggle the 'active' class on the parent card
-    const card = button.closest('.testimonial-container');
-    card.classList.toggle('active');
-  });
-});
+// // Loop through each button and add an event listener
+// buttons.forEach(button => {
+//   button.addEventListener('click', () => {
+//     // Toggle the 'active' class on the parent card
+//     const card = button.closest('.testimonial-container');
+//     card.classList.toggle('active');
+//   });
+// });
 
 
 const splide = new Splide('.students-testimonials-splide', {
@@ -121,14 +120,33 @@ const splide = new Splide('.students-testimonials-splide', {
   arrows: true, // Enable navigation arrows
 }).mount();
 
+const splideTestimonials = new Splide('.institute-testimonials-splide', {
+  type: 'loop', // Enable loop functionality
+  perPage: 2, // Default number of slides per view
+  gap: '1px',
+  pagination: true, // Enable pagination
+  arrows: true, // Enable navigation arrows
+  breakpoints: {
+    1000: {
+      perPage: 2,
+      gap: '20px', // Adjust spacing between slides
+    },
+    600: {
+      perPage: 1,
+      gap: '10px', // Adjust spacing between slides
+    },
 
-const container = document.querySelector('.testimonial-container');
+  },
+}).mount();
 
-const resizeObserver = new ResizeObserver(() => {
-  splide.options = { width: container.offsetWidth }; // Update options dynamically
-  splide.update(); // Refresh Splide layout
-});
 
-// Start observing
-resizeObserver.observe(container);
+// const container = document.querySelector('.testimonial-container');
+
+// const resizeObserver = new ResizeObserver(() => {
+//   splide.options = { width: container.offsetWidth }; // Update options dynamically
+//   splide.update(); // Refresh Splide layout
+// });
+
+// // Start observing
+// resizeObserver.observe(container);
 

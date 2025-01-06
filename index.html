@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Dont move this down, it will affect mobile field in forms  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/css/intlTelInput.css">
 
@@ -73,29 +75,63 @@
         </div>
 
         <button class="bl contact-btn toggle-floating-form">
-            Contact
+           <div class="glow">
+
+        </div>
+               Request a call
         </button>
     </nav>
 
     <section class="hero phone first">
 
         <!-- <div class="bg-pattern">
-                                                                                    <img src="/images/home/bg-pattern.png" alt="">
+            <img src="/images/home/bg-pattern.png" alt="">
         </div> -->
         <div class="container">
 
             <div class="right">
-                <p class="heading">Free Demo – Enrol Today!</p>
+                <p class="heading">No Limits, Just Growth - Enrol Today!</p>
                 <p class="subheading"> Upskill today, Lead tomorrow
                     <img src="/images/global/quotation.png" alt="">
                 </p>
+                <div class="courses">
+                    <div class="course">
+                        <h3>
+                            <!-- <img src="/images/icons/docker.png" alt=""> -->
+                        Devops
+                    </h3>
+                    </div>
+                    <div class="course">
+                        <h3>
+                            <!-- <img src="/images/icons/docker.png" alt=""> -->
+                        Fullstack Development
+                    </h3>
+                    </div>
+                    <div class="course">
+                        <h3>
+                            <!-- <img src="/images/icons/docker.png" alt=""> -->
+                        Data Analytics
+                    </h3>
+                    </div>
+                    <div class="course">
+                        <h3>
+                            <!-- <img src="/images/icons/docker.png" alt=""> -->
+                        Project Management
+                    </h3>
+                    </div>
 
+                </div>
+
+              
+ <!-- 
                 <form>
                     <input placeholder="Name" type="text">
                     <input placeholder="Email" type="email">
-                    <input class="phone-with-country" type="tel">
-                    <button class="br" type="submit">Submit</button>
-                </form>
+                    <div class="row">
+                        <input class="phone-with-country" type="tel">
+                        <button class="br" type="submit">Submit</button>
+                    </div>
+                </form> -->
             </div>
             <div class="left">
                 <div class="parent-container">
@@ -105,7 +141,7 @@
                             <p>Free Registration</p>
                         </div>
 
-                        <h2 class="course-name">DevOps Demo Class</h2>
+                        <h2 class="course-name">DevOps Masterclass</h2>
 
                         <div class="timings">
                             <div class="card">
@@ -117,6 +153,10 @@
                                 <p>10:00 AM</p>
                             </div>
                         </div>
+                        <button class="submit-btn toggle-floating-form">
+                            <img src="/images/icons/register.png" alt="">
+                            Register For Free
+                        </button>
                     </div>
 
                     <div class="trainer" style="">
@@ -129,35 +169,36 @@
                         </div>
                     </div>
                 </div>
+<!-- 
+                <div class="splide trainers-splide" aria-label="Course Trainers">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="trainer">
+                                    <p class="course-name">Devops</p>
+                                    <div class="profile">
+                                        <img src="" alt="" />
+                                        <div class="details">
+                                            <p class="name">Tushar R.</p>
+                                            <p class="designation">DevOps Engineer 2 @Amazon | AWS Community Builder |
+                                                GCP,
+                                                Terraform Certified </p>
+                                        </div>
+                                    </div>
 
-                <!-- <div class="splide trainers-splide" aria-label="Course Trainers">
-                                                                                                                    <div class="splide__track">
-                                                                                                                        <ul class="splide__list">
-                                                                                                                            <li class="splide__slide">
-                                                                                                                                <div class="trainer">
-                                                                                                                                    <p class="course-name">Devops</p>
-                                                                                                                                    <div class="profile">
-                                                                                                                                        <img src="" alt="" />
-                                                                                                                                        <div class="details">
-                                                                                                                                            <p class="name">Tushar R.</p>
-                                                                                                                                            <p class="designation">DevOps Engineer 2 @Amazon | AWS Community Builder | GCP,
-                                                                                                                                                Terraform Certified </p>
-                                                                                                                                        </div>
-                                                                                                                                    </div>
-                                                                                                            
-                                                                                                                                </div>
-                                                                                                                            </li>
-                                                                                                                            <li class="splide__slide">Slide 02</li>
-                                                                                                                            <li class="splide__slide">Slide 03</li>
-                                                                                                                        </ul>
-                                                                                                                    </div>
-                                                                                                                </div> -->
+                                </div>
+                            </li>
+                            <li class="splide__slide">Slide 02</li>
+                            <li class="splide__slide">Slide 03</li>
+                        </ul>
+                    </div>
+                </div>
 
-                <!-- <p class="heading-trainers">Trainers that are joining us: </p>
+                <p class="heading-trainers">Trainers that are joining us: </p>
 
                 <div class="trainer-container">
 
-                    <div class="trainers">  
+                    <div class="trainers">
 
                         <div class="trainer">
                             <div class="profile">
@@ -183,7 +224,7 @@
                             </div>
 
                         </div>
-                       
+
                     </div>
 
                 </div> -->
@@ -191,11 +232,12 @@
         </div>
     </section>
     <section class="programs">
-        <!-- <h1>Our Programs</h1>
-        <h2>Unlock your tech career with bootcamps built match employer demands—
-            customized for every learning style and career ambition!</h2> -->
+        <h1>Our Programs</h1>
+        <h2>Unlock your tech career with bootcamps built match employer demands
+            </br />
+            Customized for every learning style and career ambition!</h2>
 
-        <div class="program">
+        <!-- <div class="program">
             <div class="grid-container">
                 <img src="/images/course/hero-devops.png" alt="" />
                 <div class="content">
@@ -224,39 +266,42 @@
                     </a>
                 </div>
             </div>
-        </div>
-
-        <!-- <div class="categories">
-            <button class="active" data-target="popular-swiper">Popular</button>
-            <button data-target="data-science-swiper">Data Science</button>
-            <button data-target="technology-swiper">Technology</button>
-            <button data-target="finance-swiper">Finance</button>
-            <button data-target="management-swiper">Management</button>
-            <button data-target="future-tech-swiper">Future Tech</button>
         </div> -->
 
-        <!-- <div class="container">
+        <div class="categories">
+            <button class="active" data-target="popular-swiper">All Courses</button>
+            <button data-target="devops-swiper">Devops</button>
+            <button data-target="technology-swiper">Technology</button>
+            <button data-target="analytics-swiper">Analytics</button>
+            <button data-target="management-swiper">Management</button>
+        </div>
+
+        <div class="container">
             <div class="splide programs-swiper popular-swiper">
 
                 <div class="splide__track">
                     <ul class="splide__list">
                         <div class="splide__slide">
                             <div class="card">
-                                <img class="banner" src="/images/home/sky.png" alt="">
+                                <img class="banner" src="/images/course/devops/devops-banner.png" alt="">
                                 <div class="content">
-                                    <h1 class="">Medium length section goes here</h1>
+                                    <h1 class="">Devops</h1>
                                     <div class="images">
-                                        <img src="/images/home/sc.png" alt="">
-                                        <img src="/images/home/disney.png" alt="">
+                                        <img title="Docker" src="/images/icons/docker.png" alt="Docker">
+                                        <img src="/images/icons/git.png" alt="Git" title="Git">
+                                        <img src="/images/icons/jenkins.png" alt="Jenkins" title="Jenkins">
+                                        <img src="/images/icons/kubernetes.png" alt="Kubernetes" title="Kubernetes">
+                                        <img src="/images/icons/linux.png" alt="Linux" title="Linux">
+                                        <img src="/images/icons/aws.png" alt="Amazon Web Services" title="Amazon Web Services">
                                     </div>
                                     <div class="details">
-                                        <div class="detail">
+                                        <!-- <div class="detail">
                                             <img src="/images/home/suitcase.png" alt="">
                                             <p>Min. work exp: 1 year</p>
-                                        </div>
+                                        </div> -->
                                         <div class="detail">
                                             <img src="/images/home/clock.png" alt="">
-                                            <p>Duration: 9-12 months</p>
+                                            <p>Duration: 6 months</p>
                                         </div>
                                         <div class="detail">
                                             <img src="/images/home/3d-cube.png" alt="">
@@ -264,7 +309,9 @@
                                         </div>
                                     </div>
                                     <button>Download Brochure</button>
+                                    <a href="/courses/devops">
                                     <button class="white">Explore</button>
+                                </a>
                                 </div>
                             </div>
                         </div>
@@ -324,68 +371,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="splide__slide">
-                            <div class="card">
-                                <img class="banner" src="/images/home/sky.png" alt="">
-                                <div class="content">
-                                    <h1 class="">Medium length section goes here</h1>
-                                    <div class="images">
-                                        <img src="/images/home/sc.png" alt="">
-                                        <img src="/images/home/disney.png" alt="">
-                                    </div>
-                                    <div class="details">
-                                        <div class="detail">
-                                            <img src="/images/home/suitcase.png" alt="">
-                                            <p>Min. work exp: 1 year</p>
-                                        </div>
-                                        <div class="detail">
-                                            <img src="/images/home/clock.png" alt="">
-                                            <p>Duration: 9-12 months</p>
-                                        </div>
-                                        <div class="detail">
-                                            <img src="/images/home/3d-cube.png" alt="">
-                                            <p> Capstone project</p>
-                                        </div>
-                                    </div>
-                                    <button>Download Brochure</button>
-                                    <button class="white">Explore</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="splide__slide">
-                            <div class="card">
-                                <img class="banner" src="/images/home/sky.png" alt="">
-                                <div class="content">
-                                    <h1 class="">Medium length section goes here</h1>
-                                    <div class="images">
-                                        <img src="/images/home/sc.png" alt="">
-                                        <img src="/images/home/disney.png" alt="">
-                                    </div>
-                                    <div class="details">
-                                        <div class="detail">
-                                            <img src="/images/home/suitcase.png" alt="">
-                                            <p>Min. work exp: 1 year</p>
-                                        </div>
-                                        <div class="detail">
-                                            <img src="/images/home/clock.png" alt="">
-                                            <p>Duration: 9-12 months</p>
-                                        </div>
-                                        <div class="detail">
-                                            <img src="/images/home/3d-cube.png" alt="">
-                                            <p> Capstone project</p>
-                                        </div>
-                                    </div>
-                                    <button>Download Brochure</button>
-                                    <button class="white">Explore</button>
-                                </div>
-                            </div>
-                        </div>
+                      
                     </ul>
 
                 </div>
 
             </div>
-        </div> -->
+        </div>
 
 
 
@@ -774,17 +766,54 @@
 
     <section class="testimonials">
         <a href="" id="reviews"></a>
-        <div class="bg-pattern">
+        <!-- <div class="bg-pattern">
             <img src="/images/home/bg-pattern.png" alt="">
-        </div>
-        <h1>Testimonials</h1>
+        </div> -->
+        <h1>Learner success
+            <img src="/images/icons/star.png" alt="">
+
+        </h1>
 
         <div class="cards">
+            <div class="student-content">
+                <div>
+                    <h2>
+                        Mission
+                    </h2>
+
+    
+                    <p>
+                        <img src="/images/global/quotation.png" alt="">
+                        
+                        To transform learners into resilient leaders,
+                        merging creativity with excellence and
+                        optimizing them into sought-after resources
+                        in the professional realm.</p>
+                </div>
+
+                <div>
+                    <h2>
+                        Vision
+                    </h2>
+                    
+    
+                    <p>
+                        <img src="/images/global/quotation.png" alt="">
+                        To lead in tech-driven solutions,
+                        empowering talent with innovative tools
+                        and a streamlined approach that bridges
+                        education and industry, driving impactful
+                        career outcomes for every learner.</p>
+                </div>
+                
+                
+
+
+            </div>
 
             <div class="students-container testimonial-container">
                 <div class="content">
                     <div class="heading-btn">
-                        <h2>Student Success</h2>
                         <button class="close-btn">
                             <img src="/images/icons/close-btn.png" alt="">
                         </button>
@@ -823,8 +852,8 @@
                                                 Dynamic Programming (DP). These topics always felt overwhelming, and I
                                                 struggled to solve
                                                 problems effectively.
-                                               <br/>
-                                               <br/>
+                                                <br />
+                                                <br />
                                                 EZTS completely turned things around for me. Their trainers broke down
                                                 complex concepts into
                                                 simple, understandable lessons, guiding us through practical
@@ -833,9 +862,9 @@
                                                 finally started to
                                                 feel
                                                 confident tackling DSA and DP challenges.
-                                                <br/>
-                                                <br/>
-                                              
+                                                <br />
+                                                <br />
+
                                                 Beyond the technical training, their mock interview sessions were a
                                                 game-changer. They
                                                 simulated
@@ -844,8 +873,8 @@
                                                 questions confidently. The personalized attention and focus on
                                                 communication skills gave me
                                                 an
-                                               <br/>
-                                               <br/>
+                                                <br />
+                                                <br />
 
                                                 edge in the competitive job market.
                                                 Thanks to EZTS, I was able to perform exceptionally well in my
@@ -905,7 +934,7 @@
                                                 the dedicated trainers at EZTS for their guidance and encouragement.
                                                 <br />
                                                 <br />
-                                               
+
                                                 Best regards,
                                                 Dwara Rohitha Sree
                                             </p>
@@ -924,8 +953,8 @@
                                                 <!-- <img src="/images/home/dp.jpeg" alt=""> -->
                                                 <div class="info">
                                                     <p class="name">Sk Md Ashiq Ilahi</p>
-                                                    <img style="scale:2;transform-origin: right;" src="/images/home/placements/autodesk.png"
-                                                        alt="ezts-logo">
+                                                    <img style="scale:2;transform-origin: right;"
+                                                        src="/images/home/placements/autodesk.png" alt="ezts-logo">
 
                                                 </div>
 
@@ -934,26 +963,39 @@
                                         <img src="/images/home/placements/amazon.png" alt="amazon-logo">
                                     </div> -->
                                             <p class="testimonial">
-                                                I am Md Ashiq Ilahi in my final year in B.Tech in CSE(AI&ML) at Pragati Engineering College.EZ Trainings and Technologies (EZTS) is not just about teaching-it's about truly helping you understand and apply what you've learned. When I joined EZTS, I expected the usual lectures and coding exercises, but they went far beyond that.
-                                                <br/>
-                                                <br/>
+                                                I am Md Ashiq Ilahi in my final year in B.Tech in CSE(AI&ML) at Pragati
+                                                Engineering College.EZ Trainings and Technologies (EZTS) is not just
+                                                about teaching-it's about truly helping you understand and apply what
+                                                you've learned. When I joined EZTS, I expected the usual lectures and
+                                                coding exercises, but they went far beyond that.
+                                                <br />
+                                                <br />
 
-                                                The trainers taught us how to solve practical problems using real-world projects. We worked on hands-on assignments that felt like actual industry work, which helped me understand how to apply concepts in real scenarios. This wasn't just learning -it was experience.
-                                                <br/>
-                                                <br/>
-                                               
-                                                EZTS also emphasized building a strong portfolio. They guided us through creating and showcasing our projects, which made a huge difference when applying for jobs. By the end of the training, I had a solid portfolio to demonstrate my skills and confidence in my abilities.
-                                                <br/>
-                                                <br/>
-                                              
-                                                Thanks to EZTS, I not only learned the skills but also gained the tools to stand out in the job market. If you want more than just training-if you want real-world experience and career preparation- EZTS is the place to be.
-                                                <br/>
-                                                <br/>
-                                               
+                                                The trainers taught us how to solve practical problems using real-world
+                                                projects. We worked on hands-on assignments that felt like actual
+                                                industry work, which helped me understand how to apply concepts in real
+                                                scenarios. This wasn't just learning -it was experience.
+                                                <br />
+                                                <br />
+
+                                                EZTS also emphasized building a strong portfolio. They guided us through
+                                                creating and showcasing our projects, which made a huge difference when
+                                                applying for jobs. By the end of the training, I had a solid portfolio
+                                                to demonstrate my skills and confidence in my abilities.
+                                                <br />
+                                                <br />
+
+                                                Thanks to EZTS, I not only learned the skills but also gained the tools
+                                                to stand out in the job market. If you want more than just training-if
+                                                you want real-world experience and career preparation- EZTS is the place
+                                                to be.
+                                                <br />
+                                                <br />
+
                                                 Regards
-                                                <br/>
+                                                <br />
                                                 Sk Md Ashiq Ilahi
-                                                <br/>
+                                                <br />
                                                 Software Engineer intern at Autodesk Private Limited, India
                                             </p>
 
@@ -971,8 +1013,7 @@
                                                 <!-- <img src="/images/home/dp.jpeg" alt=""> -->
                                                 <div class="info">
                                                     <p class="name">Yandrapalli Sambasiva Rao</p>
-                                                    <img src="/images/home/placements/ezts.png"
-                                                        alt="amazon-logo">
+                                                    <img src="/images/home/placements/fortune-500.png" alt="amazon-logo">
 
                                                 </div>
 
@@ -982,25 +1023,37 @@
                                     </div> -->
                                             <p class="testimonial">
                                                 I am Yandrapalli Sambasiva Rao.
-                                              <br/>
-                                              <br/>
+                                                <br />
+                                                <br />
 
-                                                Before joining EZ Trainings and Technologies (EZTS), I really struggled with coding. I would often feel stuck while solving even basic problems, and the thought of writing efficient code seemed impossible. It was frustrating and made me doubt if I could ever have a career in tech.
-                                                <br/>
-                                              <br/>
-                                                Everything changed when I joined EZTS. The trainers were incredibly supportive and patient, teaching coding concepts in a way that finally made sense to me. They didn't just focus on theory -they encouraged us to practice, solve real-world problems, and build confidence with hands-on sessions. Slowly but surely, I started to see improvements.
-                                                <br/>
-                                                <br/>
-                                                EZTS didn't stop at teaching me how to code. They also prepared me for the job market with mock interviews, resume building, and practical advice. By the end of the training, I had not only mastered coding but also gained the confidence to perform well in technical interviews.
-                                                <br/>
-                                                <br/>
-                                                I am proud to say that, thanks to EZTS, I landed my first job in tech-a dream I thought was out of reach. I'll always be grateful to EZTS for their incredible guidance and support.
-                                                <br/>
-                                                <br/>
+                                                Before joining EZ Trainings and Technologies (EZTS), I really struggled
+                                                with coding. I would often feel stuck while solving even basic problems,
+                                                and the thought of writing efficient code seemed impossible. It was
+                                                frustrating and made me doubt if I could ever have a career in tech.
+                                                <br />
+                                                <br />
+                                                Everything changed when I joined EZTS. The trainers were incredibly
+                                                supportive and patient, teaching coding concepts in a way that finally
+                                                made sense to me. They didn't just focus on theory -they encouraged us
+                                                to practice, solve real-world problems, and build confidence with
+                                                hands-on sessions. Slowly but surely, I started to see improvements.
+                                                <br />
+                                                <br />
+                                                EZTS didn't stop at teaching me how to code. They also prepared me for
+                                                the job market with mock interviews, resume building, and practical
+                                                advice. By the end of the training, I had not only mastered coding but
+                                                also gained the confidence to perform well in technical interviews.
+                                                <br />
+                                                <br />
+                                                I am proud to say that, thanks to EZTS, I landed my first job in tech-a
+                                                dream I thought was out of reach. I'll always be grateful to EZTS for
+                                                their incredible guidance and support.
+                                                <br />
+                                                <br />
                                                 Regards,
-                                                <br/>
+                                                <br />
                                                 Yandrapalli Sambasiva Rao
-                                                <br/>
+                                                <br />
                                                 Thank you
                                             </p>
 
@@ -1016,9 +1069,10 @@
                 </div>
             </div>
 
+       
+
         </div>
     </section>
-
 
 
     <!-- <section class="about">
@@ -1085,8 +1139,8 @@
 
     <section class="placed">
 
-        <h1 class="">We get learners placed in 6 months</h1>
-        <h2>HOW?</h2>
+        <h1 class="">Our placement <span> mantra</span></h1>
+        <!-- <h2>HOW?</h2> -->
 
         <div class="timeline">
             <div class="bar-holder"></div>
@@ -1121,7 +1175,11 @@
                     <div class="number">
                         <p class="count"> <span>4</span></p>
                         <div class="content">
-                            <h3 style="font-weight: 800; font-size: 1rem;">NEW CAREER!</h3>
+                            <h3 
+                            style="white-space:nowrap;gap:.5rem;display:flex;border:1px solid #e0e0e0; background-color: #fef2f0; border-radius: 5px; padding: .5rem 1rem;  width: fit-content;margin:0 auto; font-size: 1rem;font-weight: 800;">
+                        <img src="/images/icons/redsage_red.png" alt="">
+                            ACCELERATE CAREER!
+                        </h3>
                         </div>
 
                     </div>
@@ -1159,17 +1217,18 @@
     <section class="skillpath">
         <div class="grid-container">
             <div class="banner">
-                <img src="/images/course/banner-skillpath.png" alt="">
+                <img src="/images/home/why.png" alt="">
+
+                <!-- <img src="/images/course/banner-skillpath.png" alt=""> -->
             </div>
             <div class="content">
-                <h1>What's included in skill paths</h1>
+                <h1>What you get?</h1>
                 <div class="cards">
                     <div class="card">
                         <img src="/images/course/puzzle.png" alt="">
                         <div>
-                            <h2>Practice Projects</h2>
-                            <p>Guided practice projects that help you with solidify the skills and concepts you're
-                                learning</p>
+                            <h2>Capstone Projects</h2>
+                            <p>Engage in guided capstone projects designed to strengthen your skills and reinforce the concepts you're learning.</p>
                         </div>
                     </div>
                     <div class="card">
@@ -1195,7 +1254,7 @@
 
     <section class="cta">
         <h1>Interactive Learning Starts Here</h1>
-        <h2>Join a Trial Class</h2>
+        <h2>Join a Masterclass for <span>absolutely free!</span></h2>
 
         <button class="toggle-floating-form">Join Now</button>
     </section>

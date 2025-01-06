@@ -465,9 +465,21 @@ nav {
     }
 
     .contact-btn {
-        display: block;
+        display: flex;
         height: fit-content;
         margin: auto 0;
+        gap: .8rem;
+        
+        .glow {
+            display: block;
+            margin:auto 0;
+            animation: gloww 1s linear infinite alternate;
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            border-radius: 50%;
+            // border:1px solid white;
+        }
     @media only screen and (max-width: 600px) {
     
         font-size:.8rem ;

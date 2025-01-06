@@ -1,5 +1,6 @@
 .hero {
   position: relative;
+  min-height: 100vh;
   background-image: linear-gradient(rgba(255, 255, 255, 0.4666666667), rgba(255, 255, 255, 0.4666666667)), url("/images/global/tile-background.png");
 }
 @media only screen and (max-width: 600px) {
@@ -46,6 +47,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
+  margin: auto 0;
+  padding-top: 2rem;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 @media only screen and (max-width: 800px) {
   .hero .container {
@@ -69,6 +74,7 @@
     padding: 3rem 1rem;
     padding-bottom: 1.5rem;
     border-radius: 0;
+    margin-top: 2rem;
   }
 }
 .hero .container .left .trainer {
@@ -132,6 +138,9 @@
 .hero .container .left .parent-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  border: 2px solid white;
+  border-radius: 1rem;
+  padding: 2rem;
 }
 @media only screen and (max-width: 550px) {
   .hero .container .left .parent-container {
@@ -156,7 +165,7 @@
     box-shadow: 0px 0px 2px white;
   }
   to {
-    box-shadow: 0px 0px 15px white;
+    box-shadow: 0px 0px 15px 3px white;
   }
 }
 .hero .container .left .chip .glow {
@@ -200,6 +209,24 @@
   height: 1.3rem;
   filter: brightness(0%) saturate(0) invert(1);
 }
+.hero .container .left button.submit-btn {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  background-color: white;
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+.hero .container .left button.submit-btn img {
+  width: 0.8rem;
+  height: 0.8rem;
+  display: block;
+  margin: auto 0;
+}
+.hero .container .left button.submit-btn:hover {
+  background-color: #d0d0d0;
+}
 @keyframes move-hero {
   from {
     transform: translate(0);
@@ -218,7 +245,6 @@
 .hero .container .right {
   border-radius: 1rem;
   padding: 2rem;
-  border: 2px solid rgba(253, 29, 8, 0.0666666667);
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -234,12 +260,9 @@
   }
 }
 .hero .container .right .heading {
-  background-color: rgba(253, 29, 8, 0.0196078431);
-  border: 2px solid rgba(253, 29, 8, 0.3333333333);
   text-decoration-color: rgba(253, 29, 8, 0.4666666667);
   width: -moz-fit-content;
   width: fit-content;
-  padding: 5px 1rem;
   border-radius: 0.5rem;
   font-size: 2rem;
   font-weight: 500;
@@ -266,10 +289,36 @@
   left: 0;
   top: -20%;
 }
+.hero .container .right .courses {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.hero .container .right .courses .course {
+  background-color: #ffe2df;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #d0d0d0;
+  transition: 0.2s;
+}
+.hero .container .right .courses .course h3 {
+  font-weight: 600;
+}
+.hero .container .right .courses .course:hover {
+  background-color: #fca69c;
+}
 .hero .container .right form {
   margin-top: 0.8rem;
   display: flex;
   flex-direction: column;
+  gap: 1rem;
+}
+.hero .container .right form button {
+  display: block;
+  margin-left: auto;
+}
+.hero .container .right form .row {
+  display: flex;
   gap: 1rem;
 }
 
@@ -305,12 +354,15 @@
 .programs h1 {
   text-align: center;
   font-size: var(--font-heading);
-  color: #565656;
+  color: #202020;
 }
 .programs h2 {
   text-align: center;
   font-size: var(--font-subheading);
-  font-weight: 400;
+  font-weight: 500;
+  width: 80%;
+  margin-block-start: auto;
+  margin: auto;
   margin-top: 1rem;
 }
 .programs .programs-swiper {
@@ -341,13 +393,15 @@
   margin-top: 3rem;
 }
 .programs .card {
+  overflow: hidden;
   background-color: white;
   border-radius: 1.5rem;
   box-shadow: 3px 3px 2px #c0c0c0;
+  border: 1px solid #d0d0d0;
 }
 .programs .card img.banner {
-  border-radius: 1.5rem;
   width: 100%;
+  background-color: #f5f5f5;
 }
 .programs .card .content {
   padding: 1.5rem;
@@ -367,8 +421,11 @@
   flex-wrap: wrap;
 }
 .programs .card .content .images img {
-  width: 2rem;
-  height: 2rem;
+  max-width: 2.5rem;
+  height: auto;
+  aspect-ratio: 3/2;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .programs .card .content .details {
   display: flex;
@@ -386,7 +443,7 @@
 }
 .programs .card .content .details .detail p {
   font-size: 0.85rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 .programs .card .content button {
   width: 100%;
@@ -395,6 +452,7 @@
   text-align: left;
 }
 .programs .program .grid-container {
+  margin-top: 3rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
@@ -417,6 +475,7 @@
   margin: auto 0;
 }
 .programs .program .grid-container h2 {
+  margin: 0;
   font-size: 2rem;
   font-weight: 600;
   font-weight: 600;
@@ -616,15 +675,15 @@
   padding-bottom: 15rem;
 }
 .placed h1 {
-  font-size: var(--font-subheading);
-  color: var(--red);
-  text-align: center;
-}
-.placed h2 {
   font-size: var(--font-heading);
   font-weight: 600;
   text-align: center;
   margin-top: 1rem;
+}
+.placed h1 span {
+  color: var(--red);
+  font-weight: 600;
+  font-style: italic;
 }
 @media only screen and (max-width: 900px) {
   .placed {
@@ -707,6 +766,9 @@
   height: fit-content;
   display: flex;
   flex-shrink: none;
+}
+.placed .timeline .container .card .number img {
+  height: 1.3rem;
 }
 .placed .timeline .container .card .number p.count {
   flex-shrink: none;
@@ -869,6 +931,7 @@
 .testimonials {
   position: relative;
   overflow: hidden;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.6666666667), rgba(255, 255, 255, 0.6666666667)), url("/images/global/tile-background.png");
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
@@ -889,7 +952,7 @@
   right: 0;
   bottom: 0;
   z-index: 0;
-  opacity: 0.4;
+  opacity: 0.1;
   display: flex;
   justify-content: center;
 }
@@ -904,6 +967,19 @@
   text-align: center;
   position: relative;
   z-index: 5;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+.testimonials h1 img {
+  display: block;
+  position: absolute;
+  top: -1rem;
+  right: -2rem;
+  width: 4rem;
+  height: 4rem;
+  z-index: -1;
+  rotate: 8deg;
 }
 .testimonials .cards {
   display: grid;
@@ -911,7 +987,7 @@
   position: relative;
   z-index: 5;
   gap: 2rem;
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 @media only screen and (max-width: 900px) {
   .testimonials .cards {
@@ -922,6 +998,73 @@
   .testimonials .cards {
     grid-template-columns: 1fr;
   }
+}
+.testimonials .cards .institute-container {
+  grid-column: span 2;
+}
+@media only screen and (max-width: 900px) {
+  .testimonials .cards .institute-container {
+    grid-column: span 1;
+  }
+}
+.testimonials .cards .institute-container .heading-btn {
+  margin-top: 2rem;
+  display: block !important;
+}
+.testimonials .cards .institute-container .heading-btn h1 {
+  text-align: center;
+  border-radius: 1rem;
+}
+.testimonials .cards .student-content {
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.testimonials .cards .student-content > div {
+  background-color: #fffcfc;
+  padding: 2rem;
+  border: 1px solid #f0f0f0;
+  border-radius: 1rem;
+  position: relative;
+  z-index: 10;
+}
+.testimonials .cards .student-content > div img {
+  width: 1.5rem;
+  height: 1.5rem;
+  opacity: 0.3;
+  z-index: 0;
+  left: 0;
+  top: 20%;
+}
+.testimonials .cards .student-content h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  position: relative;
+  line-height: 1.5;
+  font-weight: 700;
+  width: -moz-fit-content;
+  width: fit-content;
+  z-index: 5;
+}
+.testimonials .cards .student-content h2 img {
+  display: block;
+  position: absolute;
+  top: -0.5rem;
+  right: -1rem;
+  width: 2rem;
+  height: 2rem;
+  z-index: 0;
+  rotate: 8deg;
+}
+.testimonials .cards .student-content p {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  line-height: 1.6;
+  font-size: 0.9rem;
 }
 .testimonials .cards .splide,
 .testimonials .cards .splide__slide {
@@ -997,9 +1140,9 @@
 }
 .testimonials .cards .card {
   padding: 1.5rem 1.9rem;
-  background-color: #fafafa;
+  background-color: white;
   border-radius: 1rem;
-  box-shadow: 0px 3px 4px 0px #b0b0b0;
+  border: 1px solid #f0f0f0;
   display: flex;
   flex-direction: column;
   gap: 0.9rem;
@@ -1011,12 +1154,11 @@
   color: #2f2f2f !important;
   font-size: 0.9rem;
   font-family: sans-serif;
-  line-height: 1.6;
+  line-height: 1.5;
   font-weight: 500;
-  max-height: 30vh;
   overflow: auto !important;
   display: -webkit-box;
-  max-height: 8.6rem;
+  max-height: 9.5rem;
   -webkit-box-orient: vertical;
   overflow: auto;
 }
@@ -1054,10 +1196,6 @@
   display: none;
   padding: 4px 1rem;
   box-shadow: none;
-}
-.testimonials .students-container h2 {
-  font-size: 1.5;
-  margin-bottom: 1.5rem;
 }
 
 .about {
@@ -1179,7 +1317,7 @@
 
 .skillpath h1 {
   color: black;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 .skillpath .grid-container {
   display: grid;
@@ -1200,6 +1338,11 @@
   width: 100%;
   border-radius: 1rem;
 }
+.skillpath .grid-container .content {
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto 0;
+}
 .skillpath .grid-container .content .cards {
   margin-top: 2rem;
   display: flex;
@@ -1217,8 +1360,8 @@
   margin: auto 0;
 }
 .skillpath .grid-container .content .cards .card h2 {
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 1.1rem;
+  font-weight: 700;
 }
 .skillpath .grid-container .content .cards .card p {
   margin-top: 0.5rem;
@@ -1239,6 +1382,11 @@
   font-weight: 500;
   position: relative;
   z-index: 5;
+}
+.cta h2 span {
+  color: var(--red);
+  font-style: italic;
+  font-weight: 600;
 }
 .cta button {
   display: block;
