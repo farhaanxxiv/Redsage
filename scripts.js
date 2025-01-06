@@ -44,46 +44,6 @@ function toggleHamburger() {
 // navToggle.addEventListener('click', toggleHamburger);
 
 
-gsap.registerPlugin(ScrollTrigger);
-
-const timelineBar = document.querySelector(".placed .timeline .bar");
-
-  // Desktop animation: left to right
-  gsap.fromTo(
-    timelineBar,
-    { scaleX: 0, transformOrigin: "left center" },
-    {
-      scaleX: 1,
-      ease: "power2.inOut",
-      scrollTrigger: {
-        trigger: ".placed",
-        start: "top 80%",
-        end: "bottom 50%",
-        scrub: true,
-      },
-    }
-  );
-
-  // Mobile animation: top to bottom
-  ScrollTrigger.matchMedia({
-    "(max-width: 900px)": () => {
-      gsap.fromTo(
-        timelineBar,
-        { scaleY: 0, transformOrigin: "top center" },
-        {
-          scaleY: 1,
-          ease: "power2.inOut",
-          scrollTrigger: {
-            trigger: ".placed",
-            start: "top 80%",
-            end: "bottom 20%",
-            scrub: true,
-          },
-        }
-      );
-    },
-  });
-
   const floatingFormbuttons = document.querySelectorAll('.toggle-floating-form');
 
 // Select the div with the id "floating-form"

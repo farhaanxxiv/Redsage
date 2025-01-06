@@ -5,7 +5,8 @@
         padding-top: 0rem !important;
     }
 
-    background-image: linear-gradient(#ffffff77,#ffffff77),url('/images/global/tile-background.png');
+    background-image: linear-gradient(#ffffff77, #ffffff77),
+    url('/images/global/tile-background.png');
 
     .headline {
         text-align: center;
@@ -15,6 +16,7 @@
         z-index: 5;
         column-span: 2;
         margin-bottom: 2rem;
+
         @media only screen and (max-width: 800px) {
             column-span: 1;
 
@@ -101,8 +103,8 @@
                     gap: .5rem;
 
 
-                @media only screen and (max-width: 600px) {
-                    flex-direction: row;
+                    @media only screen and (max-width: 600px) {
+                        flex-direction: row;
                     }
 
                     img {
@@ -111,7 +113,7 @@
                         // height: 5rem;
                         border-radius: 50%;
                         display: block;
-                        margin: auto ;
+                        margin: auto;
 
                         @media only screen and (max-width: 600px) {
                             width: 6rem;
@@ -124,8 +126,9 @@
 
                         @media only screen and (max-width: 600px) {
                             text-align: left;
-                        
+
                         }
+
                         * {
                             color: white;
                         }
@@ -1140,22 +1143,14 @@
         z-index: 5;
     }
 
-    h2 {
-        color: #666666;
-        font-size: var(--font-subheading);
-        text-align: center;
-        margin-top: 1rem;
-        font-weight: 500;
-        position: relative;
-        z-index: 5;
 
-    }
 
     .cards {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         position: relative;
         z-index: 5;
+
 
         @media only screen and (max-width: 900px) {
             grid-template-columns: 1fr 1fr;
@@ -1170,21 +1165,125 @@
         gap: 2rem;
         margin-top: 4rem;
 
+        .splide,
+        .splide__slide {
+            padding: 1rem 1.6rem;
+
+            @media only screen and (max-width: 600px) {
+                padding: 1rem 1rem;
+            }
+
+            .splide__arrow--next {
+                right: 0;
+            }
+
+            .splide__arrow--prev {
+                left: 0;
+            }
+        }
+
+
+
+        .testimonial-container {
+            overflow: hidden;
+
+            .heading-btn {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            position: relative;
+
+            &.active {
+                background-color: white;
+                padding: 6rem;
+                padding-top: 8rem;
+                position: fixed;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+
+                .view-btn {
+                    display: none !important;
+                }
+
+                .close-btn {
+                    display: block;
+                }
+
+                .testimonial {
+
+                    overflow: auto !important;
+                    display: block !important;
+                    -webkit-line-clamp: unset;
+                    text-overflow: none;
+                }
+
+                .content {
+                    @media only screen and (min-width: 800px) {
+
+                        width: 80%;
+                    }
+                }
+
+
+            }
+
+            .content {
+                margin: auto;
+            }
+
+
+            .close-btn {
+                display: none;
+                box-shadow: none;
+                padding: .4rem;
+                border-radius: .2rem;
+                height: fit-content;
+                margin: auto 0;
+
+                img {
+                    filter: invert(1);
+                    width: 1.2rem;
+                    height: 1.2rem;
+                    display: block;
+                    margin: auto 0;
+                }
+            }
+        }
+
         .card {
             padding: 1.5rem 1.9rem;
-            background-color: var(--gray);
-            border-radius: 1.5rem;
+            background-color: #fafafa;
+            border-radius: 1rem;
             box-shadow: 0px 3px 4px 0px #b0b0b0;
 
             display: flex;
             flex-direction: column;
-            gap: 1.5rem;
+            gap: .9rem;
+            transition: all .2s ease;
+            top: 0;
+            left: 0;
+
+
 
             .testimonial {
                 color: #2f2f2f !important;
-                font-size: 1rem;
+                font-size: .9rem;
                 font-family: sans-serif;
                 line-height: 1.6;
+                font-weight: 500;
+                max-height: 30vh;
+                // overflow: auto;
+                overflow: auto !important;
+
+                display: -webkit-box;
+                // -webkit-line-clamp: 6;
+                max-height: 8.6rem;
+                -webkit-box-orient: vertical;
+                overflow: auto;
+                // text-overflow: ellipsis;
             }
 
             .profile {
@@ -1192,7 +1291,8 @@
                 gap: 1rem;
 
                 img {
-                    border-radius: 50%;
+                    // border-radius: 50%;
+                    scale: 1.2;
                     width: 3.2rem;
                     height: 3.2rem;
                 }
@@ -1200,11 +1300,17 @@
                 .info {
                     height: fit-content;
                     margin: auto 0;
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
 
 
                     .name {
-                        font-weight: 600;
-                        font-size: 0.9rem;
+
+                        height: fit-content;
+                        margin: auto 0;
+                        font-weight: 500;
+                        font-size: 1.2rem;
                     }
 
                     .role {
@@ -1217,6 +1323,26 @@
 
             }
 
+            // .company{
+            //     img{
+            //         max-width: 4rem;
+            //     }
+            // }
+
+            button.view-btn {
+                margin-top: .9rem;
+                display: none;
+                padding: 4px 1rem;
+                box-shadow: none;
+            }
+
+        }
+    }
+
+    .students-container {
+        h2 {
+            font-size: 1.5;
+            margin-bottom: 1.5rem;
         }
     }
 }
