@@ -16,7 +16,8 @@ swipers.forEach((swiper) => {
         gap: '10px', // Adjust spacing between slides
       },
 
-    }).mount();
+    },
+    pagination: true, // Enable pagination
     arrows: true, // Enable navigation arrows
   }).mount();
 
