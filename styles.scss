@@ -47,13 +47,17 @@
 
     .container {
         z-index: 5;
-        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        position: absolute;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
-    margin: auto 0;
-    padding-top: 2rem;
-    height: fit-content;
+        margin: auto 0;
+        // padding-top: 2rem;
+        height: fit-content;
 
 
         @media only screen and (max-width: 800px) {
@@ -148,7 +152,7 @@
 
                         .designation {
                             font-size: .8rem;
-                            color: #f0f0f0;
+                            color: #fafafa;
                         }
                     }
                 }
@@ -270,7 +274,7 @@
                     margin: auto 0;
                 }
 
-                &:hover{
+                &:hover {
                     background-color: #d0d0d0;
                 }
             }
@@ -352,7 +356,7 @@
                 position: relative;
 
                 @media only screen and (max-width: 600px) {
-                    font-size: 1.5rem;
+                    font-size: 1.8em;
 
                 }
 
@@ -388,23 +392,47 @@
                 }
             }
 
-            .courses{
+            .courses {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 gap: 1rem;
-                .course{
-                    background-color: #ffe2df;
+
+                @media only screen and (max-width: 600px) {
+                    grid-template-columns: 1fr;
+                }
+
+                .course {
+                    text-transform: none;
+                    font-size: 1rem;
+                    width: 100%;
+                    box-shadow: none;
+                    color: black;
+                    font-weight: 600;
+                    background-color: #fff0ee;
                     padding: 1rem;
                     border-radius: .5rem;
                     border: 1px solid #d0d0d0;
                     transition: .2s;
+                    display: flex;
 
-                    h3{
-font-weight: 600;
+                    &:hover {
+                        cursor: pointer;
                     }
 
-                    &:hover{
-                        background-color: #fca69c;
+                    @media only screen and (max-width: 600px) {
+                        padding: .5rem 1rem;
+
+                    }
+
+                    p {
+                        text-align: left;
+                        font-weight: 500;
+                        margin: auto 0;
+                        font-size: 1.12rem;
+                    }
+
+                    &:hover {
+                        background-color: #ffd5d0;
                         // color: white;
                     }
                 }
@@ -429,14 +457,52 @@ font-weight: 600;
                 }
             }
         }
+
+
     }
 
+}
+
+.bottom {
+    background-color: #fff9f8;
+    grid-column: span 2;
+    text-align: center;
+    // margin-top: 4rem;
+
+    h2 {
+        font-weight: 500;
+        font-size: 2rem;
+    }
+
+    .cards {
+        margin-top: 3rem;
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+
+
+        .card {
+            .number {
+                font-size: 3rem;
+                font-weight: 600;
+                color: var(--red);
+
+            }
+
+            .desc {
+                font-size: 1.1rem;
+                font-weight: 500;
+            }
+
+        }
+    }
 }
 
 .programs {
 
     .categories {
         margin-top: 3rem;
+        margin-top: 0;
         display: flex;
         flex-wrap: wrap;
         gap: 0.5rem 1rem;
@@ -466,7 +532,7 @@ font-weight: 600;
 
 
 
-    background: var(--gray);
+    background: #ffffff;
 
     h1 {
         text-align: center;
@@ -489,6 +555,17 @@ font-weight: 600;
         box-sizing: border-box !important;
         width: 100%;
         padding-bottom: 4rem;
+
+        @media only screen and (min-width: 1000px) {
+            padding-bottom: 0rem;
+
+        }
+
+        @media only screen and (max-width: 600px) {
+            padding-bottom: 2rem;
+
+        }
+
         position: relative;
         overflow: visible;
 
@@ -811,7 +888,7 @@ font-weight: 600;
 
     .overlay {
         position: absolute;
-        top: 0;
+        top: 8rem;
         left: 0;
         right: 0;
         bottom: 0;
@@ -1041,6 +1118,24 @@ font-weight: 600;
                         h3 {
                             font-size: 1.3rem;
                             font-weight: 700;
+
+                            &.final-step {
+                                white-space: nowrap;
+                                gap: .5rem;
+                                display: flex;
+                                border: 1px solid #e0e0e0;
+                                background-color: #fef2f0;
+                                border-radius: 5px;
+                                padding: .5rem 1rem;
+                                width: fit-content;
+                                margin: 0 auto;
+                                font-size: 1rem;
+                                font-weight: 800;
+
+                                @media only screen and (max-width: 900px) {
+                                    margin: 0;
+                                }
+                            }
                         }
 
                         p {
@@ -1713,8 +1808,8 @@ font-weight: 600;
 
     .grid-container {
         display: grid;
-        grid-template-columns: 40% 58%;
-        gap: 2rem;
+        grid-template-columns: 40% calc(60% - 4rem);
+        gap: 2rem 4rem;
 
         @media only screen and (max-width: 900px) {
             grid-template-columns: 1fr;
@@ -1737,7 +1832,7 @@ font-weight: 600;
             margin: auto 0;
 
             .cards {
-                margin-top: 2rem;   
+                margin-top: 2rem;
 
                 display: flex;
                 flex-direction: column;
@@ -1749,9 +1844,13 @@ font-weight: 600;
 
                     img {
                         display: block;
-                        width: 2rem;
-                        height: 2rem;
+                        width: 3rem;
+                        height: 3rem;
                         margin: auto 0;
+                        background-color: #fd1c0810;
+                        padding: .5rem;
+                        border-radius: 3px;
+                        border: 1px solid #00000010;
                     }
 
                     h2 {
@@ -1786,7 +1885,8 @@ font-weight: 600;
         font-weight: 500;
         position: relative;
         z-index: 5;
-        span{
+
+        span {
             color: var(--red);
             font-style: italic;
             font-weight: 600;
@@ -1797,6 +1897,19 @@ font-weight: 600;
     button {
         display: block;
         margin: 0 auto;
+        margin-top: 2rem;
+    }
+}
+
+.cta-courses {
+    text-align: center;
+    background-color: #fff9f8;
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    button {
         margin-top: 2rem;
     }
 }

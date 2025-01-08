@@ -3,7 +3,7 @@ const swipers = document.querySelectorAll('.programs-swiper');
 swipers.forEach((swiper) => {
 
   new Splide(swiper, {
-    type: 'loop', // Enable loop functionality
+    // type: 'loop', // Enable loop functionality
     perPage: 3, // Default number of slides per view
     gap: '30px',
     breakpoints: {
@@ -120,25 +120,13 @@ const splide = new Splide('.students-testimonials-splide', {
   arrows: true, // Enable navigation arrows
 }).mount();
 
-const splideTestimonials = new Splide('.institute-testimonials-splide', {
-  type: 'loop', // Enable loop functionality
-  perPage: 2, // Default number of slides per view
-  gap: '1px',
-  pagination: true, // Enable pagination
-  arrows: true, // Enable navigation arrows
-  breakpoints: {
-    1000: {
-      perPage: 2,
-      gap: '20px', // Adjust spacing between slides
-    },
-    600: {
-      perPage: 1,
-      gap: '10px', // Adjust spacing between slides
-    },
-
-  },
+const heroSplide = new Splide('.hero-splide', {
+  perPage: 1, // Default number of slides per view
+  gap: '30px',
+  pagination: false, // Enable pagination
+  arrows: false, // Enable navigation arrows,
+  drag:false
 }).mount();
-
 
 // const container = document.querySelector('.testimonial-container');
 
@@ -150,3 +138,21 @@ const splideTestimonials = new Splide('.institute-testimonials-splide', {
 // // Start observing
 // resizeObserver.observe(container);
 
+
+
+const heroCourseButtons = document.querySelectorAll('.hero-course-btn');
+
+heroCourseButtons.forEach(button => {
+  button.onclick = () => {
+      // Get the value of the 'data-attr' attribute
+      const selectedCourse = button.getAttribute('data-course');
+
+      if(selectedCourse == 'devops'){
+        heroSplide.go(0)
+      }else if(selectedCourse == 'fullstack'){
+        heroSplide.go(1)
+      }else if(selectedCourse == 'data'){
+        heroSplide.go(2)
+      }
+  };
+});

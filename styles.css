@@ -43,12 +43,15 @@
 }
 .hero .container {
   z-index: 5;
-  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  position: absolute;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   margin: auto 0;
-  padding-top: 2rem;
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -133,7 +136,7 @@
 }
 .hero .container .left .trainer .profile .details .designation {
   font-size: 0.8rem;
-  color: #f0f0f0;
+  color: #fafafa;
 }
 .hero .container .left .parent-container {
   display: grid;
@@ -270,7 +273,7 @@
 }
 @media only screen and (max-width: 600px) {
   .hero .container .right .heading {
-    font-size: 1.5rem;
+    font-size: 1.8em;
   }
 }
 .hero .container .right .subheading {
@@ -294,18 +297,41 @@
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
+@media only screen and (max-width: 600px) {
+  .hero .container .right .courses {
+    grid-template-columns: 1fr;
+  }
+}
 .hero .container .right .courses .course {
-  background-color: #ffe2df;
+  text-transform: none;
+  font-size: 1rem;
+  width: 100%;
+  box-shadow: none;
+  color: black;
+  font-weight: 600;
+  background-color: #fff0ee;
   padding: 1rem;
   border-radius: 0.5rem;
   border: 1px solid #d0d0d0;
   transition: 0.2s;
-}
-.hero .container .right .courses .course h3 {
-  font-weight: 600;
+  display: flex;
 }
 .hero .container .right .courses .course:hover {
-  background-color: #fca69c;
+  cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+  .hero .container .right .courses .course {
+    padding: 0.5rem 1rem;
+  }
+}
+.hero .container .right .courses .course p {
+  text-align: left;
+  font-weight: 500;
+  margin: auto 0;
+  font-size: 1.12rem;
+}
+.hero .container .right .courses .course:hover {
+  background-color: #ffd5d0;
 }
 .hero .container .right form {
   margin-top: 0.8rem;
@@ -322,11 +348,37 @@
   gap: 1rem;
 }
 
+.bottom {
+  background-color: #fff9f8;
+  grid-column: span 2;
+  text-align: center;
+}
+.bottom h2 {
+  font-weight: 500;
+  font-size: 2rem;
+}
+.bottom .cards {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+.bottom .cards .card .number {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--red);
+}
+.bottom .cards .card .desc {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
 .programs {
-  background: var(--gray);
+  background: #ffffff;
 }
 .programs .categories {
   margin-top: 3rem;
+  margin-top: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem 1rem;
@@ -371,6 +423,16 @@
   padding-bottom: 4rem;
   position: relative;
   overflow: visible;
+}
+@media only screen and (min-width: 1000px) {
+  .programs .programs-swiper {
+    padding-bottom: 0rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .programs .programs-swiper {
+    padding-bottom: 2rem;
+  }
 }
 .programs .programs-swiper .splide__arrow--next {
   right: -1rem !important;
@@ -626,7 +688,7 @@
 }
 .placement-record .overlay {
   position: absolute;
-  top: 0;
+  top: 8rem;
   left: 0;
   right: 0;
   bottom: 0;
@@ -815,6 +877,25 @@
 .placed .timeline .container .card .number .content h3 {
   font-size: 1.3rem;
   font-weight: 700;
+}
+.placed .timeline .container .card .number .content h3.final-step {
+  white-space: nowrap;
+  gap: 0.5rem;
+  display: flex;
+  border: 1px solid #e0e0e0;
+  background-color: #fef2f0;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 1rem;
+  font-weight: 800;
+}
+@media only screen and (max-width: 900px) {
+  .placed .timeline .container .card .number .content h3.final-step {
+    margin: 0;
+  }
 }
 .placed .timeline .container .card .number .content p {
   margin-top: 0.8rem;
@@ -1321,8 +1402,8 @@
 }
 .skillpath .grid-container {
   display: grid;
-  grid-template-columns: 40% 58%;
-  gap: 2rem;
+  grid-template-columns: 40% calc(60% - 4rem);
+  gap: 2rem 4rem;
 }
 @media only screen and (max-width: 900px) {
   .skillpath .grid-container {
@@ -1355,9 +1436,13 @@
 }
 .skillpath .grid-container .content .cards .card img {
   display: block;
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
   margin: auto 0;
+  background-color: rgba(253, 28, 8, 0.062745098);
+  padding: 0.5rem;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.062745098);
 }
 .skillpath .grid-container .content .cards .card h2 {
   font-size: 1.1rem;
@@ -1391,5 +1476,16 @@
 .cta button {
   display: block;
   margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.cta-courses {
+  text-align: center;
+  background-color: #fff9f8;
+}
+.cta-courses h2 {
+  font-size: 2rem;
+}
+.cta-courses button {
   margin-top: 2rem;
 }

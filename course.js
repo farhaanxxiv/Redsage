@@ -1,28 +1,28 @@
-const videos = [
-  // { video: document.getElementById('hero-video'), button: document.getElementById('hero-play-btn') },
-  { video: document.getElementById('why-video'), button: document.getElementById('why-play-btn') }
-];
+// const videos = [
+//   // { video: document.getElementById('hero-video'), button: document.getElementById('hero-play-btn') },
+//   { video: document.getElementById('why-video'), button: document.getElementById('why-play-btn') }
+// ];
 
-videos.forEach(({ video, button }) => {
-  // Show the button when the video is paused
-  video.addEventListener('pause', () => {
-    button.style.display = 'flex';
-    video.style.filter = 'brightness(0.7)';
-  });
+// videos.forEach(({ video, button }) => {
+//   // Show the button when the video is paused
+//   video.addEventListener('pause', () => {
+//     button.style.display = 'flex';
+//     video.style.filter = 'brightness(0.7)';
+//   });
 
-  // Hide the button when the video is playing and enable controls
-  video.addEventListener('play', () => {
-    button.style.display = 'none';
-    video.controls = true; // Enable controls when the video starts
-    video.style.filter = 'brightness(1)';
-  });
+//   // Hide the button when the video is playing and enable controls
+//   video.addEventListener('play', () => {
+//     button.style.display = 'none';
+//     video.controls = true; // Enable controls when the video starts
+//     video.style.filter = 'brightness(1)';
+//   });
 
-  // Play the video when the button is clicked
-  button.addEventListener('click', () => {
-    video.play();
-    video.controls = false; // Ensure controls are disabled initially
-  });
-});
+//   // Play the video when the button is clicked
+//   button.addEventListener('click', () => {
+//     video.play();
+//     video.controls = false; // Ensure controls are disabled initially
+//   });
+// });
 
 
 
@@ -74,3 +74,10 @@ faqItems.forEach(item => {
 //         brochureForm.classList.toggle('opened');
 //     });
 // });
+const splide = new Splide('.students-testimonials-splide', {
+  type: 'loop', // Enable loop functionality
+  perPage: 1, // Default number of slides per view
+  gap: '30px',
+  pagination: true, // Enable pagination
+  arrows: true, // Enable navigation arrows
+}).mount();

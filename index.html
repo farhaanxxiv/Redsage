@@ -52,19 +52,19 @@
                 <span class="bar"></span>
             </a>
             <a href="/">
-                <img class="logo" src="/logos/red-black.png" alt="">
+                <img class="logo" src="/logos/red-black.webp" alt="Redsage Logo ">
             </a>
         </div>
         <div class="links " id="phone-sidebar">
-            <!-- <a href="/devops.html">Devops</a> -->
+            <!-- <a href="/courses/devops">Devops</a> -->
             <div class="toggle-navbar">
                 <div class="toggle-btn">
                     <p>Courses</p>
-                    <img src="/images/home/down-arrow.png" class="arrow">
+                    <img src="/images/icons/down-arrow.webp" class="arrow" alt="down arrow icon">
                 </div>
 
                 <div class="content">
-                    <a href="/devops.html">Devops</a>
+                    <a href="/courses/devops">Devops</a>
                 </div>
 
             </div>
@@ -75,161 +75,193 @@
         </div>
 
         <button class="bl contact-btn toggle-floating-form">
-           <div class="glow">
+            <div class="glow">
 
-        </div>
-               Request a call
+            </div>
+            Request a call
         </button>
     </nav>
 
     <section class="hero phone first">
 
-        <!-- <div class="bg-pattern">
-            <img src="/images/home/bg-pattern.png" alt="">
-        </div> -->
-        <div class="container">
+        <div class="container section">
 
             <div class="right">
                 <p class="heading">No Limits, Just Growth - Enrol Today!</p>
                 <p class="subheading"> Upskill today, Lead tomorrow
-                    <img src="/images/global/quotation.png" alt="">
+                    <img src="/images/icons/quotation.webp" alt="Quotation icon">
                 </p>
                 <div class="courses">
-                    <div class="course">
-                        <h3>
-                            <!-- <img src="/images/icons/docker.png" alt=""> -->
-                        Devops
-                    </h3>
-                    </div>
-                    <div class="course">
-                        <h3>
-                            <!-- <img src="/images/icons/docker.png" alt=""> -->
-                        Fullstack Development
-                    </h3>
-                    </div>
-                    <div class="course">
-                        <h3>
-                            <!-- <img src="/images/icons/docker.png" alt=""> -->
-                        Data Analytics
-                    </h3>
-                    </div>
-                    <div class="course">
-                        <h3>
-                            <!-- <img src="/images/icons/docker.png" alt=""> -->
-                        Project Management
-                    </h3>
-                    </div>
+                    <button data-course="devops" class="course hero-course-btn">
+                        <p>
+                            Devops
+                        </p>
+                    </button>
+                    <button data-course="fullstack" class="course hero-course-btn">
+                        <p>
+                            Fullstack Development
+                        </p>
+                    </button>
+                    <button data-course="data" class="course hero-course-btn">
+                        <p>
+                            Data Analytics
+                        </p>
+                    </button>
+
 
                 </div>
 
-              
- <!-- 
-                <form>
-                    <input placeholder="Name" type="text">
-                    <input placeholder="Email" type="email">
-                    <div class="row">
-                        <input class="phone-with-country" type="tel">
-                        <button class="br" type="submit">Submit</button>
-                    </div>
-                </form> -->
             </div>
+
             <div class="left">
-                <div class="parent-container">
-                    <div class="left">
-                        <div class="chip">
-                            <div class="glow"></div>
-                            <p>Free Registration</p>
-                        </div>
 
-                        <h2 class="course-name">DevOps Masterclass</h2>
-
-                        <div class="timings">
-                            <div class="card">
-                                <img src="/images/home/calendar.png" alt="">
-                                <p>12th January 2025</p>
-                            </div>
-                            <div class="card">
-                                <img src="/images/home/clock.png" alt="">
-                                <p>10:00 AM</p>
-                            </div>
-                        </div>
-                        <button class="submit-btn toggle-floating-form">
-                            <img src="/images/icons/register.png" alt="">
-                            Register For Free
-                        </button>
-                    </div>
-
-                    <div class="trainer" style="">
-                        <div class="profile">
-                            <img style="" src="/images/home/hero-img.png" alt="" />
-                            <div class="details">
-                                <p class="name">Rajani Ekunde</p>
-                                <p class="designation">DevOps Engineer 2 @Amazon <br />GCP, Terraform Certified </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-<!-- 
-                <div class="splide trainers-splide" aria-label="Course Trainers">
+                <div class="splide hero-splide" aria-label="Splide Basic HTML Example">
                     <div class="splide__track">
                         <ul class="splide__list">
                             <li class="splide__slide">
-                                <div class="trainer">
-                                    <p class="course-name">Devops</p>
-                                    <div class="profile">
-                                        <img src="" alt="" />
-                                        <div class="details">
-                                            <p class="name">Tushar R.</p>
-                                            <p class="designation">DevOps Engineer 2 @Amazon | AWS Community Builder |
-                                                GCP,
-                                                Terraform Certified </p>
+                                <div class="parent-container">
+                                    <div class="left">
+                                        <div class="chip">
+                                            <div class="glow"></div>
+                                            <p>Free Registration</p>
                                         </div>
+
+                                        <h2 class="course-name">DevOps Masterclass</h2>
+
+                                        <div class="timings">
+                                            <div class="card">
+                                                <img src="/images/icons/calendar.webp" alt="Calendar icon">
+                                                <p>12th January 2025</p>
+                                            </div>
+                                            <div class="card">
+                                                <img src="/images/icons/clock.webp" alt="Clock icon">
+                                                <p>10:00 AM</p>
+                                            </div>
+                                        </div>
+                                        <button class="submit-btn toggle-floating-form">
+                                            <img src="/images/icons/register.webp" alt="Register icon">
+                                            Register For Free
+                                        </button>
                                     </div>
 
+                                    <div class="trainer" style="">
+                                        <div class="profile">
+                                            <img style="" src="/images/home/hero-img.png"
+                                                alt="Redsage devops trainer/faculty image" />
+                                            <div class="details">
+                                                <p class="name">Rajani Ekunde</p>
+                                                <p class="designation">DevOps Engineer 2 @Amazon <br />GCP, Terraform
+                                                    Certified </p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </li>
-                            <li class="splide__slide">Slide 02</li>
-                            <li class="splide__slide">Slide 03</li>
+                            <li class="splide__slide">
+                                <div class="parent-container">
+                                    <div class="left">
+                                        <div class="chip">
+                                            <div class="glow"></div>
+                                            <p>Free Registration</p>
+                                        </div>
+
+                                        <h2 class="course-name">Fullstack Development</h2>
+
+                                        <div class="timings">
+                                            <div class="card">
+                                                <img src="/images/icons/calendar.webp" alt="Calendar icon">
+                                                <p>12th January 2025</p>
+                                            </div>
+                                            <div class="card">
+                                                <img src="/images/icons/clock.webp" alt="Clock icon">
+                                                <p>10:00 AM</p>
+                                            </div>
+                                        </div>
+                                        <button class="submit-btn toggle-floating-form">
+                                            <img src="/images/icons/register.png" alt="Register icon">
+                                            Register For Free
+                                        </button>
+                                    </div>
+
+                                    <div class="trainer" style="">
+                                        <div class="profile">
+                                            <img style="" src="/images/home/hero-img.png"
+                                                alt="Redsage Fullstack Development trainer image" />
+                                            <div class="details">
+                                                <p class="name">Rajani Ekunde</p>
+                                                <p class="designation">DevOps Engineer 2 @Amazon <br />GCP, Terraform
+                                                    Certified </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="parent-container">
+                                    <div class="left">
+                                        <div class="chip">
+                                            <div class="glow"></div>
+                                            <p>Free Registration</p>
+                                        </div>
+
+                                        <h2 class="course-name">Data Analytics Masterclass</h2>
+
+                                        <div class="timings">
+                                            <div class="card">
+                                                <img src="/images/icons/calendar.webp" alt="Calendar icon">
+                                                <p>12th January 2025</p>
+                                            </div>
+                                            <div class="card">
+                                                <img src="/images/icons/clock.webp" alt="Clock icon">
+                                                <p>10:00 AM</p>
+                                            </div>
+                                        </div>
+                                        <button class="submit-btn toggle-floating-form">
+                                            <img src="/images/icons/register.png" alt="Register icon">
+                                            Register For Free
+                                        </button>
+                                    </div>
+
+                                    <div class="trainer" style="">
+                                        <div class="profile">
+                                            <img style="" src="/images/home/hero-img.png"
+                                                alt="Redsage Data Analytics trainer image" />
+                                            <div class="details">
+                                                <p class="name">Rajani Ekunde</p>
+                                                <p class="designation">DevOps Engineer 2 @Amazon <br />GCP, Terraform
+                                                    Certified </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
 
-                <p class="heading-trainers">Trainers that are joining us: </p>
 
-                <div class="trainer-container">
 
-                    <div class="trainers">
-
-                        <div class="trainer">
-                            <div class="profile">
-                                <img src="https://media.licdn.com/dms/image/v2/D5603AQHHWLUAJAFFGA/profile-displayphoto-shrink_400_400/B56ZPeyoh3G4Ak-/0/1734609636102?e=1741219200&v=beta&t=3rFXpvj8SDZKTfOWMQBnjMzZ9AL719Nyk1xK-5e5EDk"
-                                    alt="" />
-                                <div class="details">
-                                    <p class="name">Rajani Ekunde</p>
-                                    <p class="designation">DevOps Engineer 2 @Amazon | AWS Community Builder | GCP,
-                                        Terraform Certified </p>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="trainer">
-                            <div class="profile">
-                                <img src="https://media.licdn.com/dms/image/v2/D5603AQHHWLUAJAFFGA/profile-displayphoto-shrink_400_400/B56ZPeyoh3G4Ak-/0/1734609636102?e=1741219200&v=beta&t=3rFXpvj8SDZKTfOWMQBnjMzZ9AL719Nyk1xK-5e5EDk"
-                                    alt="" />
-                                <div class="details">
-                                    <p class="name">Abhishek Kumbhar</p>
-                                    <p class="designation">DevOps Engineer 2 @Amazon | AWS Community Builder | GCP,
-                                        Terraform Certified </p>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div> -->
             </div>
+
+         
         </div>
+    </section>
+    <section class="bottom">
+            <h2>Driven by the industry, Designed for your success!</h2>
+            <div class="cards">
+                <div class="card">
+                    <p class="number">71.6%</p>
+                    <p class="desc">average <br/>salary hike</p>
+                </div>
+                <div class="card">
+                    <p class="number">1L+</p>
+                    <p class="desc">careers <br/> transformed</p>
+                </div>
+                <div class="card">
+                    <p class="number">400+</p>
+                    <p class="desc">industry <br/> partners</p>
+                </div>
+            </div>
     </section>
     <section class="programs">
         <h1>Our Programs</h1>
@@ -237,104 +269,82 @@
             </br />
             Customized for every learning style and career ambition!</h2>
 
-        <!-- <div class="program">
-            <div class="grid-container">
-                <img src="/images/course/hero-devops.png" alt="" />
-                <div class="content">
-                    <h2 class="course-name">Master DevOps in 6 months</h2>
-                    <p class="description">Transform your career with our comprehensive DevOps Course designed to equip
-                        you with in-demand
-                        skills and hands-on experience.</p>
-                    <ul>
-                        <li>DevOps Foundations & Agile Methodologies</li>
-                        <li>Cloud Essentials with AWS, Azure, and GCP</li>
-                        <li>CI/CD Pipelines, Containerization, and Orchestration</li>
-                        <li>Real-world Capstone Project to build and deploy a 3-tier application</li>
-                    </ul>
-                    <div class="stats">
-                        <div class="stat">
-                            <img src="/images/home/clock.png" alt="">
-                            <p> <span>Duration: </span> 6 Months</p>
-                        </div>
-                        <div class="stat">
-                            <img src="/images/home/3d-cube.png" alt="">
-                            <p> <span>Mode: </span> Online, with live sessions and practical labs</p>
-                        </div>
-                    </div>
-                    <a href="/devops.html">
-                        <button class="br">View Course</button>
-                    </a>
-                </div>
-            </div>
-        </div> -->
-
         <div class="categories">
-            <button class="active" data-target="popular-swiper">All Courses</button>
-            <button data-target="devops-swiper">Devops</button>
-            <button data-target="technology-swiper">Technology</button>
-            <button data-target="analytics-swiper">Analytics</button>
-            <button data-target="management-swiper">Management</button>
+            <!-- <button class="active" data-target="popular-swiper">All Courses</button> -->
+            <!-- <button data-target="devops-swiper">Devops</button> -->
+            <!-- <button data-target="technology-swiper">Technology</button> -->
+            <!-- <button data-target="analytics-swiper">Analytics</button> -->
+            <!-- <button data-target="management-swiper">Management</button> -->
         </div>
 
         <div class="container">
             <div class="splide programs-swiper popular-swiper">
-
+        
                 <div class="splide__track">
                     <ul class="splide__list">
                         <div class="splide__slide">
                             <div class="card">
-                                <img class="banner" src="/images/course/devops/devops-banner.png" alt="">
+                                <img class="banner" src="/images/course/devops/devops-banner.png"
+                                    alt="Devops Course Banner">
                                 <div class="content">
                                     <h1 class="">Devops</h1>
                                     <div class="images">
-                                        <img title="Docker" src="/images/icons/docker.png" alt="Docker">
-                                        <img src="/images/icons/git.png" alt="Git" title="Git">
-                                        <img src="/images/icons/jenkins.png" alt="Jenkins" title="Jenkins">
-                                        <img src="/images/icons/kubernetes.png" alt="Kubernetes" title="Kubernetes">
-                                        <img src="/images/icons/linux.png" alt="Linux" title="Linux">
-                                        <img src="/images/icons/aws.png" alt="Amazon Web Services" title="Amazon Web Services">
+                                        <img title="Docker" src="/images/icons/docker.webp" alt="Docker">
+                                        <img src="/images/icons/git.webp" alt="Git" title="Git">
+                                        <img src="/images/icons/jenkins.webp" alt="Jenkins" title="Jenkins">
+                                        <img src="/images/icons/kubernetes.webp" alt="Kubernetes" title="Kubernetes">
+                                        <img src="/images/icons/linux.webp" alt="Linux" title="Linux">
+                                        <img src="/images/icons/aws.webp" alt="Amazon Web Services"
+                                            title="Amazon Web Services">
                                     </div>
                                     <div class="details">
-                                        <!-- <div class="detail">
-                                            <img src="/images/home/suitcase.png" alt="">
-                                            <p>Min. work exp: 1 year</p>
-                                        </div> -->
                                         <div class="detail">
-                                            <img src="/images/home/clock.png" alt="">
+                                            <img src="/images/icons/suitcase.webp" alt="Eligibility icon">
+                                            <p>Eligibility: B.Tech</p>
+                                        </div>
+                                        <div class="detail">
+                                            <img src="/images/icons/clock.webp" alt="Clock icon">
                                             <p>Duration: 6 months</p>
                                         </div>
                                         <div class="detail">
-                                            <img src="/images/home/3d-cube.png" alt="">
+                                            <img src="/images/icons/3d-cube.webp" alt="Capstone Project icon">
                                             <p> Capstone project</p>
                                         </div>
                                     </div>
                                     <button>Download Brochure</button>
                                     <a href="/courses/devops">
-                                    <button class="white">Explore</button>
-                                </a>
+                                        <button class="white">Explore</button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                         <div class="splide__slide">
                             <div class="card">
-                                <img class="banner" src="/images/home/sky.png" alt="">
+                                <img class="banner" src="/images/course/fullstack-development/fullstack-banner.png"
+                                    alt="Fullstack development imageEligibility icon">
                                 <div class="content">
-                                    <h1 class="">Medium length section goes here</h1>
+                                    <h1 class="">Fullstack Development</h1>
                                     <div class="images">
-                                        <img src="/images/home/sc.png" alt="">
-                                        <img src="/images/home/disney.png" alt="">
+                                        <img src="/images/icons/mongodb-icon.webp"
+                                            alt="Mongo DB for Fullstack Development">
+                                        <img src="/images/icons/react.webp" alt="React Fullstack Development">
+                                        <img src="/images/icons/javascript.webp" alt="Javascript Fullstack Development">
+                                        <img src="/images/icons/nodejs.webp" alt="NodeJS Fullstack Development">
+                                        <img src="/images/icons/github.webp" alt="Github Fullstack Development">
+        
+        
                                     </div>
                                     <div class="details">
                                         <div class="detail">
-                                            <img src="/images/home/suitcase.png" alt="">
-                                            <p>Min. work exp: 1 year</p>
+                                            <img src="/images/icons/suitcase.webp" alt="Eligibility icon">
+                                            <p>Eligibility: B.Tech</p>
                                         </div>
                                         <div class="detail">
-                                            <img src="/images/home/clock.png" alt="">
+                                            <img src="/images/icons/clock.webp" alt="Clock icon">
                                             <p>Duration: 9-12 months</p>
                                         </div>
                                         <div class="detail">
-                                            <img src="/images/home/3d-cube.png" alt="">
+                                            <img src="/images/icons/3d-cube.webp" alt="Capstone Project icon">
                                             <p> Capstone project</p>
                                         </div>
                                     </div>
@@ -345,24 +355,25 @@
                         </div>
                         <div class="splide__slide">
                             <div class="card">
-                                <img class="banner" src="/images/home/sky.png" alt="">
+                                <img class="banner" src="/images/course/data-analytics/data-analytics-banner.png"
+                                    alt="">
                                 <div class="content">
-                                    <h1 class="">Medium length section goes here</h1>
+                                    <h1 class="">Data Analytics</h1>
                                     <div class="images">
-                                        <img src="/images/home/sc.png" alt="">
-                                        <img src="/images/home/disney.png" alt="">
+                                        <img src="/images/home/sc.webp" alt="">
+                                        <img src="/images/home/disney.webp" alt="">
                                     </div>
                                     <div class="details">
                                         <div class="detail">
-                                            <img src="/images/home/suitcase.png" alt="">
-                                            <p>Min. work exp: 1 year</p>
+                                            <img src="/images/icons/suitcase.webp" alt="Eligibility icon">
+                                            <p>Eligibility: B.Tech</p>
                                         </div>
                                         <div class="detail">
-                                            <img src="/images/home/clock.png" alt="">
+                                            <img src="/images/icons/clock.webp" alt="Clock icon">
                                             <p>Duration: 9-12 months</p>
                                         </div>
                                         <div class="detail">
-                                            <img src="/images/home/3d-cube.png" alt="">
+                                            <img src="/images/icons/3d-cube.webp" alt="apstone Project icon">
                                             <p> Capstone project</p>
                                         </div>
                                     </div>
@@ -371,70 +382,28 @@
                                 </div>
                             </div>
                         </div>
-                      
+        
                     </ul>
-
+        
                 </div>
-
+        
             </div>
         </div>
-
+        
+        
 
 
     </section>
 
+    <section class="cta-courses">
+        <div>
+            <h2>Learn Your Way: Customized Courses For Your Unique Goals</h2>
 
-    <!-- <section class="clientele">
-        <h1>Corporate Clientele</h1>
 
-        <div class="cards">
-            <div class="card">
-                <img src="/images/home/clientele/transparent-aglie-ls.png" alt="">
-            </div>
-            <div class="card">
-                <img src="/images/home/clientele/transparent-powess-soft.png" alt="">
-            </div>
-            <div class="card">
-                <img style="filter: invert(1);" src="/images/home/clientele/transparent-right-data.png" alt="">
-            </div>
-            <div class="card">
-                <img src="/images/home/clientele/transparent-study-hq.png" alt="">
-            </div>
-
+            <button class="toggle-floating-form">Book a Call</button>
         </div>
-        <div class="count">
-            <p>25+ Clientele</p>
-        </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="clientele institute">
-        <h1>Institute Clientele</h1>
-        <div class="cards">
-
-            <div class="card">
-                <img src="/images/home/institutions/sru.png" alt="">
-            </div>
-            <div class="card">
-                <img src="/images/home/institutions/cmr.png" alt="">
-            </div>
-            <div class="card">
-                <img src="/images/home/institutions/galgotias.png" alt="">
-            </div>
-            <div class="card">
-                <img src="/images/home/institutions/giet.png" alt="">
-            </div>
-            <div class="card">
-                <img src="/images/home/institutions/iare.png" alt="">
-            </div>
-            <div class="card">
-                <img src="/images/home/institutions/pragati.png" alt="">
-            </div>
-
-        </div>
-        <div class="count">
-            <p>80+ Institutions</p>
-        </div>
-    </section> -->
 
     <section class="placement-record">
         <a id="placements"></a>
@@ -444,170 +413,169 @@
         <div class="container">
             <div class="slider">
                 <div class="slide">
-                    <img src="/images/home/placements/accenture.png" alt="">
+                    <img src="/images/home/placements/accenture.png" alt="Accenture Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/adp.png" alt="">
+                    <img src="/images/home/placements/adp.png" alt="ADP Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/amazon.png" alt="">
+                    <img src="/images/home/placements/amazon.png" alt="Amazon Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/autodesk.png" alt="">
+                    <img src="/images/home/placements/autodesk.png" alt="Autodesk Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/capgemini.png" alt="">
+                    <img src="/images/home/placements/capgemini.png" alt="Capegemini Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/cisco.png" alt="">
+                    <img src="/images/home/placements/cisco.png" alt="Cisco Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/accenture.png" alt="">
+                    <img src="/images/home/placements/accenture.png" alt="Accenture Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/adp.png" alt="">
+                    <img src="/images/home/placements/adp.png" alt="ADP Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/amazon.png" alt="">
+                    <img src="/images/home/placements/amazon.png" alt="Amazon Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/autodesk.png" alt="">
+                    <img src="/images/home/placements/autodesk.png" alt="Autodesk Company logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/capgemini.png" alt="">
+                    <img src="/images/home/placements/capgemini.png" alt="Capegemini Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/cisco.png" alt="">
+                    <img src="/images/home/placements/cisco.png" alt="Cisco Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/accenture.png" alt="">
+                    <img src="/images/home/placements/accenture.png" alt="Accenture Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/adp.png" alt="">
+                    <img src="/images/home/placements/adp.png" alt="ADP Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/amazon.png" alt="">
+                    <img src="/images/home/placements/amazon.png" alt="Amazon Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/autodesk.png" alt="">
+                    <img src="/images/home/placements/autodesk.png" alt="Autodesk Company logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/capgemini.png" alt="">
-                </div>
+                    v </div>
                 <div class="slide">
-                    <img src="/images/home/placements/cisco.png" alt="">
-                </div>
-            </div>
-            <div class="slider">
-                <div class="slide">
-                    <img src="/images/home/placements/cognizant.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/images/home/placements/dxc.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/images/home/placements/flipkart.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/images/home/placements/hexaware.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/images/home/placements/ibm.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/images/home/placements/jp-morgan.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/images/home/placements/cognizant.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/images/home/placements/dxc.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/images/home/placements/flipkart.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/images/home/placements/hexaware.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/images/home/placements/ibm.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/images/home/placements/jp-morgan.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/images/home/placements/cognizant.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/images/home/placements/dxc.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/images/home/placements/flipkart.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/images/home/placements/hexaware.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/images/home/placements/ibm.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/images/home/placements/jp-morgan.png" alt="">
+                    <img src="/images/home/placements/cisco.png" alt="Cisco Company Logo">
                 </div>
             </div>
             <div class="slider">
                 <div class="slide">
-                    <img src="/images/home/placements/lti.png" alt="">
+                    <img src="/images/home/placements/cognizant.png" alt="Cognizant Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/microsoft.png" alt="">
+                    <img src="/images/home/placements/dxc.png" alt="DXC Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/paypal.png" alt="">
+                    <img src="/images/home/placements/flipkart.png" alt="Flipkart Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/service-now.png" alt="">
+                    <img src="/images/home/placements/hexaware.png" alt="Hexaware Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/tcs.png" alt="">
+                    <img src="/images/home/placements/ibm.png" alt="IBM Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/tech-mahindra.png" alt="">
+                    <img src="/images/home/placements/jp-morgan.png" alt="JP Morgan Chase Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/lti.png" alt="">
+                    <img src="/images/home/placements/cognizant.png" alt="Cognizant Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/microsoft.png" alt="">
+                    <img src="/images/home/placements/dxc.png" alt="DXC Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/paypal.png" alt="">
+                    <img src="/images/home/placements/flipkart.png" alt="Flipkart Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/service-now.png" alt="">
+                    <img src="/images/home/placements/hexaware.png" alt="Hexaware Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/tcs.png" alt="">
+                    <img src="/images/home/placements/ibm.png" alt="IBM Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/tech-mahindra.png" alt="">
+                    <img src="/images/home/placements/jp-morgan.png" alt="JP Morgan Chase Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/lti.png" alt="">
+                    <img src="/images/home/placements/cognizant.png" alt="Cognizant Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/microsoft.png" alt="">
+                    <img src="/images/home/placements/dxc.png" alt="DXC Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/paypal.png" alt="">
+                    <img src="/images/home/placements/flipkart.png" alt="Flipkart Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/service-now.png" alt="">
+                    <img src="/images/home/placements/hexaware.png" alt="Hexaware Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/tcs.png" alt="">
+                    <img src="/images/home/placements/ibm.png" alt="IBM Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/tech-mahindra.png" alt="">
+                    <img src="/images/home/placements/jp-morgan.png" alt="JP Morgan Chase Company Logo">
+                </div>
+            </div>
+            <div class="slider">
+                <div class="slide">
+                    <img src="/images/home/placements/lti.png" alt="LTI MindTree Company Logo">
+                </div>
+                <div class="slide">
+                    <img src="/images/home/placements/microsoft.png" alt="Microsoft Company Logo">
+                </div>
+                <div class="slide">
+                    <img src="/images/home/placements/paypal.png" alt="Paypal Company Logo">
+                </div>
+                <div class="slide">
+                    <img src="/images/home/placements/service-now.png" alt="Service Now Company Logo">
+                </div>
+                <div class="slide">
+                    <img src="/images/home/placements/tcs.png" alt="TCS TATA Consultanty Services Company Logo">
+                </div>
+                <div class="slide">
+                    <img src="/images/home/placements/tech-mahindra.png" alt="Tech Mahindra Company Logo">
+                </div>
+                <div class="slide">
+                    <img src="/images/home/placements/lti.png" alt="LTI MindTree Company Logo">
+                </div>
+                <div class="slide">
+                    <img src="/images/home/placements/microsoft.png" alt="Microsoft Company Logo">
+                </div>
+                <div class="slide">
+                    <img src="/images/home/placements/paypal.png" alt="Paypal Company Logo">
+                </div>
+                <div class="slide">
+                    <img src="/images/home/placements/service-now.png" alt="Service Now Company Logo">
+                </div>
+                <div class="slide">
+                    <img src="/images/home/placements/tcs.png" alt="TCS TATA Consultanty Services Company Logo">
+                </div>
+                <div class="slide">
+                    <img src="/images/home/placements/tech-mahindra.png" alt="Tech Mahindra Company Logo">
+                </div>
+                <div class="slide">
+                    <img src="/images/home/placements/lti.png" alt="LTI MindTree Company Logo">
+                </div>
+                <div class="slide">
+                    <img src="/images/home/placements/microsoft.png" alt="Microsoft Company Logo">
+                </div>
+                <div class="slide">
+                    <img src="/images/home/placements/paypal.png" alt="Paypal Company Logo">
+                </div>
+                <div class="slide">
+                    <img src="/images/home/placements/service-now.png" alt="Service Now Company Logo">
+                </div>
+                <div class="slide">
+                    <img src="/images/home/placements/tcs.png" alt="TCS TATA Consultanty Services Company Logo">
+                </div>
+                <div class="slide">
+                    <img src="/images/home/placements/tech-mahindra.png" alt="Tech Mahindra Company Logo">
                 </div>
             </div>
         </div>
@@ -615,163 +583,12 @@
 
     </section>
 
-    <!-- <section class="masterclass">
-        <h1>Free Masterclass</h1>
-        <h2>Adipisicing nisi anim duis consectetur sit nostrud ad eiusmod commodo in cupidatat dolor et.</h2>
-
-        <div class="cards">
-
-            <div class="splide  masterclass-swiper">
-                <div class="splide__track">
-                    <ul class="splide__list">
-
-                        <div class="splide__slide">
-                            <div class="card">
-                                <div class="profile">
-                                    <img src="/images/home/dp.jpeg" alt="">
-                                    <div class="info">
-                                        <p class="name">John</p>
-                                        <p class="role">Developer</p>
-                                    </div>
-                                </div>
-
-                                <div class="info">
-                                    <h2>Java Collection Framework</h2>
-                                    <h3>Working on Java</h3>
-                                </div>
-
-                                <div class="details">
-
-                                    <div class="detail">
-                                        <img src="/images/home/calendar.png" alt="">
-                                        <p>Jul 25, 2024 | 7:30</p>
-                                    </div>
-                                    <div class="detail">
-                                        <img src="/images/home/clock.png" alt="">
-                                        <p>2 hours</p>
-                                    </div>
-                                </div>
-
-                                <p class="registered">200+ Registered</p>
-
-                                <button>Register Now</button>
-                            </div>
-                        </div>
-                        <div class="splide__slide">
-                            <div class="card">
-                                <div class="profile">
-                                    <img src="/images/home/dp.jpeg" alt="">
-                                    <div class="info">
-                                        <p class="name">John</p>
-                                        <p class="role">Developer</p>
-                                    </div>
-                                </div>
-
-                                <div class="info">
-                                    <h2>Java Collection Framework</h2>
-                                    <h3>Working on Java</h3>
-                                </div>
-
-                                <div class="details">
-
-                                    <div class="detail">
-                                        <img src="/images/home/calendar.png" alt="">
-                                        <p>Jul 25, 2024 | 7:30</p>
-                                    </div>
-                                    <div class="detail">
-                                        <img src="/images/home/clock.png" alt="">
-                                        <p>2 hours</p>
-                                    </div>
-                                </div>
-
-                                <p class="registered">200+ Registered</p>
-
-                                <button>Register Now</button>
-                            </div>
-                        </div>
-                        <div class="splide__slide">
-                            <div class="card">
-                                <div class="profile">
-                                    <img src="/images/home/dp.jpeg" alt="">
-                                    <div class="info">
-                                        <p class="name">John</p>
-                                        <p class="role">Developer</p>
-                                    </div>
-                                </div>
-
-                                <div class="info">
-                                    <h2>Java Collection Framework</h2>
-                                    <h3>Working on Java</h3>
-                                </div>
-
-                                <div class="details">
-
-                                    <div class="detail">
-                                        <img src="/images/home/calendar.png" alt="">
-                                        <p>Jul 25, 2024 | 7:30</p>
-                                    </div>
-                                    <div class="detail">
-                                        <img src="/images/home/clock.png" alt="">
-                                        <p>2 hours</p>
-                                    </div>
-                                </div>
-
-                                <p class="registered">200+ Registered</p>
-
-                                <button>Register Now</button>
-                            </div>
-                        </div>
-                        <div class="splide__slide">
-                            <div class="card">
-                                <div class="profile">
-                                    <img src="/images/home/dp.jpeg" alt="">
-                                    <div class="info">
-                                        <p class="name">John</p>
-                                        <p class="role">Developer</p>
-                                    </div>
-                                </div>
-
-                                <div class="info">
-                                    <h2>Java Collection Framework</h2>
-                                    <h3>Working on Java</h3>
-                                </div>
-
-                                <div class="details">
-
-                                    <div class="detail">
-                                        <img src="/images/home/calendar.png" alt="">
-                                        <p>Jul 25, 2024 | 7:30</p>
-                                    </div>
-                                    <div class="detail">
-                                        <img src="/images/home/clock.png" alt="">
-                                        <p>2 hours</p>
-                                    </div>
-                                </div>
-
-                                <p class="registered">200+ Registered</p>
-
-                                <button>Register Now</button>
-                            </div>
-                        </div>
-                    </ul>
-                </div>
-
-            </div>
-
-        </div>
-
-        <button class="view-all">View All Courses</button>
-
-    </section> -->
 
     <section class="testimonials">
         <a href="" id="reviews"></a>
-        <!-- <div class="bg-pattern">
-            <img src="/images/home/bg-pattern.png" alt="">
-        </div> -->
-        <h1>Learner success
-            <img src="/images/icons/star.png" alt="">
 
+        <h1>Learner success
+            <img src="/images/icons/star.webp" alt="Star icon">
         </h1>
 
         <div class="cards">
@@ -781,32 +598,34 @@
                         Mission
                     </h2>
 
-    
+
                     <p>
-                        <img src="/images/global/quotation.png" alt="">
-                        
+                        <img src="/images/icons/quotation.webp" alt="Quotation icon">
+
                         To transform learners into resilient leaders,
                         merging creativity with excellence and
                         optimizing them into sought-after resources
-                        in the professional realm.</p>
+                        in the professional realm.
+                    </p>
                 </div>
 
                 <div>
                     <h2>
                         Vision
                     </h2>
-                    
-    
+
+
                     <p>
-                        <img src="/images/global/quotation.png" alt="">
+                        <img src="/images/icons/quotation.webp" alt="Quotation icon">
                         To lead in tech-driven solutions,
                         empowering talent with innovative tools
                         and a streamlined approach that bridges
                         education and industry, driving impactful
-                        career outcomes for every learner.</p>
+                        career outcomes for every learner.
+                    </p>
                 </div>
-                
-                
+
+
 
 
             </div>
@@ -815,7 +634,7 @@
                 <div class="content">
                     <div class="heading-btn">
                         <button class="close-btn">
-                            <img src="/images/icons/close-btn.png" alt="">
+                            <img src="/images/icons/close-btn.webp" alt="Cross Mark icon">
                         </button>
                     </div>
                     <div class="students ">
@@ -901,7 +720,7 @@
                                                 <div class="info">
                                                     <p class="name">Dwara Rohitha Sree</p>
                                                     <img src="/images/home/placements/fortune-500.png"
-                                                        alt="amazon-logo">
+                                                        alt="Fortune 500 Company Logo">
 
                                                 </div>
 
@@ -954,8 +773,8 @@
                                                 <div class="info">
                                                     <p class="name">Sk Md Ashiq Ilahi</p>
                                                     <img style="scale:2;transform-origin: right;"
-                                                        src="/images/home/placements/autodesk.png" alt="ezts-logo">
-
+                                                        src="/images/home/placements/autodesk.png"
+                                                        alt=" EZ Trainings and Technologies (EZTS) Logo" />
                                                 </div>
 
                                             </div>
@@ -1013,7 +832,8 @@
                                                 <!-- <img src="/images/home/dp.jpeg" alt=""> -->
                                                 <div class="info">
                                                     <p class="name">Yandrapalli Sambasiva Rao</p>
-                                                    <img src="/images/home/placements/fortune-500.png" alt="amazon-logo">
+                                                    <img src="/images/home/placements/fortune-500.png"
+                                                        alt="Fortune 500 Logo">
 
                                                 </div>
 
@@ -1069,78 +889,14 @@
                 </div>
             </div>
 
-       
+
 
         </div>
     </section>
 
-
-    <!-- <section class="about">
-        <div class="container">
-            <div class="splide about-swiper">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <div class="splide__slide">
-                            <div>
-                                <div class="content">
-                                    <h2>Exercitation reprehenderit nostrud laborum sit.</h2>
-                                    <p>Duis aute esse non quis ullamco anim culpa et.Esse laboris voluptate velit sit.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="splide__slide">
-                            <div>
-                                <div class="content">
-                                    <h2>Exercitation reprehenderit nostrud laborum sit.</h2>
-                                    <p>Duis aute esse non quis ullamco anim culpa et.Esse laboris voluptate velit sit.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="splide__slide">
-                            <div>
-                                <div class="content">
-                                    <h2>Exercitation reprehenderit nostrud laborum sit.</h2>
-                                    <p>Duis aute esse non quis ullamco anim culpa et.Esse laboris voluptate velit sit.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </ul>
-
-                </div>
-
-            </div>
-
-
-            <div class="right">
-                <div class="cards">
-                    <div class="card">
-                        <img src="/images/home/space.jpg" alt="">
-                        <div class="content">
-                            <h2>Aliquip aliquip minim minim occaecat.</h2>
-                            <p>Adipisicing non exercitation aliqua dolore anim laboris ex irure magna ipsum culpa.</p>
-                        </div>
-                    </div>
-                    <div class="card two">
-                        <div class="content">
-                            <h2>Aliquip aliquip minim minim occaecat.</h2>
-                            <p>Adipisicing non exercitation aliqua dolore anim laboris ex irure magna ipsum culpa.</p>
-                        </div>
-                        <img src="/images/home/space.jpg" alt="">
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section> -->
-
     <section class="placed">
 
         <h1 class="">Our placement <span> mantra</span></h1>
-        <!-- <h2>HOW?</h2> -->
 
         <div class="timeline">
             <div class="bar-holder"></div>
@@ -1175,11 +931,10 @@
                     <div class="number">
                         <p class="count"> <span>4</span></p>
                         <div class="content">
-                            <h3 
-                            style="white-space:nowrap;gap:.5rem;display:flex;border:1px solid #e0e0e0; background-color: #fef2f0; border-radius: 5px; padding: .5rem 1rem;  width: fit-content;margin:0 auto; font-size: 1rem;font-weight: 800;">
-                        <img src="/images/icons/redsage_red.png" alt="">
-                            ACCELERATE CAREER!
-                        </h3>
+                            <h3 style="" class="final-step">
+                                <img src="/images/icons/redsage_red.png" alt="">
+                                ACCELERATE CAREER!
+                            </h3>
                         </div>
 
                     </div>
@@ -1191,33 +946,10 @@
 
     </section>
 
-    <!-- <section class="hero">
-        <div class="bg-pattern">
-            <img src="/images/home/bg-pattern.png" alt="">
-        </div>
-        <div class="container">
-            <div class="right">
-                <p class="heading">Your Information</p>
-                <p class="subheading">Deserunt ad mollit sunt nostrud commodo cillum ullamco.</p>
-
-                <form>
-                    <input placeholder="Name" type="text">
-                    <input placeholder="" class="phone-with-country" type="tel">
-                    <input placeholder="Email" type="email">
-                    <button class="br" type="submit">Submit</button>
-                </form>
-            </div>
-            <div class="left">
-                <img src="/images/home/hero-img.png" alt="">
-            </div>
-
-        </div>
-    </section> -->
-
     <section class="skillpath">
         <div class="grid-container">
             <div class="banner">
-                <img src="/images/home/why.png" alt="">
+                <img src="/images/home/why.png" alt="Learn, Assess, Apply, Reinforce, Certify, Share">
 
                 <!-- <img src="/images/course/banner-skillpath.png" alt=""> -->
             </div>
@@ -1225,14 +957,15 @@
                 <h1>What you get?</h1>
                 <div class="cards">
                     <div class="card">
-                        <img src="/images/course/puzzle.png" alt="">
+                        <img src="/images/course/puzzle.webp" alt="Projects Icon">
                         <div>
                             <h2>Capstone Projects</h2>
-                            <p>Engage in guided capstone projects designed to strengthen your skills and reinforce the concepts you're learning.</p>
+                            <p>Engage in guided capstone projects designed to strengthen your skills and reinforce the
+                                concepts you're learning.</p>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="/images/course/assessment-2.png" alt="">
+                        <img src="/images/course/assessment-2.webp" alt="Assessment Icon">
                         <div>
                             <h2>Assessments</h2>
                             <p>Auto-graded quizes and immediate feedback help you reinforce your skills as you learn.
@@ -1240,7 +973,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img src="/images/course/certificate-2.png" alt="">
+                        <img src="/images/course/certificate-2.webp" alt="Certificataion Completion Icon">
                         <div>
                             <h2>Certificate of Completion</h2>
                             <p>Earn a document to prove you've completed a course or path that you can share with your
@@ -1261,14 +994,14 @@
 
     <footer>
         <div class="logo-container">
-            <img src="/logos/red-black.png" alt="">
+            <img src="/logos/red-black.webp" alt="Redsage Logo">
         </div>
         <div class="links-container">
             <div class="column">
                 <h3>Courses</h3>
 
                 <div class="links">
-                    <a href="/devops.html">Devops </a>
+                    <a href="/courses/devops">Devops </a>
                 </div>
             </div>
 
@@ -1291,7 +1024,7 @@
 
                 <div>
                     <p class="heading">Talk to our expert
-                        <img class="toggle-floating-form  toggle-form-button" src="/images/icons/close-btn.png" alt="">
+                        <img class="toggle-floating-form  toggle-form-button" src="/images/icons/close-btn.webp" alt="">
                     </p>
                     <!-- <p class="subheading">Deserunt ad mollit sunt nostrud commodo cillum ullamco.</p> -->
                 </div>

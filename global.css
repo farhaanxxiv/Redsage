@@ -23,16 +23,16 @@ html {
   scroll-behavior: smooth;
 }
 
-section {
+section, div.section {
   padding: 5rem 5%;
 }
 @media only screen and (max-width: 600px) {
-  section {
+  section, div.section {
     padding: 5rem 5%;
   }
 }
 @media only screen and (max-width: 600px) {
-  section.phone {
+  section.phone, div.section.phone {
     padding: 5rem 0;
   }
 }
@@ -540,7 +540,7 @@ footer .column .links a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: url(/images/global/arrow.png);
+  background-image: url(/images/icons/arrow.webp);
   background-size: contain;
   background-repeat: no-repeat;
   width: 2rem !important;
@@ -555,7 +555,7 @@ footer .column .links a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: url(/images/global/arrow.png);
+  background-image: url(/images/icons/arrow.webp);
   background-size: contain;
   background-repeat: no-repeat;
   width: 2rem !important;
@@ -740,4 +740,10 @@ footer .column .links a {
 }
 .faq-container .arrow.open {
   transform: rotate(45deg);
+}
+
+.bg-pattern {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
