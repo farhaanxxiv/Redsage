@@ -47,13 +47,14 @@
 
     .container {
         z-index: 5;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-        position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+        // width: 100%;
+        // position: absolute;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        padding-top: 2rem;
         gap: 2rem;
         margin: auto 0;
         // padding-top: 2rem;
