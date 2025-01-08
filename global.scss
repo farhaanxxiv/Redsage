@@ -481,12 +481,29 @@ nav {
             border-radius: 50%;
             // border:1px solid white;
         }
+
+        .desktop{
+            display: inline-block;
+        }
+
+        .mobile{
+            display: none;
+        }
     @media only screen and (max-width: 600px) {
     
         font-size:.8rem ;
         padding-top: 0.2rem;
         padding-bottom: 0.2rem;
+        .desktop{
+            display: none;
+        }
+    
+        .mobile{
+            display: inline-block;
+        }
     }
+
+   
     }
 }
 
