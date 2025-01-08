@@ -7,6 +7,12 @@
   --font-heading: 2.4rem;
   --font-subheading: 1rem;
 }
+@media only screen and (max-width: 600px) {
+  :root {
+    --font-heading: 2rem;
+    --font-subheading: 1rem;
+  }
+}
 
 * {
   box-sizing: border-box;

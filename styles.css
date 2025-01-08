@@ -371,7 +371,7 @@
   text-align: center;
 }
 .bottom h2 {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 2rem;
 }
 .bottom .cards {
@@ -845,13 +845,13 @@
   height: -moz-fit-content;
   height: fit-content;
   display: flex;
-  flex-shrink: none;
+  flex-shrink: 0;
 }
 .placed .timeline .container .card .number img {
   height: 1.3rem;
 }
 .placed .timeline .container .card .number p.count {
-  flex-shrink: none;
+  flex-shrink: 0;
   color: white;
   font-weight: 600;
   width: 2rem;

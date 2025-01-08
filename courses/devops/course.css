@@ -1112,9 +1112,15 @@
 }
 .faculties .cards .card .person .info .details .designation {
   margin-top: 0.5rem;
-  color: #565656;
+  color: #303030;
   font-size: 0.95rem;
-  line-height: 2;
+  line-height: 1.6;
+  font-weight: 500;
+}
+@media only screen and (max-width: 600px) {
+  .faculties .cards .card .person .info .details .designation {
+    font-size: 0.85rem;
+  }
 }
 
 .pricing h1 {
