@@ -45,17 +45,21 @@
   z-index: 5;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-top: 2rem;
   gap: 2rem;
   margin: auto 0;
   height: -moz-fit-content;
   height: fit-content;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (min-width: 1000px) {
+  .hero .container {
+    padding-top: 2rem;
+  }
+}
+@media only screen and (max-width: 1000px) {
   .hero .container {
     grid-template-columns: 1fr;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 }
 .hero .container .left {
@@ -73,8 +77,24 @@
     padding: 3rem 1rem;
     padding-bottom: 1.5rem;
     border-radius: 0;
-    margin-top: 2rem;
   }
+}
+.hero .container .left .hero-splide {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.hero .container .left .hero-splide .splide__track {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.hero .container .left .hero-splide .splide__list {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.hero .container .left .hero-splide .splide__slide {
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto 0;
 }
 .hero .container .left .trainer {
   display: flex;
@@ -256,6 +276,7 @@
 @media only screen and (max-width: 600px) {
   .hero .container .right {
     border: none;
+    margin-top: 4rem;
   }
 }
 .hero .container .right .heading {
@@ -356,6 +377,7 @@
 .bottom .cards {
   margin-top: 3rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 4rem;
 }

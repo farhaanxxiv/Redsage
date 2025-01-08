@@ -54,17 +54,20 @@
         // position: absolute;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding-top: 2rem;
+
+        @media only screen and (min-width: 1000px) {
+            padding-top: 2rem;
+        
+        }
         gap: 2rem;
         margin: auto 0;
-        // padding-top: 2rem;
         height: fit-content;
 
 
-        @media only screen and (max-width: 800px) {
+        @media only screen and (max-width: 1000px) {
             grid-template-columns: 1fr;
             display: flex;
-            flex-direction: column-reverse;
+            flex-direction: column;
         }
 
         .left {
@@ -81,9 +84,26 @@
                 padding: 3rem 1rem;
                 padding-bottom: 1.5rem;
                 border-radius: 0;
-                margin-top: 2rem;
 
             }
+
+            .hero-splide{
+                height: fit-content;
+
+                .splide__track{
+                height: fit-content;
+                }
+                .splide__list{
+                    height: fit-content;
+                }
+
+                .splide__slide{
+                    height: fit-content;
+                    margin: auto 0;
+                }
+            }
+
+
 
             .trainer {
                 // background-color: white;
@@ -160,6 +180,8 @@
 
             }
 
+          
+
             .parent-container {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
@@ -171,6 +193,11 @@
                 // margin-top: .8rem ;
                 @media only screen and (max-width: 550px) {
                     grid-template-columns: 1fr;
+
+                }
+
+                
+                .splide__slide{
 
                 }
 
@@ -340,6 +367,7 @@
 
             @media only screen and (max-width: 600px) {
                 border: none;
+                margin-top: 4rem;
                 // background-color: white;
             }
 
@@ -478,6 +506,7 @@
     .cards {
         margin-top: 3rem;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         gap: 4rem;
 
