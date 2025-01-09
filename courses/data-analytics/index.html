@@ -15,15 +15,29 @@
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 
+
     <link rel="stylesheet" href="/global.css">
-    <link rel="stylesheet" href="/courses/devops/course.css">
+    <link rel="stylesheet" href="/course.css">
+
 
     <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/js/intlTelInput.min.js"></script>
+
+    <!-- Lite Youtube -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/lite-youtube-embed/0.3.2/lite-yt-embed.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lite-youtube-embed/0.3.2/lite-yt-embed.css"
+        integrity="sha512-utq8YFW0J2abvPCECXM0zfICnIVpbEpW4lI5gl01cdJu+Ct3W6GQMszVITXMtBLJunnaTp6bbzk5pheKX2XuXQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- SwiperJS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
 
 </head>
 
 
 <body>
+
 
     <nav>
         <div class="logo-hamburger-container">
@@ -34,46 +48,53 @@
                 <span class="bar"></span>
             </a>
             <a href="/">
-                <img class="logo" src="/logos/red-black.webp" alt="Redsage Logo">
+                <img loading="eager" class="logo" src="/logos/red-black.webp" alt="Redsage Logo ">
             </a>
         </div>
-
         <div class="links " id="phone-sidebar">
-            <!-- <a href="/courses/devops">Devops</a> -->
             <div class="toggle-navbar">
                 <div class="toggle-btn">
                     <p>Courses</p>
-                    <img src="/images/icons/down-arrow.webp" class="arrow" alt="Down Arrow Icon">
+                    <img src="/images/icons/down-arrow.webp" class="arrow" alt="down arrow icon">
                 </div>
 
                 <div class="content">
                     <a href="/courses/devops">Devops</a>
+                    <a href="/courses/fullstack-development/">Fullstack Development</a>
+                    <a href="/courses/data-analytics/">Data Analytics</a>
+                    <a href="/courses/project-management/">Project Management</a>
                 </div>
-
             </div>
 
             <a href="#certification">Certification</a>
-            <a href="#curriculum">Curriculum</a>
+            <a href="#reviews">Reviews</a>
             <a href="/blogs">Blogs</a>
-
         </div>
 
         <button class="bl contact-btn toggle-floating-form">
-            Contact
+            <div class="glow">
+
+            </div>
+            <span class="desktop">
+
+                Request a call
+            </span>
+
+            <span class="mobile">
+                Contact
+            </span>
+
         </button>
     </nav>
 
 
     <section class="hero first">
-        <!-- <div class="bg-pattern">
-            <img src="/images/global/bg-pattern.png" alt="">
-        </div> -->
+
         <div class="container">
             <div class="left">
-                <h1>Be a certified DEVOPS Engineer</h1>
-                <h2>"Streamline Development, Accelerate Delivery, and
-                    Revolutionize Your Career with ourComprehensive
-                    DevOps Training."</h2>
+                <h1>Become a Certified Data Analyst</h1>
+                <h2>"Transform Raw Data into Actionable Insights with our Hands-on Data Analytics Training"
+                </h2>
                 <div class="buttons">
                     <button class="bl toggle-floating-form">Apply Now</button>
                     <button class="bl toggle-brochure-form">Download Brochure</button>
@@ -81,7 +102,7 @@
 
             </div>
             <div class="right">
-                <img src="/images/course/hero-devops.png" alt="Data Analytics Banner Image" />
+                <img loading="eager" src="/images/course/data-analytics/data-analytics-hero.jpg" alt="Data Analytics Banner Image" />
             </div>
         </div>
         </div>
@@ -106,12 +127,13 @@
 
     <section class="overview">
         <h1>Course Overview</h1>
-        <p>Amet cillum voluptate fugiat reprehenderit est sint.</p>
+        <p>Your Learning Journey at a Glance</p>
 
         <div class="container">
             <div class="left">
-                <img src="/images/course/hero-img.jpeg" alt="Data Analytics Banner Image" />
-             </div>
+                <img loading="eager" src="/images/course/data-analytics/data-analytics-banner.png" alt="Data Analytics Banner Image" />
+
+            </div>
             <div class="right">
                 <div class="info">
                     <div class="card">
@@ -157,256 +179,236 @@
 
     <section class="why">
         <h1>Why Join this Program</h1>
-        <!-- <p>Amet cillum voluptate fugiat reprehenderit est sint.</p> -->
-
+    
         <div class="container">
-
             <div class="right">
                 <div class="cards">
                     <div class="card">
-                        <h2>What is DevOps</h2>
-                        <p>DevOps is a set of practices
-                            that combines software
-                            development (Dev) and IT
-                            operations (Ops) to improve
-                            collaboration, automate
-                            workflows, and accelerate the
-                            delivery of high-quality
-                            software.</p>
+                        <h2>What is Data Analytics</h2>
+                        <p>Data Analytics is the process of examining raw data to draw conclusions, uncover trends, and make data-driven decisions. By transforming data into valuable insights, it helps organizations optimize their processes and improve outcomes.</p>
                     </div>
                     <div class="card">
-                        <h2>What skills and tools will I
-                            learn in a DevOps course?</h2>
-                        <p>A comprehensive DevOps course will teach
-                            you</p>
+                        <h2>What skills and tools will I learn in a Data Analytics course?</h2>
+                        <p>A comprehensive Data Analytics course will teach you:</p>
                         <ul>
-                            <li> <span>Core Skills</span>: Continuous Integration and
-                                Continuous Deployment (CI/CD),
-                                Infrastructure as Code (IaC), Configuration
-                                Management, and Monitoring</li>
+                            <li> <span>Core Skills</span>: Data cleaning, exploratory data analysis (EDA), statistical analysis, data visualization, and basic machine learning algorithms.</li>
                             <li>
-                                <span>Tools</span>: Git, Jenkins, Docker, Kubernetes,
-                                Ansible, Terraform, Prometheus, Grafana,
-                                AWS, and Azure.
+                                <span>Tools</span>: Python (Pandas, NumPy), SQL, Tableau, Power BI, Excel, R, and various data visualization libraries (e.g., Matplotlib, Seaborn).
                             </li>
                             <li>
-                                <span>Soft Skills</span>: Collaboration, problem-solving,
-                                and understanding Agile methodologies.
-                                By the end, you'll be capable of designing
-                                and managing DevOps workflows in realworld scenarios.
+                                <span>Soft Skills</span>: Analytical thinking, problem-solving, and the ability to communicate insights clearly and effectively to stakeholders.
                             </li>
                         </ul>
                     </div>
                     <div class="card">
-                        <h2>Why is DevOps Important?</h2>
+                        <h2>Why is Data Analytics Important?</h2>
                         <p>
-                            Learning DevOps equips you with in-demand skills to:
+                            Learning Data Analytics equips you with the skills to:
                         </p>
-
                         <ul>
-                            <li>Boost your career by qualifying
-                                for roles like DevOps Engineer,
-                                Cloud Engineer, or Site
-                                Reliability Engineer.
-                            </li>
-                            <li>Gain expertise in automation,
-                                CI/CD pipelines, and cloud
-                                technologies.
-                            </li>
-                            <li>
-                                Help businesses deliver
-                                features faster, improve
-                                system reliability, and reduce
-                                operational costs.
-                            </li>
+                            <li>Enhance decision-making by transforming complex data into actionable insights.</li>
+                            <li>Unlock career opportunities as a Data Analyst, Business Intelligence Analyst, or Data Scientist.</li>
+                            <li>Support businesses in improving strategies, optimizing operations, and increasing profitability through data-driven approaches.</li>
                         </ul>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="approach">
+        <h1>Our approach towards
+            <span> excellence</span>
+        </h1>
+        <div class="container">
+            <img src="/images/course/excellence.png" alt="6 Steps To Career Advancement Image">
+
+            <div class="cards">
+
+                <div class="card">
+                    <div class="number">1</div>
+                    <img src="/images/course/book.png" alt="Book icon">
+                    <p>
+                        Industry-approved,
+                        structured curriculum </p>
+
+                </div>
+                <div class="card">
+                    <div class="number">2</div>
+                    <img src="/images/course/live-streaming.png" alt="Online Class Icon">
+                    <p>
+                        Live, interactive sessions
+                        with industry experts </p>
+                </div>
+
+                <div class="card">
+                    <div class="number">3</div>
+
+                    <img src="/images/course/meeting.png" alt="Dedication Sessions Icon">
+                    <p>
+                        Dedicated sessions to
+                        resolve doubts and ensure
+                        progress. </p>
+
+                </div>
+                <div class="card">
+                    <div class="number">4</div>
+
+                    <img src="/images/course/opportunity.png" alt="Career Support Icon">
+                    <p>
+                        Career Support via Mock
+                        interviews, profile building,
+                        and referrals. </p>
+
+                </div>
+                <div class="card">
+                    <div class="number">5</div>
+
+                    <img src="/images/course/experience.png" alt="Experience Icon">
+                    <p>
+                        Learn from experienced
+                        industry leaders </p>
+
+                </div>
+                <div class="card">
+                    <div class="number">6</div>
+
+                    <img src="/images/course/recommend.png" alt="Recommend Icon">
+                    <p>
+                        Hands-on experience with
+                        real-world case study and
+                        capstone projects. </p>
 
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="approach">
-        <h1>Our approach towards
-          <span>  excellence</span></h1>
-          <div class="container">
-            <img src="/images/course/excellence.png" alt="6 Steps To Career Advancement Image">
-
-        <div class="cards">
-
-            <div class="card">
-                <div class="number">1</div>
-                <img src="/images/course/book.png" alt="Book icon">
-                <p>
-                    Industry-approved,
-                    structured curriculum </p>
-
-            </div>
-            <div class="card">
-                <div class="number">2</div>
-                <img src="/images/course/live-streaming.png" alt="Online Class Icon">
-                <p>
-                    Live, interactive sessions
-                    with industry experts </p>
-            </div>
-
-            <div class="card">
-                <div class="number">3</div>
-
-                <img src="/images/course/meeting.png" alt="Dedication Sessions Icon">
-                <p>
-                    Dedicated sessions to
-                    resolve doubts and ensure
-                    progress. </p>
-
-            </div>
-            <div class="card">
-                <div class="number">4</div>
-
-                <img src="/images/course/opportunity.png" alt="Career Support Icon">
-                <p>
-                    Career Support via Mock
-                    interviews, profile building,
-                    and referrals. </p>
-
-            </div>
-            <div class="card">
-                <div class="number">5</div>
-
-                <img src="/images/course/experience.png" alt="Experience Icon">
-                <p>
-                    Learn from experienced
-                    industry leaders </p>
-
-            </div>
-            <div class="card">
-                <div class="number">6</div>
-
-                <img src="/images/course/recommend.png" alt="Recommend Icon">
-                <p>
-                    Hands-on experience with
-                    real-world case study and
-                    capstone projects. </p>
-
-            </div>
-        </div>
-    </div>
-    </section>
-
     <section class="industry">
-       
-        <div  class="certification">
-            <div id="certification" ></div>
+
+        <div class="certification">
+            <div id="certification"></div>
             <h2>Certification</h2>
-            <img src="/images/course/certificate.png" alt="Redsage Certificate Image">
+            <img loading="lazy" src="/images/course/certificate.png" alt="Redsage Certificate Image">
         </div>
     </section>
+
 
     <section class="faculties">
 
         <div class="bg-pattern">
-            <img src="/images/global/bg-pattern.png" alt="">
+            <img src="/images/global/bg-pattern.png" alt="Background Pattern">
         </div>
 
-        <h1>Faculties</h1>
-        <h2>Labore commodo tempor enim occaecat Lorem voluptate.</h2>
+        <h1>Learn from the Best</h1>
 
         <div class="cards">
             <div class="card">
-                <!-- <img src="/images/course/lady.jpeg" alt=""> -->
                 <div class="person">
                     <div class="info">
-                        <p class="name">Tushar R.</p>
-                        <p class="designation">DevOps Engineer 2 @Amazon | AWS Community Builder | GCP, Terraform
-                            Certified</p>
+                        <img src="/images/global/trainers/tushar.webp" alt="Tushar R Display Picture">
+                        <div class="details">
+                            <p class="name">
+                                Tushar R
+                                <a target="_blank" href="https://www.linkedin.com/in/tusharrajpoot/">
+                                    <img loading="lazy" src="/images/icons/linkedin.webp" alt="Linkedin Icon">
+                                </a>
+                            </p>
+                            <p class="designation">DevOps Engineer 2 @Amazon | AWS Community Builder | GCP, Terraform
+                                Certified</p>
+                        </div>
                     </div>
-                    <a target="_blank" href="https://www.linkedin.com/in/tusharrajpoot/">
-                        <img src="/images/icons/linkedin.webp" alt="Linkedin Icon">
-                    </a>
+
                 </div>
             </div>
 
             <div class="card">
-                <!-- <img src="/images/course/lady.jpeg" alt=""> -->
                 <div class="person">
                     <div class="info">
-                        <p class="name">Abhishek Kumbhar</p>
-                        <p class="designation">DevOps Engineer at Amazon
-                        </p>
+                        <img src="/images/global/trainers/abhishek.webp" alt="Abhishek Kumbhar Display Picture">
+                        <div class="details">
+                            <p class="name">
+                                Abhishek Kumbhar
+                                <a target="_blank" href="https://www.linkedin.com/in/abhishek-kumbhar-101269265">
+                                    <img loading="lazy" src="/images/icons/linkedin.webp" alt="Linkedin Icon">
+                                </a>
+                            </p>
+                            <p class="designation">DevOps Engineer @Amazon
+
+                            </p>
+                        </div>
                     </div>
-                    <a target="_blank" href="https://www.linkedin.com/in/abhishek-kumbhar-101269265">
-                        <img src="/images/icons/linkedin.webp" alt="Linkedin Icon">
-                    </a>
+
                 </div>
             </div>
             <div class="card">
-                <!-- <img src="/images/course/lady.jpeg" alt=""> -->
                 <div class="person">
+
                     <div class="info">
-                        <p class="name">Rajani Ekunde</p>
-                        <p class="designation">DevOps Engineer | Docker Captain | 1x GCP Certified | WTM Ambassador |
-                            LIFT Scholar '24</p>
+                        <img src="/images/global/trainers/rajani.webp" alt="Rajani Ekunde Display Picture">
+                        <div class="details">
+                            <p class="name">
+                                Rajani Ekunde
+                                <a target="_blank" href="https://www.linkedin.com/in/rajani103/">
+                                    <img loading="lazy" src="/images/icons/linkedin.webp" alt="Linkedin Icon">
+                                </a>
+                            </p>
+                            <p class="designation">DevOps Engineer | Docker Captain | 1x GCP Certified | WTM Ambassador
+                                | LIFT Scholar '24
+
+                            </p>
+                        </div>
                     </div>
-                    <a target="_blank" href="https://www.linkedin.com/in/rajani103/">
-                        <img src="/images/icons/linkedin.webp" alt="Linkedin Icon">
-                    </a>
+
                 </div>
             </div>
         </div>
 
     </section>
 
-
-
     <section class="curriculum">
-        <!-- <div class="bg-pattern">
-            <img src="/images/global/bg-pattern.png" alt="">
-        </div> -->
-        <div id="curriculum" ></div>
 
+        <div id="curriculum"></div>
+    
         <div class="container">
             <div class="left">
-                <h1>Curriculum</h1>
-                <!-- <h2>Qui dolore officia fugiat dolore esse anim consectetur elit ipsum sunt excepteur minim.</h2> -->
-                <!-- 
-                <button class="bl">
-                    Contact Us
-                </button> -->
+                <h1>Data Analytics Curriculum</h1>
             </div>
             <div class="right">
                 <div class="faq-container">
                     <div class="faq-item">
                         <div class="faq-question">
                             <p>
-                                Month 1 : <span>Foundations</span>
+                                Month 1 : <span>Introduction to Data Analytics</span>
                             </p>
-                            <img src="/images/icons/plus.webp" class="arrow" />
+                            <img src="/images/icons/plus.webp" class="arrow" loading="lazy"
+                                alt="Collapsible Arrow Icon" />
                         </div>
                         <div class="faq-answer">
                             <ul>
                                 <li>
-                                    <strong>Introduction to DevOps</strong>
+                                    <strong>Introduction to Data Analytics</strong>
                                     <ol>
-                                        <li>What is DevOps?</li>
-                                        <li>Benefits and principles.</li>
-                                        <li>Agile methodology and Scrum basics.</li>
+                                        <li>What is Data Analytics?</li>
+                                        <li>Types of Data Analytics (Descriptive, Diagnostic, Predictive, Prescriptive)</li>
+                                        <li>Overview of the analytics process and workflow.</li>
                                     </ol>
                                 </li>
                                 <li>
-                                    <strong>Software Development Life Cycle (SDLC)</strong>
+                                    <strong>Data Collection and Preparation</strong>
                                     <ol>
-                                        <li>Overview of SDLC models.</li>
-                                        <li>Waterfall vs. Agile methodologies.</li>
-                                        <li>Integration of SDLC with DevOps.</li>
+                                        <li>Sources of data: Structured vs. Unstructured Data</li>
+                                        <li>Data cleaning and wrangling techniques</li>
+                                        <li>Using tools like Excel, Google Sheets, and basic SQL for data preparation</li>
                                     </ol>
                                 </li>
                                 <li>
-                                    <strong>Python Programming Basics</strong>
+                                    <strong>Intro to Statistical Concepts</strong>
                                     <ol>
-                                        <li>Loops, conditional statements, and functions.</li>
-                                        <li>Object-Oriented Programming (OOPs).</li>
-                                        <li>Introduction to Flask and database integration.</li>
+                                        <li>Understanding distributions, mean, median, mode, standard deviation</li>
+                                        <li>Introduction to Probability theory</li>
+                                        <li>Exploring correlation and regression basics</li>
                                     </ol>
                                 </li>
                             </ul>
@@ -415,261 +417,521 @@
                     <div class="faq-item">
                         <div class="faq-question">
                             <p>
-                                Month 2 : <span>Version Control, Linux, and Automation</span>
-
+                                Month 2 : <span>Excel & SQL for Data Analysis</span>
                             </p>
-                            <img src="/images/icons/plus.webp" class="arrow" />
+                            <img src="/images/icons/plus.webp" class="arrow" loading="lazy"
+                                alt="Collapsible Arrow Icon" />
                         </div>
                         <div class="faq-answer">
                             <ul>
                                 <li>
-                                    <strong>Git and GitHub</strong>
+                                    <strong>Advanced Excel Techniques</strong>
                                     <ol>
-                                        <li>Version control basics.</li>
-                                        <li>Branching, merging, and resolving conflicts.</li>
-                                        <li>Collaborative coding using GitHub.</li>
+                                        <li>Pivot Tables and Pivot Charts</li>
+                                        <li>VLOOKUP, INDEX-MATCH, Conditional Formatting</li>
+                                        <li>Data Validation, Charts, and Dashboards</li>
                                     </ol>
                                 </li>
                                 <li>
-                                    <strong>Linux Basics</strong>
+                                    <strong>Introduction to SQL</strong>
                                     <ol>
-                                        <li>File system navigation and permissions.</li>
-                                        <li>Shell scripting with Bash.</li>
-                                        <li>Essential Linux commands for servers.</li>
+                                        <li>Basic SQL queries: SELECT, FROM, WHERE, JOIN, GROUP BY</li>
+                                        <li>Filtering, sorting, and aggregating data</li>
+                                        <li>SQL for data manipulation and analysis</li>
                                     </ol>
                                 </li>
                                 <li>
-                                    <strong>Testing</strong>
+                                    <strong>Data Visualization Basics</strong>
                                     <ol>
-                                        <li>Introduction to Pytest.</li>
-                                        <li>Writing and automating test cases.</li>
+                                        <li>Overview of data visualization principles</li>
+                                        <li>Creating charts in Excel, Google Sheets</li>
+                                        <li>Introduction to data visualization tools (Power BI, Tableau)</li>
                                     </ol>
                                 </li>
                             </ul>
-
                         </div>
                     </div>
-
+    
                     <div class="faq-item">
                         <div class="faq-question">
                             <p>
-                                Month 3 : <span>Continuous Integration and Cloud Essentials</span>
+                                Month 3 : <span>Data Visualization and Tools</span>
                             </p>
-                            <img src="/images/icons/plus.webp" class="arrow" />
-
+                            <img src="/images/icons/plus.webp" class="arrow" loading="lazy"
+                                alt="Collapsible Arrow Icon" />
                         </div>
                         <div class="faq-answer">
                             <ul>
                                 <li>
-                                    <strong>CI/CD Pipeline</strong>
+                                    <strong>Advanced Data Visualization with Power BI</strong>
                                     <ol>
-                                        <li>Concepts of CI/CD.</li>
-                                        <li>Using Jenkins and GitHub Actions.</li>
-                                        <li>End-to-end pipeline creation.</li>
+                                        <li>Introduction to Power BI Desktop</li>
+                                        <li>Creating interactive dashboards</li>
+                                        <li>Advanced visualizations (maps, scatter plots, line charts)</li>
                                     </ol>
                                 </li>
                                 <li>
-                                    <strong>Cloud Basics</strong>
+                                    <strong>Data Visualization with Tableau</strong>
                                     <ol>
-                                        <li>Introduction to IaaS, PaaS, and SaaS.</li>
-                                        <li>Overview of AWS, Azure, and GCP platforms.</li>
+                                        <li>Overview of Tableau interface</li>
+                                        <li>Creating basic charts, dashboards, and stories</li>
+                                        <li>Advanced features like calculated fields and table calculations</li>
                                     </ol>
                                 </li>
                                 <li>
-                                    <strong>AWS Services</strong>
+                                    <strong>Storytelling with Data</strong>
                                     <ol>
-                                        <li>Setting up AWS accounts.</li>
-                                        <li>Understanding EC2, S3, RDS, and VPC.</li>
-                                        <li>Configuring load balancers and auto-scaling.</li>
+                                        <li>How to tell a compelling data story</li>
+                                        <li>Choosing the right chart for the data</li>
+                                        <li>Best practices for presenting data effectively</li>
                                     </ol>
                                 </li>
                             </ul>
-
                         </div>
                     </div>
-
+    
                     <div class="faq-item">
                         <div class="faq-question">
                             <p>
-                                Month 4 : <span>Advanced Cloud and Deployment Automation</span>
+                                Month 4 : <span>Intro to Data Science & Machine Learning</span>
                             </p>
-                            <img src="/images/icons/plus.webp" class="arrow" />
-
+                            <img src="/images/icons/plus.webp" class="arrow" loading="lazy"
+                                alt="Collapsible Arrow Icon" />
                         </div>
                         <div class="faq-answer">
                             <ul>
                                 <li>
-                                    <strong>Serverless Architecture</strong>
+                                    <strong>Introduction to Data Science</strong>
                                     <ol>
-                                        <li>AWS Lambda basics.</li>
-                                        <li>Automating tasks using Boto3.</li>
-                                        <li>SNS, SQS, and AWS CLI.</li>
+                                        <li>Data Science process and workflow</li>
+                                        <li>Overview of Python for Data Science</li>
+                                        <li>Data manipulation with Pandas and NumPy</li>
                                     </ol>
                                 </li>
                                 <li>
-                                    <strong>Infrastructure as Code (IaC)</strong>
+                                    <strong>Intro to Machine Learning</strong>
                                     <ol>
-                                        <li>Introduction to Terraform and CloudFormation.</li>
-                                        <li>Writing and managing infrastructure templates.</li>
+                                        <li>Supervised vs. Unsupervised Learning</li>
+                                        <li>Basic ML algorithms (Linear Regression, KNN)</li>
+                                        <li>Introduction to Scikit-learn for model building</li>
                                     </ol>
                                 </li>
                                 <li>
-                                    <strong>Monitoring and Logging</strong>
+                                    <strong>Data Cleaning and Feature Engineering</strong>
                                     <ol>
-                                        <li>AWS CloudWatch.</li>
-                                        <li>Grafana and Prometheus basics.</li>
-                                        <li>ELK stack for log management.</li>
+                                        <li>Handling missing data and outliers</li>
+                                        <li>Feature scaling and normalization</li>
+                                        <li>Feature selection techniques</li>
                                     </ol>
                                 </li>
                             </ul>
-
                         </div>
                     </div>
-
+    
                     <div class="faq-item">
                         <div class="faq-question">
                             <p>
-                                Month 5 : <span>Containerization and Orchestration</span>
+                                Month 5 : <span>Advanced Data Analysis & Machine Learning</span>
                             </p>
-                            <img src="/images/icons/plus.webp" class="arrow" />
-
+                            <img src="/images/icons/plus.webp" class="arrow" loading="lazy"
+                                alt="Collapsible Arrow Icon" />
                         </div>
                         <div class="faq-answer">
                             <ul>
                                 <li>
-                                    <strong>Docker</strong>
+                                    <strong>Advanced Machine Learning Techniques</strong>
                                     <ol>
-                                        <li>Containerization concepts.</li>
-                                        <li>Dockerfile, Docker Compose.</li>
-                                        <li>Pushing and pulling images to/from Docker Hub.</li>
+                                        <li>Classification algorithms (Logistic Regression, Decision Trees)</li>
+                                        <li>Clustering techniques (K-means, Hierarchical)</li>
+                                        <li>Evaluation metrics (Confusion matrix, ROC Curve)</li>
                                     </ol>
                                 </li>
                                 <li>
-                                    <strong>Kubernetes</strong>
+                                    <strong>Time Series Analysis</strong>
                                     <ol>
-                                        <li>Basics of container orchestration.</li>
-                                        <li>Kubernetes services and scaling.</li>
-                                        <li>Deploying applications using Helm and Kustomize.</li>
+                                        <li>Introduction to time series data</li>
+                                        <li>Decomposition of time series</li>
+                                        <li>Forecasting models (ARIMA, SARIMA)</li>
                                     </ol>
                                 </li>
                                 <li>
-                                    <strong>AWS EKS</strong>
+                                    <strong>Natural Language Processing (NLP)</strong>
                                     <ol>
-                                        <li>Integrating Kubernetes with AWS.</li>
-                                        <li>Horizontal and vertical pod autoscaling.</li>
+                                        <li>Text mining and preprocessing</li>
+                                        <li>Bag of Words and TF-IDF</li>
+                                        <li>Basic sentiment analysis</li>
                                     </ol>
                                 </li>
                             </ul>
-
                         </div>
                     </div>
+    
                     <div class="faq-item">
                         <div class="faq-question">
                             <p>
-                                Month 6 : <span>Specializations and Capstone Project</span>
+                                Month 6 : <span>Capstone Project and Advanced Topics</span>
                             </p>
-                            <img src="/images/icons/plus.webp" class="arrow" />
-
+                            <img src="/images/icons/plus.webp" class="arrow" loading="lazy"
+                                alt="Collapsible Arrow Icon" />
                         </div>
                         <div class="faq-answer">
                             <ul>
-                                <li>
-                                    <strong>Specializations</strong>
-                                    <ol>
-                                        <li>DevSecOps: Security in CI/CD pipelines.</li>
-                                        <li>MLOps: Automating machine learning models.</li>
-                                        <li>Advanced networking concepts.</li>
-                                    </ol>
-                                </li>
                                 <li>
                                     <strong>Capstone Project</strong>
                                     <ol>
-                                        <li>Architect and deploy a 3-tier application using AWS.</li>
-                                        <li>Automate deployment with Jenkins and Kubernetes.</li>
-                                        <li>Implement monitoring and logging with Grafana and Prometheus.</li>
+                                        <li>Choose a real-world dataset</li>
+                                        <li>Analyze, clean, and model the data</li>
+                                        <li>Create a comprehensive report and presentation</li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <strong>Advanced Topics in Data Analytics</strong>
+                                    <ol>
+                                        <li>Big Data technologies (Hadoop, Spark)</li>
+                                        <li>Deep Learning basics</li>
+                                        <li>Cloud-based data analytics (AWS, GCP)</li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <strong>Final Presentations & Review</strong>
+                                    <ol>
+                                        <li>Present your Capstone Project to mentors</li>
+                                        <li>Get feedback and iterate on your solution</li>
+                                        <li>Prepare for industry job roles in Data Analytics</li>
                                     </ol>
                                 </li>
                             </ul>
-
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
     </section>
+    
 
-    <section class="reviews">
-        <h1>Reviews</h1>
-        <h2>Adipisicing nisi anim duis consectetur sit nostrud ad eiusmod commodo in cupidatat dolor et.</h2>
+    
+    <section class="testimonials">
+        <a href="" id="reviews"></a>
+
+        <h1>Learner success
+            <img loading="lazy" src="/images/icons/star.webp" alt="Star icon">
+        </h1>
 
         <div class="cards">
-            <div class="card">
-                <!-- <div data-star="4">
-                </div> -->
+            <div class="student-content">
+                <div>
+                    <h2>
+                        Mission
+                    </h2>
 
-                <lite-youtube videoid="LN1TQm942_U" style="background-image: url('/images/home/macbook.png');">
-                </lite-youtube>
 
-                <p class="testimonial">
-                    Minim et ullamco elit elit do aliqua ex minim eu sit. Ea proident fugiat et ullamco est laboris
-                    aliqua ex nostrud pariatur. Ullamco excepteur voluptate elit nisi labore.
-                </p>
+                    <p>
+                        <img loading="lazy" src="/images/icons/quotation.webp" alt="Quotation icon">
 
-                <div class="profile">
-                    <img src="/images/dp.jpeg" alt="">
-                    <div class="info">
-                        <p class="name">John</p>
-                        <p class="role">Developer</p>
+                        To transform learners into resilient leaders,
+                        merging creativity with excellence and
+                        optimizing them into sought-after resources
+                        in the professional realm.
+                    </p>
+                </div>
+
+                <div>
+                    <h2>
+                        Vision
+                    </h2>
+
+
+                    <p>
+                        <img loading="lazy" src="/images/icons/quotation.webp" alt="Quotation icon">
+                        To lead in tech-driven solutions,
+                        empowering talent with innovative tools
+                        and a streamlined approach that bridges
+                        education and industry, driving impactful
+                        career outcomes for every learner.
+                    </p>
+                </div>
+
+
+
+
+            </div>
+
+            <div class="students-container testimonial-container">
+                <div class="content">
+
+                    <div class="students ">
+                        <div class="splide testimonial-splide students-testimonials-splide"
+                            aria-label="Student Testimonial Slider">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <div class="card">
+
+                                            <div class="profile">
+                                                <div class="info">
+                                                    <p class="name">Adhithi Deverapu</p>
+                                                    <img loading="lazy" src="/images/home/placements/amazon.png"
+                                                        alt="Amazon Company Logo">
+                                                </div>
+                                            </div>
+
+                                            <p class="testimonial">
+                                                I owe my success to EZ Trainings and Technologies (EZTS) for helping me
+                                                secure a job at one
+                                                of
+                                                the top MNCs i.e., Amazon as a BIE intern. When my college partnered
+                                                with EZTS, I had little
+                                                confidence in my skills, especially in tough areas like Data Structures
+                                                and Algorithms (DSA)
+                                                and
+                                                Dynamic Programming (DP). These topics always felt overwhelming, and I
+                                                struggled to solve
+                                                problems effectively.
+                                                <br />
+                                                <br />
+                                                EZTS completely turned things around for me. Their trainers broke down
+                                                complex concepts into
+                                                simple, understandable lessons, guiding us through practical
+                                                problem-solving techniques. The
+                                                hands- on sessions and real-world examples made a huge difference, and I
+                                                finally started to
+                                                feel
+                                                confident tackling DSA and DP challenges.
+                                                <br />
+                                                <br />
+
+                                                Beyond the technical training, their mock interview sessions were a
+                                                game-changer. They
+                                                simulated
+                                                real interview scenarios, provided constructive feedback, and taught us
+                                                how to approach
+                                                questions confidently. The personalized attention and focus on
+                                                communication skills gave me
+                                                an
+                                                <br />
+                                                <br />
+
+                                                edge in the competitive job market.
+                                                Thanks to EZTS, I was able to perform exceptionally well in my
+                                                interviews and land a dream
+                                                job
+                                                at Amazon. Their training is not just about learning-it's about
+                                                preparing you to succeed in
+                                                the
+                                                real world. I will always be grateful for their support and dedication
+                                            </p>
+
+                                            <button class="view-btn">View</button>
+
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="card">
+
+
+
+                                            <div class="profile">
+                                                <div class="info">
+                                                    <p class="name">Dwara Rohitha Sree</p>
+                                                    <img loading="lazy" src="/images/home/placements/fortune-500.png"
+                                                        alt="Fortune 500 Company Logo">
+
+                                                </div>
+
+                                            </div>
+
+                                            <p class="testimonial">
+                                                I am Dwara Rohitha Sree, and I am thrilled to share that I recently
+                                                secured a great job in a leading software company. EZ Trainings and
+                                                Technologies (EZTS) played a significant role in my success.
+                                                <br />
+                                                <br />
+
+                                                The training provided by EZTS, in partnership with my college, was a
+                                                game-changer in my learning journey. The sessions were interactive,
+                                                practical, and focused on real-world projects, helping me apply concepts
+                                                effectively.
+                                                <br />
+                                                <br />
+
+                                                EZTS also prepared us for interviews through mock sessions, guidance on
+                                                tackling technical and HR questions, which boosted my confidence and
+                                                professionalism.
+                                                <br />
+                                                <br />
+
+                                                Thanks to their support, I developed strong skills, built a solid
+                                                project portfolio, and achieved my career goals. I am truly grateful to
+                                                the dedicated trainers at EZTS for their guidance and encouragement.
+                                                <br />
+                                                <br />
+
+                                                Best regards,
+                                                Dwara Rohitha Sree
+                                            </p>
+
+                                            <button class="view-btn">View</button>
+
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="card">
+
+                                            <div class="profile">
+                                                <div class="info">
+                                                    <p class="name">Komala Elusuri</p>
+                                                    <img loading="lazy" src="/images/home/placements/amazon.png"
+                                                        alt="Amazon Company Logo">
+                                                </div>
+                                            </div>
+
+                                            <p class="testimonial">
+                                                Before joining EZ Trainings and Technologies (EZTS), I really struggled
+                                                with coding. I would often feel stuck while solving even basic problems,
+                                                and the thought of writing efficient code seemed impossible. It was
+                                                frustrating and made me doubt if I could ever have a career in tech.
+                                                <br />
+                                                <br />
+                                                Everything changed when I joined EZTS. The trainers were incredibly
+                                                supportive and patient, teaching coding concepts in a way that finally
+                                                made sense to me. They didn't just focus on theory-they encouraged us to
+                                                practice, solve real-world problems, and build confidence with hands-on
+                                                sessions. Slowly but surely, I started to see improvements.
+                                                <br />
+                                                <br />
+                                                EZTS didn't stop at teaching me how to code. They also prepared me for
+                                                the job market with mock interviews, resume building, and practical
+                                                advice. By the end of the training, I had not only mastered coding but
+                                                also gained the confidence to perform well in technical interviews.
+                                                <br />
+                                                <br />
+                                                I am proud to say that, thanks to EZTS, I landed my first job in tech
+                                                i.e, Amazon as a SE Intern. I'll always be grateful to EZTS for their
+                                                incredible guidance and support.
+                                            </p>
+
+                                            <button class="view-btn">View</button>
+
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="card">
+                                            <div class="profile">
+                                                <div class="info">
+                                                    <p class="name">Sk Md Ashiq Ilahi</p>
+                                                    <img loading="lazy" style="scale:2;transform-origin: right;"
+                                                        src="/images/home/placements/autodesk.png"
+                                                        alt=" EZ Trainings and Technologies (EZTS) Logo" />
+                                                </div>
+
+                                            </div>
+
+                                            <p class="testimonial">
+                                                I am Md Ashiq Ilahi in my final year in B.Tech in CSE(AI&ML) at Pragati
+                                                Engineering College.EZ Trainings and Technologies (EZTS) is not just
+                                                about teaching-it's about truly helping you understand and apply what
+                                                you've learned. When I joined EZTS, I expected the usual lectures and
+                                                coding exercises, but they went far beyond that.
+                                                <br />
+                                                <br />
+
+                                                The trainers taught us how to solve practical problems using real-world
+                                                projects. We worked on hands-on assignments that felt like actual
+                                                industry work, which helped me understand how to apply concepts in real
+                                                scenarios. This wasn't just learning -it was experience.
+                                                <br />
+                                                <br />
+
+                                                EZTS also emphasized building a strong portfolio. They guided us through
+                                                creating and showcasing our projects, which made a huge difference when
+                                                applying for jobs. By the end of the training, I had a solid portfolio
+                                                to demonstrate my skills and confidence in my abilities.
+                                                <br />
+                                                <br />
+
+                                                Thanks to EZTS, I not only learned the skills but also gained the tools
+                                                to stand out in the job market. If you want more than just training-if
+                                                you want real-world experience and career preparation- EZTS is the place
+                                                to be.
+                                                <br />
+                                                <br />
+
+                                                Regards
+                                                <br />
+                                                Sk Md Ashiq Ilahi
+                                                <br />
+                                                Software Engineer intern at Autodesk Private Limited, India
+                                            </p>
+
+                                            <button class="view-btn">View</button>
+
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="card">
+
+                                            <div class="profile">
+                                                <div class="info">
+                                                    <p class="name">Yandrapalli Sambasiva Rao</p>
+                                                    <img loading="lazy" src="/images/home/placements/fortune-500.png"
+                                                        alt="Fortune 500 Logo">
+
+                                                </div>
+
+                                            </div>
+
+                                            <p class="testimonial">
+                                                I am Yandrapalli Sambasiva Rao.
+                                                <br />
+                                                <br />
+
+                                                Before joining EZ Trainings and Technologies (EZTS), I really struggled
+                                                with coding. I would often feel stuck while solving even basic problems,
+                                                and the thought of writing efficient code seemed impossible. It was
+                                                frustrating and made me doubt if I could ever have a career in tech.
+                                                <br />
+                                                <br />
+                                                Everything changed when I joined EZTS. The trainers were incredibly
+                                                supportive and patient, teaching coding concepts in a way that finally
+                                                made sense to me. They didn't just focus on theory -they encouraged us
+                                                to practice, solve real-world problems, and build confidence with
+                                                hands-on sessions. Slowly but surely, I started to see improvements.
+                                                <br />
+                                                <br />
+                                                EZTS didn't stop at teaching me how to code. They also prepared me for
+                                                the job market with mock interviews, resume building, and practical
+                                                advice. By the end of the training, I had not only mastered coding but
+                                                also gained the confidence to perform well in technical interviews.
+                                                <br />
+                                                <br />
+                                                I am proud to say that, thanks to EZTS, I landed my first job in tech-a
+                                                dream I thought was out of reach. I'll always be grateful to EZTS for
+                                                their incredible guidance and support.
+                                                <br />
+                                                <br />
+                                                Regards,
+                                                <br />
+                                                Yandrapalli Sambasiva Rao
+                                                <br />
+                                                Thank you
+                                            </p>
+
+                                            <button class="view-btn">View</button>
+
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <!-- <div data-star="4">
-                </div> -->
 
-                <lite-youtube videoid="LN1TQm942_U"
-                    style="background-image: url('https://i.ytimg.com/vi/LN1TQm942_U/hqdefault.jpg');">
-                </lite-youtube>
 
-                <p class="testimonial">
-                    Minim et ullamco elit elit do aliqua ex minim eu sit. Ea proident fugiat et ullamco est laboris
-                    aliqua ex nostrud pariatur. Ullamco excepteur voluptate elit nisi labore.
-                </p>
 
-                <div class="profile">
-                    <img src="/images/dp.jpeg" alt="">
-                    <div class="info">
-                        <p class="name">John</p>
-                        <p class="role">Developer</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <!-- <div data-star="4">
-                </div> -->
-
-                <lite-youtube videoid="LN1TQm942_U"
-                    style="background-image: url('https://i.ytimg.com/vi/LN1TQm942_U/hqdefault.jpg');">
-                </lite-youtube>
-
-                <p class="testimonial">
-                    Minim et ullamco elit elit do aliqua ex minim eu sit. Ea proident fugiat et ullamco est laboris
-                    aliqua ex nostrud pariatur. Ullamco excepteur voluptate elit nisi labore.
-                </p>
-
-                <div class="profile">
-                    <img src="/images/dp.jpeg" alt="">
-                    <div class="info">
-                        <p class="name">John</p>
-                        <p class="role">Developer</p>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
-
     <section class="alumni">
         <h1>Where Alumni are Working ?</h1>
         <div class="overlay"></div>
@@ -677,170 +939,176 @@
         <div class="container">
             <div class="slider">
                 <div class="slide">
-                    <img src="/images/home/placements/accenture.png" alt="">
+                    <img loading="lazy" src="/images/home/placements/accenture.png" alt="Accenture Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/adp.png" alt="">
+                    <img loading="lazy" src="/images/home/placements/adp.png" alt="ADP Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/amazon.png" alt="">
+                    <img loading="lazy" src="/images/home/placements/amazon.png" alt="Amazon Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/autodesk.png" alt="">
+                    <img loading="lazy" src="/images/home/placements/autodesk.png" alt="Autodesk Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/capgemini.png" alt="">
+                    <img loading="lazy" src="/images/home/placements/capgemini.png" alt="Capegemini Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/cisco.png" alt="">
+                    <img loading="lazy" src="/images/home/placements/cisco.png" alt="Cisco Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/accenture.png" alt="">
+                    <img loading="lazy" src="/images/home/placements/accenture.png" alt="Accenture Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/adp.png" alt="">
+                    <img loading="lazy" src="/images/home/placements/adp.png" alt="ADP Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/amazon.png" alt="">
+                    <img loading="lazy" src="/images/home/placements/amazon.png" alt="Amazon Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/autodesk.png" alt="">
+                    <img loading="lazy" src="/images/home/placements/autodesk.png" alt="Autodesk Company logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/capgemini.png" alt="">
+                    <img loading="lazy" src="/images/home/placements/capgemini.png" alt="Capegemini Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/cisco.png" alt="">
+                    <img loading="lazy" src="/images/home/placements/cisco.png" alt="Cisco Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/accenture.png" alt="">
+                    <img loading="lazy" src="/images/home/placements/accenture.png" alt="Accenture Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/adp.png" alt="">
+                    <img loading="lazy" src="/images/home/placements/adp.png" alt="ADP Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/amazon.png" alt="">
+                    <img loading="lazy" src="/images/home/placements/amazon.png" alt="Amazon Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/autodesk.png" alt="">
+                    <img loading="lazy" src="/images/home/placements/autodesk.png" alt="Autodesk Company logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/capgemini.png" alt="">
+                    <img loading="lazy" src="/images/home/placements/capgemini.png" alt="Capegemini Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/cisco.png" alt="">
-                </div>
-            </div>
-            <div class="slider">
-                <div class="slide">
-                    <img src="/images/home/placements/cognizant.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/images/home/placements/dxc.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/images/home/placements/flipkart.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/images/home/placements/hexaware.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/images/home/placements/ibm.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/images/home/placements/jp-morgan.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/images/home/placements/cognizant.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/images/home/placements/dxc.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/images/home/placements/flipkart.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/images/home/placements/hexaware.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/images/home/placements/ibm.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/images/home/placements/jp-morgan.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/images/home/placements/cognizant.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/images/home/placements/dxc.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/images/home/placements/flipkart.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/images/home/placements/hexaware.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/images/home/placements/ibm.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="/images/home/placements/jp-morgan.png" alt="">
+                    <img loading="lazy" src="/images/home/placements/cisco.png" alt="Cisco Company Logo">
                 </div>
             </div>
             <div class="slider">
                 <div class="slide">
-                    <img src="/images/home/placements/lti.png" alt="">
+                    <img loading="lazy" src="/images/home/placements/cognizant.png" alt="Cognizant Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/microsoft.png" alt="">
+                    <img loading="lazy" src="/images/home/placements/dxc.png" alt="DXC Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/paypal.png" alt="">
+                    <img loading="lazy" src="/images/home/placements/flipkart.png" alt="Flipkart Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/service-now.png" alt="">
+                    <img loading="lazy" src="/images/home/placements/hexaware.png" alt="Hexaware Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/tcs.png" alt="">
+                    <img loading="lazy" src="/images/home/placements/ibm.png" alt="IBM Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/tech-mahindra.png" alt="">
+                    <img loading="lazy" src="/images/home/placements/jp-morgan.png" alt="JP Morgan Chase Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/lti.png" alt="">
+                    <img loading="lazy" src="/images/home/placements/cognizant.png" alt="Cognizant Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/microsoft.png" alt="">
+                    <img loading="lazy" src="/images/home/placements/dxc.png" alt="DXC Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/paypal.png" alt="">
+                    <img loading="lazy" src="/images/home/placements/flipkart.png" alt="Flipkart Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/service-now.png" alt="">
+                    <img loading="lazy" src="/images/home/placements/hexaware.png" alt="Hexaware Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/tcs.png" alt="">
+                    <img loading="lazy" src="/images/home/placements/ibm.png" alt="IBM Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/tech-mahindra.png" alt="">
+                    <img loading="lazy" src="/images/home/placements/jp-morgan.png" alt="JP Morgan Chase Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/lti.png" alt="">
+                    <img loading="lazy" src="/images/home/placements/cognizant.png" alt="Cognizant Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/microsoft.png" alt="">
+                    <img loading="lazy" src="/images/home/placements/dxc.png" alt="DXC Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/paypal.png" alt="">
+                    <img loading="lazy" src="/images/home/placements/flipkart.png" alt="Flipkart Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/service-now.png" alt="">
+                    <img loading="lazy" src="/images/home/placements/hexaware.png" alt="Hexaware Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/tcs.png" alt="">
+                    <img loading="lazy" src="/images/home/placements/ibm.png" alt="IBM Company Logo">
                 </div>
                 <div class="slide">
-                    <img src="/images/home/placements/tech-mahindra.png" alt="">
+                    <img loading="lazy" src="/images/home/placements/jp-morgan.png" alt="JP Morgan Chase Company Logo">
+                </div>
+            </div>
+            <div class="slider">
+                <div class="slide">
+                    <img loading="lazy" src="/images/home/placements/lti.png" alt="LTI MindTree Company Logo">
+                </div>
+                <div class="slide">
+                    <img loading="lazy" src="/images/home/placements/microsoft.png" alt="Microsoft Company Logo">
+                </div>
+                <div class="slide">
+                    <img loading="lazy" src="/images/home/placements/paypal.png" alt="Paypal Company Logo">
+                </div>
+                <div class="slide">
+                    <img loading="lazy" src="/images/home/placements/service-now.png" alt="Service Now Company Logo">
+                </div>
+                <div class="slide">
+                    <img loading="lazy" src="/images/home/placements/tcs.png"
+                        alt="TCS TATA Consultanty Services Company Logo">
+                </div>
+                <div class="slide">
+                    <img loading="lazy" src="/images/home/placements/tech-mahindra.png"
+                        alt="Tech Mahindra Company Logo">
+                </div>
+                <div class="slide">
+                    <img loading="lazy" src="/images/home/placements/lti.png" alt="LTI MindTree Company Logo">
+                </div>
+                <div class="slide">
+                    <img loading="lazy" src="/images/home/placements/microsoft.png" alt="Microsoft Company Logo">
+                </div>
+                <div class="slide">
+                    <img loading="lazy" src="/images/home/placements/paypal.png" alt="Paypal Company Logo">
+                </div>
+                <div class="slide">
+                    <img loading="lazy" src="/images/home/placements/service-now.png" alt="Service Now Company Logo">
+                </div>
+                <div class="slide">
+                    <img loading="lazy" src="/images/home/placements/tcs.png"
+                        alt="TCS TATA Consultanty Services Company Logo">
+                </div>
+                <div class="slide">
+                    <img loading="lazy" src="/images/home/placements/tech-mahindra.png"
+                        alt="Tech Mahindra Company Logo">
+                </div>
+                <div class="slide">
+                    <img loading="lazy" src="/images/home/placements/lti.png" alt="LTI MindTree Company Logo">
+                </div>
+                <div class="slide">
+                    <img loading="lazy" src="/images/home/placements/microsoft.png" alt="Microsoft Company Logo">
+                </div>
+                <div class="slide">
+                    <img loading="lazy" src="/images/home/placements/paypal.png" alt="Paypal Company Logo">
+                </div>
+                <div class="slide">
+                    <img loading="lazy" src="/images/home/placements/service-now.png" alt="Service Now Company Logo">
+                </div>
+                <div class="slide">
+                    <img loading="lazy" src="/images/home/placements/tcs.png"
+                        alt="TCS TATA Consultanty Services Company Logo">
+                </div>
+                <div class="slide">
+                    <img loading="lazy" src="/images/home/placements/tech-mahindra.png"
+                        alt="Tech Mahindra Company Logo">
                 </div>
             </div>
         </div>
@@ -850,76 +1118,6 @@
 
 
 
-
-    <!-- <section class="pricing">
-
-        <div class="container">
-            <div class="left">
-                <div class="images">
-                    <img src="/images/home/sc.png" alt="">
-                    <img src="/images/home/disney.png" alt="">
-                </div>
-                <div class="divider"></div>
-                <h2>Medium Section Length Goes Here</h2>
-                <div class="divider"></div>
-                <div class="price">
-                    <div class="cont">
-                        <p class="heading">Emi Starts at</p>
-                        <p class="count">$4000<span>/month</span></p>
-                    </div>
-                    <div class="cont">
-                        <p class="heading">Price</p>
-                        <p class="count">$3500 <span>+ GST</span></p>
-                    </div>
-                </div>
-
-            </div>
-            <div class="right">
-                <div class="info">
-                    <div class="card">
-                        <h2>Batch Starts</h2>
-                        <h3>7 Aug, 2024</h3>
-                    </div>
-                    <div class="divider"></div>
-                    <div class="card">
-                        <h2>Duration</h2>
-                        <h3>9 months</h3>
-                    </div>
-                    <div class="divider"></div>
-
-                    <div class="card">
-                        <h2>Total Effort</h2>
-                        <h3>280+ hours</h3>
-                    </div>
-                </div>
-                <div class="points">
-                    <div class="point">
-                        <img src="/images/icons/check.webp" alt="">
-                        <p>70-90% instructor live classes</p>
-                    </div>
-                    <div class="point">
-                        <img src="/images/icons/check.webp" alt="">
-                        <p>Live training by trainers from Unreal & Snap
-                        </p>
-                    </div>
-                    <div class="point">
-                        <img src="/images/icons/check.webp" alt="">
-                        <p>Expert-led workshops & masterclasses
-                        </p>
-                    </div>
-                    <div class="point">
-                        <img src="/images/icons/check.webp" alt="">
-                        <p>Application-based training & assessments</p>
-                    </div>
-
-                    <button class="bl">
-                        Apply Now
-                    </button>
-
-                </div>
-            </div>
-        </div>
-    </section> -->
 
     <div id="floating-form" class="floating-form">
         <div class="content">
@@ -928,17 +1126,20 @@
 
                 <div>
                     <p class="heading">Talk to our expert
-                        <img class="toggle-floating-form toggle-form-button" src="/images/icons/close-btn.webp" alt="">
+                        <img class="toggle-floating-form toggle-form-button" src="/images/icons/close-btn.webp"
+                            alt="Close Button Icon">
                     </p>
-                    <p class="subheading">Deserunt ad mollit sunt nostrud commodo cillum ullamco.</p>
+                    <!-- <p class="subheading">Deserunt ad mollit sunt nostrud commodo cillum ullamco.</p> -->
                 </div>
 
                 <div>
                     <select name="" id="">
                         <option value="" hidden selected>Select a course</option>
 
-                        <option value="full-stack">Devops</option>
-                        <!-- <option value="frontend">Frontend</option> -->
+                        <option value="devops">Devops</option>
+                        <option value="full-stack">Fullstack Development</option>
+                        <option value="data-analytics">Data Analytics</option>
+                        <option value="project-management">Project Management</option>
 
                     </select>
                 </div>
@@ -960,7 +1161,7 @@
 
                     <input placeholder="" class="phone-with-country" type="tel">
                 </div>
-              
+
                 <div>
                     <button class="br" type="submit">Submit</button>
                 </div>
@@ -975,51 +1176,48 @@
             <form>
 
                 <div>
-                    <p class="heading">Talk to our expert
-                        <img class="toggle-brochure-form toggle-form-button" src="/images/icons/close-btn.webp" alt="">
+                    <p class="heading">Submit to Downlaod Brochure
+                        <img loading="lazy" class="toggle-brochure-form toggle-form-button"
+                            src="/images/icons/close-btn.webp" alt="Close Button Icon">
                     </p>
-                    <p class="subheading">Deserunt ad mollit sunt nostrud commodo cillum ullamco.</p>
                 </div>
 
                 <div>
                     <input placeholder="Name" type="text">
                 </div>
-               
+
                 <div>
                     <input placeholder="Email" type="email">
                 </div>
+
                 <div>
                     <input placeholder="" class="phone-with-country" type="tel">
                 </div>
-              
+
                 <div>
                     <button class="br" type="submit">Submit</button>
                 </div>
 
             </form>
+
         </div>
     </div>
 
     <section class="faqs">
-        <!-- <div class="bg-pattern">
-            <img src="/images/global/bg-pattern.png" alt="">
-        </div> -->
+
 
         <div class="container">
             <div class="left">
                 <h1>FAQs</h1>
-                <!-- <h2>Qui dolore officia fugiat dolore esse anim consectetur elit ipsum sunt excepteur minim.</h2> -->
 
-                <!-- <button class="bl toggle-navbar">
-                    Contact Us
-                </button> -->
             </div>
             <div class="right">
                 <div class="faq-container">
                     <div class="faq-item">
                         <div class="faq-question">
                             How do I enroll in a course on RedSage?
-                            <img src="/images/icons/plus.webp" class="arrow" />
+                            <img loading="lazy" src="/images/icons/plus.webp" class="arrow" loading="lazy"
+                                alt="Collapsible Arrow Icon" />
                         </div>
                         <div class="faq-answer">
                             Visit our course catalog, select the course you’re interested in, and follow the
@@ -1029,7 +1227,8 @@
                     <div class="faq-item">
                         <div class="faq-question">
                             What is the format of RedSage courses?
-                            <img src="/images/icons/plus.webp" class="arrow" />
+                            <img src="/images/icons/plus.webp" class="arrow" loading="lazy"
+                                alt="Collapsible Arrow Icon" />
                         </div>
                         <div class="faq-answer">
                             Courses are available in live, self-paced, and hybrid formats, depending on the
@@ -1040,7 +1239,8 @@
                     <div class="faq-item">
                         <div class="faq-question">
                             How are courses structured?
-                            <img src="/images/icons/plus.webp" class="arrow" />
+                            <img src="/images/icons/plus.webp" class="arrow" loading="lazy"
+                                alt="Collapsible Arrow Icon" />
                         </div>
                         <div class="faq-answer">
                             Each course includes a mix of video lectures, assignments, live sessions, quizzes, and
@@ -1051,7 +1251,8 @@
                     <div class="faq-item">
                         <div class="faq-question">
                             Can I preview a course before enrolling?
-                            <img src="/images/icons/plus.webp" class="arrow" />
+                            <img src="/images/icons/plus.webp" class="arrow" loading="lazy"
+                                alt="Collapsible Arrow Icon" />
                         </div>
                         <div class="faq-answer">
                             Yes, most courses offer a demo module to help you decide before enrolling.
@@ -1061,7 +1262,8 @@
                     <div class="faq-item">
                         <div class="faq-question">
                             Are RedSage courses accredited?
-                            <img src="/images/icons/plus.webp" class="arrow" />
+                            <img src="/images/icons/plus.webp" class="arrow" loading="lazy"
+                                alt="Collapsible Arrow Icon" />
                         </div>
                         <div class="faq-answer">
                             Yes, many of our courses are accredited and include certificates recognized by
@@ -1077,7 +1279,6 @@
         </div>
     </section>
 
-
     <footer>
         <div class="logo-container">
             <img src="/logos/red-black.webp" alt="Redsage Logo">
@@ -1088,6 +1289,10 @@
 
                 <div class="links">
                     <a href="/courses/devops">Devops </a>
+                    <a href="/courses/fullstack-development/">Fullstack Development </a>
+                    <a href="/courses/data-analytics/">Data Analytics </a>
+                    <a href="/courses/project-management/">Project Management </a>
+
                 </div>
             </div>
 
@@ -1102,7 +1307,6 @@
             </div>
         </div>
     </footer>
-
 
     <script src="/scripts.js">
     </script>

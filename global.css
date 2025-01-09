@@ -369,7 +369,9 @@ nav .links .toggle-navbar .toggle-btn p {
   font-size: 1rem;
 }
 nav .links .toggle-navbar.opened .content {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 nav .links .toggle-navbar.opened img.arrow {
   rotate: 180deg;
@@ -399,7 +401,7 @@ nav .links .toggle-navbar .content {
   top: 135%;
   left: 0;
   width: 200%;
-  border: 2px solid white;
+  border: 2px solid #f0f0f0;
   border-radius: 0.5rem;
   display: none;
 }
@@ -411,12 +413,13 @@ nav .links .toggle-navbar .content {
     height: -moz-fit-content;
     height: fit-content;
     padding: 0.5rem;
+    background-color: transparent;
+    border: none;
   }
+}
+@media only screen and (max-width: 1000px) and (min-width: 1000px) {
   nav .links .toggle-navbar .content * {
     color: black !important;
-  }
-  nav .links .toggle-navbar .content *:hover {
-    color: white !important;
   }
 }
 nav .contact-btn {

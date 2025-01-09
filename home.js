@@ -130,6 +130,8 @@ heroCourseButtons.forEach(button => {
         heroSplide.go(1)
       }else if(selectedCourse == 'data'){
         heroSplide.go(2)
+      }else if(selectedCourse == 'project'){
+        heroSplide.go(3)
       }
   };
 });
