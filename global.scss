@@ -861,6 +861,7 @@ footer {
     }
 
     .arrow {
+        user-select: none;
         transition: transform 0.3s ease;
         width: 1.2rem;
         height: 1.2rem;
