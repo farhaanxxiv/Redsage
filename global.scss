@@ -663,7 +663,6 @@ footer {
     height: 2rem !important;
     scale: 0.5;
     transform-origin: 0 0;
-
 }
 
 .splide__arrow--next::after {
@@ -678,7 +677,7 @@ footer {
     width: 2rem !important;
     height: 2rem !important;
     scale: 0.5;
-    transform-origin: 0 0;
+    transform-origin: 0;
     rotate: 180deg;
 }
 
@@ -885,4 +884,10 @@ footer {
 
 .bg-pattern {
     user-select: none;
+}
+
+.chip{
+    font-family: var(--primary-font);
+    letter-spacing: 3px;
+    color: 400;
 }
